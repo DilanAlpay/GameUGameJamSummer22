@@ -47,6 +47,10 @@ public class PlayerMovement : MonoBehaviour
     private bool _isJumpPressed;
     #endregion
 
+    #region Animation Hashes
+    private int _hashDirection;
+    #endregion
+
     #region Private Properties
     /// <summary>
     /// An accessor for the X and Y input from the controller
@@ -91,6 +95,8 @@ public class PlayerMovement : MonoBehaviour
         _input.CharacterControls.Jump.started += OnJump;
         _input.CharacterControls.Jump.canceled += OnJump;
 
+        //Animation hashes
+        _hashDirection = Animator.StringToHash("direction");
 
         //Jump Velocity Calculation
         //I do not know how this math works
@@ -146,9 +152,8 @@ public class PlayerMovement : MonoBehaviour
 
         HandleGravity();
         HandleJump();
+        HandleAnimation();
     }
-
-
 
     void HandleJump()
     {
@@ -181,6 +186,12 @@ public class PlayerMovement : MonoBehaviour
             //Caps the fall speed at -20 or otherwise takes the average
             _direction.y = Mathf.Max((lastY + _direction.y) * 0.5f, -20f);
         }
+    }
+
+    void HandleAnimation()
+    {
+        if (!_animator) return;
+        _animator.SetInteger(_hashDirection, (int)_moveInput.x);
     }
 
 }
