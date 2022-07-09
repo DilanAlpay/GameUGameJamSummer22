@@ -66,6 +66,10 @@ public class LineOfSight : MonoBehaviour
         OnSeeTarget?.Invoke();
         _hasTarget = true;
     }
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
 
     private void OnDrawGizmosSelected()
     {
