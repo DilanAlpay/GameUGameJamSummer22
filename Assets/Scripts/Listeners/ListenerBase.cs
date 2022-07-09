@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class ListenerBase<T> : Listener
 {
     [SerializeField]
-    public UnityEvent<T> response;
+    public UnityEvent2<T> response;
 
     public virtual void Call(T obj)
     {
