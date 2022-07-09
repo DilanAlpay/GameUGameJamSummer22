@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,4 +10,43 @@ public class Speaker : ScriptableObject
     public Color nameBoxColor = Color.white;
 
     public Sprite sprite;
+
+    //Don't do this at home kids... It's halfway between a dictionary and something else.. I don't feel like creating resources and building a dictionary for each character
+    public SpeakerEmotionData defaultEmotion;
+    public SpeakerEmotionData happyEmotion;
+    public SpeakerEmotionData sadEmotion;
+    public SpeakerEmotionData angryEmotion;
+
+    public Sprite GetSprite(SpeakerEmotion emotion = SpeakerEmotion.Default)
+    {
+        if(emotion == SpeakerEmotion.Angry && angryEmotion != null)
+        {
+            return angryEmotion.sprite;
+        }
+        else if(emotion == SpeakerEmotion.Happy && happyEmotion != null)
+        {
+            return happyEmotion.sprite;
+        }
+        else if(emotion == SpeakerEmotion.Sad && sadEmotion != null)
+        {
+            return sadEmotion.sprite;
+        }
+        else if(emotion == SpeakerEmotion.Default && defaultEmotion != null)
+        {
+            return defaultEmotion.sprite;
+        }
+        else
+        {
+            return null;
+        }
+
+    }
+}
+
+public enum SpeakerEmotion
+{
+    Default,
+    Happy,
+    Sad,
+    Angry
 }

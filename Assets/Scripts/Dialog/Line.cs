@@ -5,4 +5,5 @@ public class Line
 {
     public string text;
     public Speaker speaker;
+    public SpeakerEmotion emotion;
 }

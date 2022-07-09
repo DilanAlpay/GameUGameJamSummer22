@@ -12,6 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507cf7338028b744ba95925b1e1a76f0, type: 3}
   m_Name: Bubble
   m_EditorClassIdentifier: 
-  speakerName: Bubble
+  speakerName: Blub
   nameBoxColor: {r: 0, g: 0.8414297, b: 1, a: 1}
   sprite: {fileID: 21300000, guid: d3f0884dce5723c4a8d1e1ab459fbd27, type: 3}
+  defaultEmotion:
+    emotion: 0
+    sprite: {fileID: 21300000, guid: d3f0884dce5723c4a8d1e1ab459fbd27, type: 3}
+  happyEmotion:
+    emotion: 0
+    sprite: {fileID: 0}
+  sadEmotion:
+    emotion: 0
+    sprite: {fileID: 0}
+  angryEmotion:
+    emotion: 0
+    sprite: {fileID: 0}

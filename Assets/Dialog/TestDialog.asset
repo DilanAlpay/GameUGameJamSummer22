@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: TestDialog
   m_EditorClassIdentifier: 
   lines:
-  - text: Go get them Bubble!
+  - text: What a lovely day!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+  - text: Now you're making me mad!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 3
+  - text: Go for the eyes Blub!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 2
   - text: Blub!
     speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 0
+  OnDialogOver: {fileID: 0}

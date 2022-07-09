@@ -30,7 +30,7 @@ public class DialogManager : MonoBehaviour
         ShowDialogBox();
         foreach(Line line in dialog.lines)
         {
-            SetSpeaker(line.speaker);
+            SetSpeaker(line.speaker, line.emotion);
             dialogText.text = line.text;
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
             yield return new WaitForEndOfFrame();
@@ -39,9 +39,9 @@ public class DialogManager : MonoBehaviour
         HideDialogBox();
     }
 
-    private void SetSpeaker(Speaker speaker, bool isLeftSpeaker = true)
+    private void SetSpeaker(Speaker speaker, SpeakerEmotion emote = SpeakerEmotion.Default, bool isLeftSpeaker = true)
     {
-        leftSpeakerImage.sprite = speaker.sprite;
+        leftSpeakerImage.sprite = speaker.GetSprite(emote);
         speakerNameText.text = speaker.speakerName;
         speakerNameBox.color = speaker.nameBoxColor;
 
