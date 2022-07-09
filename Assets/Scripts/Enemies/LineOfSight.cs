@@ -2,6 +2,7 @@ using GameJam.Util;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,12 +10,12 @@ public class LineOfSight : MonoBehaviour
 {
     [SerializeField] float visionRadius = 5f;
     [SerializeField] bool active = true;
-    [SerializeField] Transform target;
+    [SerializeField] LayerMask layers;
     [SerializeField] LoggerTag loggerTag;
-    [SerializeField] UnityEvent OnSeeTarget;
+    [SerializeField] TransformEvent OnSeeTarget;
     [SerializeField] UnityEvent OnLoseTarget;
-    
 
+    Collider target;
     bool _hasTarget = false; 
 
     public float VisionRadius => visionRadius;
@@ -22,31 +23,27 @@ public class LineOfSight : MonoBehaviour
 
     public bool HasTarget => _hasTarget;
 
-    bool warning;
+
     private void Update()
     {
         if (!active) return;
-        if (target == null)
-        {
-            if (!warning)
+
+            Collider[] colliders = Physics.OverlapSphere(transform.position, visionRadius, layers);
+            if (colliders.Length != 0)
             {
-                LoggerManager.i.Log($"{name} does not have a Line Of Sight target assigned!", loggerTag);
-                warning = true;
+                if(!_hasTarget)
+                    SeesTarget(colliders[0]);
             }
-            return;
-        }
+            else
+            {
+                if (_hasTarget)
+                    LostTarget();
+            }
 
-        float distToTarget = Vector3.Distance(transform.position, target.position);
+        
 
-        if(!_hasTarget && distToTarget <= visionRadius)
-        {
-            SeesTarget();
-        }
 
-        if(_hasTarget && distToTarget > visionRadius)
-        {
-            LostTarget();
-        }
+
 
     }
 
@@ -58,17 +55,19 @@ public class LineOfSight : MonoBehaviour
     private void LostTarget()
     {
         OnLoseTarget?.Invoke();
+        target = null;
         _hasTarget = false;
     }
 
-    private void SeesTarget()
+    private void SeesTarget(Collider newTarget)
     {
-        OnSeeTarget?.Invoke();
+        OnSeeTarget?.Invoke(newTarget.transform);
+        target = newTarget;
         _hasTarget = true;
     }
-    public void SetTarget(Transform newTarget)
+    public void SetTargetLayers(LayerMask layerMask)
     {
-        target = newTarget;
+        layers = layerMask;
     }
 
     private void OnDrawGizmosSelected()

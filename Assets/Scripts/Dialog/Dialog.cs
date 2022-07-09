@@ -9,5 +9,7 @@ public class Dialog : ScriptableObject
 {
     public List<Line> lines;
 
+    public GameEvent OnDialogOver;
+
 
 }

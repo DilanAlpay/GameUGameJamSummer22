@@ -25,10 +25,15 @@ public class Fighter : MonoBehaviour
         equippedWeapon = weapon;
     }
 
-    public IEnumerator Attack()
+    public IEnumerator AttackCO(Transform target)
     {
         LoggerManager.i.Log($"{name} is attacking with {equippedWeapon.weaponName}!", logtag);
 
-        yield return new WaitForSeconds(defaultWeapon.attackTime);
+        yield return new WaitForSeconds(equippedWeapon.attackTime);
+        if(equippedWeapon.type == WeaponType.Projectile)
+        {
+            Projectile proj = Instantiate(equippedWeapon.projectile, transform.position, transform.rotation);
+            proj.SetTarget(target);
+        }
     }
 }

@@ -4,7 +4,8 @@
     {
         General,
         Combat,
-        Enemy
+        Enemy,
+        Dialog
         
     }
 }

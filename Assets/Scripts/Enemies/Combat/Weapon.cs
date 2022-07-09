@@ -7,7 +7,7 @@ public class Weapon : ScriptableObject
 {
     public string weaponName;
     public WeaponType type = WeaponType.Melee;
-    public GameObject projectile;
+    public Projectile projectile;
     public float attackRange;
 
     public float attackTime;

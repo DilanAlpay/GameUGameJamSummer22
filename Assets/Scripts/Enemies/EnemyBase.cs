@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(NavMeshMover),typeof(LineOfSight))]
 public class EnemyBase : MonoBehaviour
 {
-    public Transform target;
+    public LayerMask targetLayers;
     
     public float checkPositionTime = 0.25f;
 
@@ -13,15 +13,20 @@ public class EnemyBase : MonoBehaviour
     protected Fighter fighter;
     protected LineOfSight los;
     protected WaitForSeconds delay;
+    protected Transform target;
 
     protected virtual void Awake()
     {
         mover = GetComponent<NavMeshMover>();
         los = GetComponent<LineOfSight>();
         fighter = GetComponent<Fighter>();
-        los.SetTarget(target);
+        los.SetTargetLayers(targetLayers);
         delay = new WaitForSeconds(checkPositionTime);
     }
 
+    public void SetTarget(Transform tar)
+    {
 
+        target = tar;
+    }
 }
