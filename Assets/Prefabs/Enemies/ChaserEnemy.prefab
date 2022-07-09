@@ -193,15 +193,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visionRadius: 10
   active: 1
-  target: {fileID: 0}
+  layers:
+    serializedVersion: 2
+    m_Bits: 0
   loggerTag: 0
   OnSeeTarget:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1414728412597797189}
-        m_TargetAssemblyTypeName: SimpleChaser, Assembly-CSharp
-        m_MethodName: StartChasing
-        m_Mode: 1
+        m_TargetAssemblyTypeName: EnemyBase, Assembly-CSharp
+        m_MethodName: SetTarget
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -237,7 +239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4dfab8be0a55f448623801bc587a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 33554432
   checkPositionTime: 0.25
   logtag: 2
 --- !u!114 &1414728412597797191

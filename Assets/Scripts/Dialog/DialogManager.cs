@@ -9,7 +9,8 @@ public class DialogManager : MonoBehaviour
 
     [SerializeField] GameObject dialogBox;
     [SerializeField] Text dialogText;
-    [SerializeField] Image speakerImage;
+    [SerializeField] Image leftSpeakerImage;
+    [SerializeField] Image rightSpeakerImage;
     [SerializeField] Image speakerNameBox;
     [SerializeField] Text speakerNameText;
 
@@ -38,9 +39,9 @@ public class DialogManager : MonoBehaviour
         HideDialogBox();
     }
 
-    private void SetSpeaker(Speaker speaker)
+    private void SetSpeaker(Speaker speaker, bool isLeftSpeaker = true)
     {
-        speakerImage.sprite = speaker.sprite;
+        leftSpeakerImage.sprite = speaker.sprite;
         speakerNameText.text = speaker.speakerName;
         speakerNameBox.color = speaker.nameBoxColor;
 

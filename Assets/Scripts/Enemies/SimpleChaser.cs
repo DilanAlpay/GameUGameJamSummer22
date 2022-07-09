@@ -8,6 +8,7 @@ public class SimpleChaser : EnemyBase
 {
     bool isChasing;
     Vector3 startPos;
+
     protected override void Awake()
     {
         base.Awake();
@@ -22,24 +23,24 @@ public class SimpleChaser : EnemyBase
         while (isChasing)
         {
 
-            mover.MoveToTarget(target);
-            if (Vector3.Distance(transform.position, target.position) <= fighter.AttackRange)
-            {
+                mover.MoveToTarget(target);
+                if (Vector3.Distance(transform.position, target.position) <= fighter.AttackRange)
+                {
                     mover.CancelAction();
-                    yield return fighter.Attack();
+                    yield return fighter.AttackCO(target);
                     mover.ResetMoving();
-                    
+
+                }
+                else
+                    yield return delay;
             }
-            else
-                yield return delay;
         }
 
             
         
-    }
+    
     public void StartChasing()
     {
-        LoggerManager.i.Log("starting to chase", logtag);
         isChasing = true;
         StartCoroutine(Chase());
         mover.StartMoving();
@@ -50,13 +51,14 @@ public class SimpleChaser : EnemyBase
     public void StopChasing()
     {
         isChasing = false;
-
-
+        StopAllCoroutines();
     }
+
+
 
     public void ReturnToStartingPosition()
     {
-        LoggerManager.i.Log("Go home buddy",logtag);
+
         isChasing = false;
         mover.MoveToPosition(startPos);
     }

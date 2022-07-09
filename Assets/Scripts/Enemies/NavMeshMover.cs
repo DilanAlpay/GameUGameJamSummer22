@@ -22,7 +22,8 @@ public class NavMeshMover : MonoBehaviour,IAction
 
     public void MoveToTarget(Transform target)
     {
-        MoveToPosition(target.position);
+        if(target != null)
+            MoveToPosition(target.position);
     }
 
     public void StopMoving()
