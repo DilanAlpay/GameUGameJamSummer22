@@ -5,6 +5,7 @@ using UnityEngine;
 public class Throwable : MonoBehaviour
 {
     public float height;
+    public float thickness = 3;
 
     public void Throw(Vector3 d, float t)
     {
