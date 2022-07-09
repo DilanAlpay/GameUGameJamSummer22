@@ -34,6 +34,7 @@ public class DialogManager : MonoBehaviour
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
             yield return new WaitForEndOfFrame();
         }
+        dialog.OnDialogOver?.Call();
         HideDialogBox();
     }
 
