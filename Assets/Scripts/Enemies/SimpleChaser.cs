@@ -3,35 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(NavMeshMover))]
-public class SimpleChaser : MonoBehaviour
+
+public class SimpleChaser : EnemyBase
 {
-    public Transform target;
-    public float checkPositionTime = 0.25f;
-
-    
-    NavMeshMover mover;
-    Fighter fighter;
-    LineOfSight los;
     bool isChasing;
-    WaitForSeconds delay;
-
-    LoggerTag logtag = LoggerTag.Enemy;
-    private void Awake()
+    Vector3 startPos;
+    protected override void Awake()
     {
-        mover = GetComponent<NavMeshMover>();
-        los = GetComponent<LineOfSight>();
-        fighter = GetComponent<Fighter>();
-        los.SetTarget(target);
-        delay = new WaitForSeconds(checkPositionTime);
+        base.Awake();
     }
 
-
-    void Start()
+    private void Start()
     {
-        
+        startPos = transform.position;
     }
-
     IEnumerator Chase()
     {
         while (isChasing)
@@ -41,9 +26,7 @@ public class SimpleChaser : MonoBehaviour
             if (Vector3.Distance(transform.position, target.position) <= fighter.AttackRange)
             {
                     mover.CancelAction();
-                    
-                    LoggerManager.i.Log("Attacking time!", logtag);
-                    yield return new WaitForSeconds(1f);
+                    yield return fighter.Attack();
                     mover.ResetMoving();
                     
             }
@@ -67,7 +50,14 @@ public class SimpleChaser : MonoBehaviour
     public void StopChasing()
     {
         isChasing = false;
-        mover.StopMoving();
 
+
+    }
+
+    public void ReturnToStartingPosition()
+    {
+        LoggerManager.i.Log("Go home buddy",logtag);
+        isChasing = false;
+        mover.MoveToPosition(startPos);
     }
 }

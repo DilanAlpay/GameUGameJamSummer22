@@ -1,3 +1,4 @@
+using GameJam.Util;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ public class Fighter : MonoBehaviour
 
     public Weapon equippedWeapon;
 
-
+    LoggerTag logtag = LoggerTag.Combat;
     public float AttackRange => equippedWeapon.attackRange;
     private void Start()
     {
@@ -26,7 +27,8 @@ public class Fighter : MonoBehaviour
 
     public IEnumerator Attack()
     {
-        
+        LoggerManager.i.Log($"{name} is attacking with {equippedWeapon.weaponName}!", logtag);
+
         yield return new WaitForSeconds(defaultWeapon.attackTime);
     }
 }

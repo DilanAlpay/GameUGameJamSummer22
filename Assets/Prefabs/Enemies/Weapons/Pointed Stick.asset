@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61ce7d1e01237547aba313efd2d235e, type: 3}
   m_Name: Pointed Stick
   m_EditorClassIdentifier: 
-  weaponName: 
-  attackRange: 0
-  attackTime: 0
+  weaponName: Pointed Stick
+  type: 0
+  projectile: {fileID: 0}
+  attackRange: 3
+  attackTime: 2

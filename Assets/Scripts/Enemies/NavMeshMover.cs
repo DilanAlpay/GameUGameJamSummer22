@@ -16,6 +16,7 @@ public class NavMeshMover : MonoBehaviour,IAction
 
     public void MoveToPosition(Vector3 position)
     {
+        StartMoving();
         agent.SetDestination(position);
     }
 
