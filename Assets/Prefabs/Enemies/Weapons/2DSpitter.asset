@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507cf7338028b744ba95925b1e1a76f0, type: 3}
-  m_Name: Player
+  m_Script: {fileID: 11500000, guid: c61ce7d1e01237547aba313efd2d235e, type: 3}
+  m_Name: 2DSpitter
   m_EditorClassIdentifier: 
-  speakerName: Player
-  nameBoxColor: {r: 0.46826026, g: 0, b: 0.509434, a: 1}
-  sprite: {fileID: 21300000, guid: 235bccc63179f1544950cbb9481f8bbb, type: 3}
+  weaponName: Spitter
+  type: 1
+  projectile: {fileID: 2448308660433139893, guid: 71f0c9c2765df18468c349c95504302f, type: 3}
+  attackRange: 8
+  attackTime: 1

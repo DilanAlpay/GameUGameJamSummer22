@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507cf7338028b744ba95925b1e1a76f0, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: 
+  speakerName: Player
+  nameBoxColor: {r: 0.46826026, g: 0, b: 0.509434, a: 1}
+  sprite: {fileID: 21300000, guid: 235bccc63179f1544950cbb9481f8bbb, type: 3}
+  defaultEmotion:
+    emotion: 0
+    sprite: {fileID: 21300000, guid: 1d3e8296f05663143bea55b3b5b80056, type: 3}
+  happyEmotion:
+    emotion: 1
+    sprite: {fileID: 21300000, guid: 1d3e8296f05663143bea55b3b5b80056, type: 3}
+  sadEmotion:
+    emotion: 2
+    sprite: {fileID: 21300000, guid: f043c52ae4e6fa846bda79d583054bd2, type: 3}
+  angryEmotion:
+    emotion: 3
+    sprite: {fileID: 21300000, guid: d87961e2ce1441746b81690ee3502e90, type: 3}

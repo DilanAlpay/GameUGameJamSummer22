@@ -2,10 +2,8 @@
 using UnityEngine;
 
 [Serializable]
-public class Line
+public class SpeakerEmotionData
 {
-    [TextArea]
-    public string text;
-    public Speaker speaker;
     public SpeakerEmotion emotion;
+    public Sprite sprite;
 }

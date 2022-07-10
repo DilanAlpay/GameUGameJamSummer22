@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
+  m_Name: TestDialog
+  m_EditorClassIdentifier: 
+  lines:
+  - text: What a lovely day!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+  - text: Now you're making me madLorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 3
+  - text: Go for the eyes Blub!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 2
+  - text: Blub!
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 0
+  OnDialogOver: {fileID: 0}

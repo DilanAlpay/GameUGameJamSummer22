@@ -14,7 +14,7 @@ public class SimpleChaser : EnemyBase
         base.Awake();
     }
 
-    private void Start()
+    void Start()
     {
         startPos = transform.position;
     }
@@ -33,8 +33,8 @@ public class SimpleChaser : EnemyBase
                 }
                 else
                     yield return delay;
-            }
         }
+    }
 
             
         
