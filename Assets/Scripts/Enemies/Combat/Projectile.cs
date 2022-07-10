@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class Projectile : MonoBehaviour, IPausable
 {
     [SerializeField] float speed;
     [SerializeField] bool isHoming;
     [SerializeField] Transform targetTest;
     Transform target;
+    bool isPaused;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
+        if (isPaused) return;
 
         if (isHoming)
         {
@@ -39,4 +41,13 @@ public class Projectile : MonoBehaviour
         return new Vector3(target.position.x, transform.position.y, target.position.z);
     }
 
+    public void Pause()
+    {
+        isPaused = true;
+    }
+
+    public void Unpause()
+    {
+        isPaused = false;
+    }
 }
