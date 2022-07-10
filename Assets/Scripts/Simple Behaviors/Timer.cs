@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Timer : MonoBehaviour
+public class TimerBehavior : MonoBehaviour
 {
     [SerializeField] float duration = 1f;
     [SerializeField] bool fireOnDestroy = false;

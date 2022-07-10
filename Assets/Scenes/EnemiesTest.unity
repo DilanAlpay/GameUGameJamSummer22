@@ -682,6 +682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeGroup: {fileID: 538012986}
   fadeTime: 0
+  onFadeInComplete: {fileID: 0}
 --- !u!1 &555967066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeGroup: {fileID: 824819688}
   fadeTime: 0
+  onFadeInComplete: {fileID: 0}
 --- !u!222 &824819690
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1631,30 +1633,10 @@ MonoBehaviour:
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4458801445785636840}
-        m_TargetAssemblyTypeName: SleepyEnemy, Assembly-CSharp
-        m_MethodName: WakeUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2106730723}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: StartTimer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      - {m_Target: {fileID: 4458801445785636840}, m_TargetAssemblyTypeName: SleepyEnemy, Assembly-CSharp, m_MethodName: WakeUp, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
+      - {m_Target: {fileID: 2106730723}, m_TargetAssemblyTypeName: Timer, Assembly-CSharp, m_MethodName: StartTimer, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
+    m_CallsDirty: 1
+  isRunning: 0
 --- !u!4 &1650726766
 Transform:
   m_ObjectHideFlags: 0
@@ -2034,30 +2016,10 @@ MonoBehaviour:
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1650726765}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: StartTimer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4458801445785636840}
-        m_TargetAssemblyTypeName: SleepyEnemy, Assembly-CSharp
-        m_MethodName: GoToSleep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      - {m_Target: {fileID: 1650726765}, m_TargetAssemblyTypeName: Timer, Assembly-CSharp, m_MethodName: StartTimer, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
+      - {m_Target: {fileID: 4458801445785636840}, m_TargetAssemblyTypeName: SleepyEnemy, Assembly-CSharp, m_MethodName: GoToSleep, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
+    m_CallsDirty: 1
+  isRunning: 0
 --- !u!4 &2106730724
 Transform:
   m_ObjectHideFlags: 0
@@ -2219,6 +2181,10 @@ PrefabInstance:
       propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2367153723139642522, guid: 2a07cf2a409c843488da39d870fb13f4, type: 3}
+      propertyPath: onFadeInComplete
+      value: 
+      objectReference: {fileID: 11400000, guid: 166b2ad42d1a08041874f675f1f8dde0, type: 2}
     - target: {fileID: 2367153723139642523, guid: 2a07cf2a409c843488da39d870fb13f4, type: 3}
       propertyPath: m_Name
       value: Fader

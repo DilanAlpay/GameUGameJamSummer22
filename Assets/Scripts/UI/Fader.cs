@@ -8,7 +8,7 @@ public class Fader : MonoBehaviour
     [SerializeField] CanvasGroup fadeGroup;
     [SerializeField] float fadeTime;
 
-
+    public GameEvent onFadeInComplete;
     public void SetAlpha(float alpha)
     {
         fadeGroup.alpha = alpha;
@@ -47,7 +47,7 @@ public class Fader : MonoBehaviour
     public IEnumerator FadeInCO() 
     {
         yield return FadeCO(0, fadeTime);
-    
+        onFadeInComplete?.Call();
     
     }
 

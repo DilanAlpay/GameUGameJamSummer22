@@ -59,6 +59,13 @@ public class LineOfSight : MonoBehaviour
         _hasTarget = false;
     }
 
+    public GameObject GetTarget()
+    {
+        if (!_hasTarget) return null;
+
+        return target.gameObject;
+    }
+
     private void SeesTarget(Collider newTarget)
     {
         OnSeeTarget?.Invoke(newTarget.transform);
@@ -68,6 +75,11 @@ public class LineOfSight : MonoBehaviour
     public void SetTargetLayers(LayerMask layerMask)
     {
         layers = layerMask;
+    }
+
+    public void SetRadius(float radius)
+    {
+        visionRadius = radius;
     }
 
     private void OnDrawGizmosSelected()

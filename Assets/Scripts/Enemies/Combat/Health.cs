@@ -14,7 +14,7 @@ public class Health : MonoBehaviour, IDamageable
 
     int currentHealth;
     bool isDead;
-
+    public bool IsDead => isDead;
     private void Start()
     {
         currentHealth = maxHealth;
