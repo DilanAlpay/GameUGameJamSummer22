@@ -4,62 +4,42 @@ using UnityEngine;
 
 public class Fader : MonoBehaviour
 {
+    public GameEvent fadeOutComplete, fadeInComplete;
 
-    [SerializeField] CanvasGroup fadeGroup;
-    [SerializeField] float fadeTime;
+    private Animator _animator;
 
-    public GameEvent onFadeInComplete;
-    public void SetAlpha(float alpha)
+    #region Animation Hashes
+    private int _hashTransition;
+    #endregion
+
+    private void Awake()
     {
-        fadeGroup.alpha = alpha;
+        Initialize();
     }
 
-    public void StartFadeIn()
+    private void Initialize()
     {
-        StartCoroutine(FadeInCO());
+        _animator = GetComponent<Animator>();
+
+        _hashTransition = Animator.StringToHash("Transition");
     }
 
-    public void StartFadeOut()
+    /// <summary>
+    /// Fades in and fades out
+    /// </summary>
+    public void Transition()
     {
-        StartCoroutine(FadeOutCO());
+        _animator.Play(_hashTransition);
     }
 
-    public void StartFadeFromBlack()
+    public void FadeOutComplete()
     {
-        StartCoroutine(FadeInFromBlackCO());
+        fadeOutComplete.Call();
     }
 
-
-    public IEnumerator FadeCO(float targetAlpha, float fadeTime)
+    public void FadeInComplete()
     {
-        float startAlpha = fadeGroup.alpha;
-
-        while (!Mathf.Approximately(fadeGroup.alpha, targetAlpha))
-        {
-            fadeGroup.alpha -= (startAlpha - targetAlpha) / fadeTime * Time.deltaTime;
-
-            yield return new WaitForSecondsRealtime(0);
-        }
-
-        fadeGroup.alpha = targetAlpha;
-    }
-
-    public IEnumerator FadeInCO() 
-    {
-        yield return FadeCO(0, fadeTime);
-        onFadeInComplete?.Call();
-    
-    }
-
-    public IEnumerator FadeOutCO()
-    {
-        yield return FadeCO(1, fadeTime);
-    }
-
-    public IEnumerator FadeInFromBlackCO()
-    {
-        SetAlpha(1);
-        yield return FadeInCO();
+        fadeInComplete.Call();
     }
 
 }

@@ -26,9 +26,9 @@ public class PlayerThrowing : MonoBehaviour
     [SerializeField]
     private float _throwRange = 12;
     [SerializeField]
-    private float _height = 5;
+    private float _aimRange = 12;
     [SerializeField]
-    private float _centerOffset = 2;
+    private float _height = 5;
 
     /// <summary>
     /// The object that the child is attached to
@@ -123,23 +123,51 @@ public class PlayerThrowing : MonoBehaviour
     void Aim(Vector2 v)
     {
         if (!_aiming) return;
+        /*
+        Vector2 mousePos = v;
+        mousePos.x -= Screen.width / 2;
+        mousePos.y -= Screen.height / 2;
+
+        float distance = mousePos.magnitude;
+
+        float angle = Mathf.Atan2(mousePos.x, mousePos.y) * Mathf.Rad2Deg;
+
+        rangeDisplay.transform.localEulerAngles = Vector3.up * angle;
+
+        print(distance);
+
+        rangeDisplay.transform.localScale = new Vector3(1, 1, distance);
+        */
+        //float distance = Vector3.Distance();
+        
+        print(v);
         Ray ray = Camera.main.ScreenPointToRay(v);
         RaycastHit hit;
         if (!Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) return;
         
-        Vector3 pos = transform.position + _centerOffset * Vector3.forward;
-        
         indicator.transform.position = hit.point;
         _inRange = true;
 
-        Vector3 pos2 = indicator.transform.localPosition;
-        pos2 *= -1;
-        indicator.transform.localPosition = pos2;
+        Vector3 pos = indicator.transform.localPosition;
+        pos *= -1;
+        indicator.transform.localPosition = pos;
+                     
+        rangeDisplay.transform.LookAt(indicator.transform.position);
+        //Debug.DrawLine(hit.point, indicator.transform.position, Color.red);
+
+        //rangeDisplay.transform.localRotation = Quaternion.Euler(new Vector3(90, 0, angle));
+        //*/
+    }
+
+    /*
+        void ShowArc()
+        {
 
         Vector3 start = transform.position;
         Vector3 dest = indicator.transform.position;
         int fidelity = 10;
         float thickness = _height + (_item.thickness / 0.5f);
+
 
         List<Vector3> points = new List<Vector3>();
         for (int i = 0; i < fidelity; i++)
@@ -147,8 +175,9 @@ public class PlayerThrowing : MonoBehaviour
             points.Add(MathParabola.Parabola(start, dest, thickness, (float)i / (fidelity - 1f)));
         }
         _path.positionCount = fidelity;
-        _path.SetPositions(points.ToArray());             
-    }
+        _path.SetPositions(points.ToArray());
+        }
+    */
 
     void Throw()
     {

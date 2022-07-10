@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Area : MonoBehaviour
 {
-
     public Area areaN, areaE, areaS, areaW;
+
+    public UnityEvent onExit;
 
     private Transform _parentPathways;
     private Transform _parentEnemies;
     private Dictionary<Direction, Area> _neighbors;
     private Dictionary<Direction, Pathway> _dictPath;
     private Dictionary<Direction, GameObject> _dictEnemies;
+
+    /// <summary>
+    /// Temporarily stored when moving between Areas
+    /// </summary>
+    private PlayerMovement _movingThis;
+    private Direction _moveDirection;
 
     private void Awake()
     {
@@ -59,15 +66,9 @@ public class Area : MonoBehaviour
             //Add the enemies to the dictionary
             _dictEnemies.Add(dir, _parentEnemies.GetChild(i).gameObject);
         }
-    }
-    
-    /// <summary>
-    /// The character has moved here from this direction
-    /// </summary>
-    /// <param name="dir"></param>
-    public void EnterFrom(PlayerMovement player, Direction dir)
-    {
 
+        //All start off by default except for the starting area.
+        gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -75,8 +76,38 @@ public class Area : MonoBehaviour
     /// </summary>
     public void ExitFrom(PlayerMovement player, Direction dir)
     {
+        //gameObject.SetActive(false);
+        _movingThis = player;
+        _moveDirection = dir;
+        onExit.Invoke();
+    }
+
+
+    public void MoveCharacter()
+    {
+        if (!_movingThis) return;
+
+        int otherWay = (int)_moveDirection;
+        otherWay = (otherWay + 2) % 4;
+        _neighbors[_moveDirection].EnterFrom(_movingThis, (Direction)otherWay);
+
+        _movingThis = null;
+
         gameObject.SetActive(false);
     }
+
+    /// <summary>
+    /// The character has moved here from this direction
+    /// </summary>
+    /// <param name="dir"></param>
+    public void EnterFrom(PlayerMovement player, Direction dir)
+    {
+        gameObject.SetActive(true);
+        print(_dictPath[dir]);
+        player.TeleportTo(_dictPath[dir].Position);
+    }
+
+
 
     private void OnEnable()
     {
@@ -91,4 +122,39 @@ public class Area : MonoBehaviour
     {
 
     }
+
+    private void OnDrawGizmos()
+    {
+        if (areaN)
+        {
+            Gizmos.color = Color.yellow;
+            Vector3 posA = transform.position + transform.forward * 15 + transform.right * 2;
+            Vector3 posB = areaN.transform.position - areaN.transform.forward * 15 + transform.right * 2;
+            Gizmos.DrawLine(posA, posB);
+        }
+        if (areaE)
+        {
+            Gizmos.color = Color.red;
+            Vector3 posA = transform.position + transform.right * 17 + transform.forward * 2;
+            Vector3 posB = areaE.transform.position - areaE.transform.right * 17 + transform.forward * 2;
+            Gizmos.DrawLine(posA, posB);
+        }
+        if (areaS)
+        {
+            Gizmos.color = Color.green;
+            Vector3 posA = transform.position - transform.forward * 15 + transform.right * -2;
+            Vector3 posB = areaS.transform.position + areaS.transform.forward * 15 + transform.right * -2;
+            Gizmos.DrawLine(posA, posB);
+        }
+        if (areaW)
+        {
+            Gizmos.color = Color.blue;
+            Vector3 posA = transform.position - transform.right * 17 + transform.forward * -2;
+            Vector3 posB = areaW.transform.position + areaW.transform.right * 17 + transform.forward * -2;
+            Gizmos.DrawLine(posA, posB);
+        }
+    }
+
+
+
 }
