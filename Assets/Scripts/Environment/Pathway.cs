@@ -13,7 +13,7 @@ public class Pathway : MonoBehaviour
     /// How far locally from the center
     /// the player will be when entering this pathway
     /// </summary>
-    private float _enterOffset;
+    private float _enterOffset = 0.5f;
 
     /// <summary>
     /// The direction this pathway is headed
@@ -21,7 +21,7 @@ public class Pathway : MonoBehaviour
     /// </summary>
     private Direction _direction;
 
-    public Vector3 Position { get { return transform.position - transform.forward * _enterOffset} }
+    public Vector3 Position { get { return transform.position - (transform.forward * _enterOffset); } }
 
     public void Initialize(Area a, Direction d)
     {

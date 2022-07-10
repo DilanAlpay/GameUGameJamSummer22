@@ -6,7 +6,7 @@ public class Throwable : MonoBehaviour
 {
     public float height;
     public float thickness = 3;
-
+    public AnimationCurve bounceCurve;
     public void Throw(Vector3 d, float t)
     {
         transform.parent = null;
@@ -21,7 +21,10 @@ public class Throwable : MonoBehaviour
 
         while(elapsed < time)
         {
-            transform.position = MathParabola.Parabola(start, dest, height, elapsed/time);
+            Vector3 pos = Vector3.Lerp(start, dest, elapsed / time);
+            pos.y = bounceCurve.Evaluate(elapsed / time) * height;
+            transform.position = pos;
+            //transform.position = MathParabola.Parabola(start, dest, height, elapsed/time);
             elapsed += Time.deltaTime;
             yield return null;
         }
