@@ -194,4 +194,14 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetInteger(_hashDirection, (int)_moveInput.x);
     }
 
+
+    public void TeleportTo(Vector3 newPos)
+    {
+        //This is a necessary step when working with CharacterControllers
+        //No, I do not know why
+        _controller.enabled = false;
+        transform.position = newPos;
+        _controller.enabled = true;
+    }
+
 }
