@@ -21,7 +21,7 @@ public class Pathway : MonoBehaviour
     /// </summary>
     private Direction _direction;
 
-    public Vector3 Position { get { return transform.position - transform.forward * _enterOffset} }
+    public Vector3 Position { get { return transform.position - transform.forward * _enterOffset; } }
 
     public void Initialize(Area a, Direction d)
     {

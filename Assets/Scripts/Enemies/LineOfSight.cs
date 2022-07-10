@@ -23,55 +23,22 @@ public class LineOfSight : MonoBehaviour
 
     public bool HasTarget => _hasTarget;
 
-
-    private void Update()
-    {
-        if (!active) return;
-
-            Collider[] colliders = Physics.OverlapSphere(transform.position, visionRadius, layers);
-            if (colliders.Length != 0)
-            {
-                if(!_hasTarget)
-                    SeesTarget(colliders[0]);
-            }
-            else
-            {
-                if (_hasTarget)
-                    LostTarget();
-            }
-
-        
-
-
-
-
-    }
-
-    public void SetActive(bool isActive)
-    {
-        active = isActive;
-    }
-
-    private void LostTarget()
-    {
-        OnLoseTarget?.Invoke();
-        target = null;
-        _hasTarget = false;
-    }
+ 
 
     public GameObject GetTarget()
     {
-        if (!_hasTarget) return null;
-
-        return target.gameObject;
+        Collider[] colliders = Physics.OverlapSphere(transform.position, visionRadius, layers);
+        
+        if (colliders.Length != 0)
+        {
+            target = colliders[0];
+            return colliders[0].gameObject;
+        }
+        target = null;
+        return null;
     }
 
-    private void SeesTarget(Collider newTarget)
-    {
-        OnSeeTarget?.Invoke(newTarget.transform);
-        target = newTarget;
-        _hasTarget = true;
-    }
+
     public void SetTargetLayers(LayerMask layerMask)
     {
         layers = layerMask;

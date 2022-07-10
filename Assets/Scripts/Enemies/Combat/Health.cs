@@ -7,7 +7,7 @@ public class Health : MonoBehaviour, IDamageable
 {
     [SerializeField] int maxHealth;
 
-    
+    [SerializeField] int size;
     [SerializeField] UnityEvent onTakeDamage;
     [SerializeField] UnityEvent onHeal;
     [SerializeField] UnityEvent onDie;
@@ -18,6 +18,14 @@ public class Health : MonoBehaviour, IDamageable
     private void Start()
     {
         currentHealth = maxHealth;
+    }
+
+    public void Squish(int bubbleSize, GameObject source = null)
+    {
+        if(bubbleSize>= size)
+        {
+            TakeDamage(maxHealth, source);
+        }
     }
 
     public void TakeDamage(int damage, GameObject source = null)
@@ -59,6 +67,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         if (isDead) return;
         isDead = true;
+        GetComponent<ActionScheduler>()?.CancelCurrentAction();
         onDie?.Invoke();
     }
 

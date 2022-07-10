@@ -105,8 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2448308660433139892}
   - component: {fileID: 2448308660433139893}
-  - component: {fileID: 2448308660433139894}
   - component: {fileID: 2448308660433139895}
+  - component: {fileID: 4311782165874656406}
   m_Layer: 0
   m_Name: SimpleProjectile
   m_TagString: Untagged
@@ -144,7 +144,19 @@ MonoBehaviour:
   speed: 3
   isHoming: 0
   targetTest: {fileID: 0}
---- !u!114 &2448308660433139894
+--- !u!114 &2448308660433139895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448308660433139888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4ff1d8022232440a7b3ae625efa69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4311782165874656406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 3
   fireOnDestroy: 0
+  startTimerImmediate: 1
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
@@ -173,15 +186,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2448308660433139895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2448308660433139888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a4ff1d8022232440a7b3ae625efa69c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

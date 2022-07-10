@@ -10,7 +10,7 @@ public class Weapon : ScriptableObject
     public Projectile projectile;
     public float attackRange;
 
-    public float attackTime;
+    public float timeBetweenAttacks;
 }
 
 public enum WeaponType
