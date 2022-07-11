@@ -44,6 +44,7 @@ public class Projectile : MonoBehaviour, IPausable
     public void Pause()
     {
         isPaused = true;
+        
     }
 
     public void Unpause()

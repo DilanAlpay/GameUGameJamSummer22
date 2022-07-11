@@ -11,7 +11,7 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] UnityEvent onTakeDamage;
     [SerializeField] UnityEvent onHeal;
     [SerializeField] UnityEvent onDie;
-
+    [SerializeField] GameEvent hitBySmallBubble;
     int currentHealth;
     bool isDead;
     public bool IsDead => isDead;
@@ -25,6 +25,10 @@ public class Health : MonoBehaviour, IDamageable
         if(bubbleSize>= size)
         {
             TakeDamage(maxHealth, source);
+        }
+        else
+        {
+            hitBySmallBubble?.Call();
         }
     }
 

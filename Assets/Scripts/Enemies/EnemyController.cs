@@ -48,7 +48,6 @@ public class EnemyController : MonoBehaviour, IPausable
         GameObject target = vision.GetTarget();
         if (target != null)
         {
-            Debug.Log("I have a target!");
             AttackBehavior(target);
         }
         else if( timeSinceLastSawPlayer <= susTime ) //Suspicious behavior

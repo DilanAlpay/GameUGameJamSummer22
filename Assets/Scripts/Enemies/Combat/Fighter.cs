@@ -8,6 +8,7 @@ using UnityEngine;
 public class Fighter : MonoBehaviour, IAction
 {
     public bool isActive = true;
+    public bool isRelentless = false;
     [SerializeField] Transform projectileSpawn;
     public Weapon defaultWeapon;
     public Weapon equippedWeapon;
@@ -97,7 +98,8 @@ public class Fighter : MonoBehaviour, IAction
 
     public void LoseTarget()
     {
-        _target = null;
+        if(!isRelentless)
+            _target = null;
     }
     private bool IsInRange(GameObject target)
     {
@@ -114,5 +116,15 @@ public class Fighter : MonoBehaviour, IAction
     {
         _target = null;
         mover.StopMoving();
+    }
+
+    public void Pause()
+    {
+        isActive = false;
+    }
+
+    public void Unpause()
+    {
+        isActive = true;
     }
 }
