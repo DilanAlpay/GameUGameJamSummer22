@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
-    [SerializeField] LayerMask layers;
+
     [SerializeField] int damage;
+
+    public void DealDamage(GameObject health)
+    {
+        Debug.Log($"Deal {damage} to {health}");
+    }
 }

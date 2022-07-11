@@ -84,13 +84,6 @@ public class EnemyController : MonoBehaviour
         //fighter.Attack(target);
         onAttackBehavior?.Invoke(target);
     }
-    public void Pause()
-    {
-        mover.PauseMovement();
-    }
 
-    public void Unpause()
-    {
-        mover.UnpauseMovement();
-    }
+
 }

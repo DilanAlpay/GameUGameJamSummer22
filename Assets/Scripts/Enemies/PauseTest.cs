@@ -22,6 +22,10 @@ public class PauseTest : MonoBehaviour
         }
     }
 
+    public void AddPauseObject()
+    {
+
+    }
     public void TogglePause()
     {
 
