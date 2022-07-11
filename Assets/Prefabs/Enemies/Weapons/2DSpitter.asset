@@ -16,4 +16,4 @@ MonoBehaviour:
   type: 1
   projectile: {fileID: 2448308660433139893, guid: 71f0c9c2765df18468c349c95504302f, type: 3}
   attackRange: 8
-  attackTime: 1
+  timeBetweenAttacks: 3

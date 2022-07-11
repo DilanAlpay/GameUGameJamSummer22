@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,24 +7,56 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class NavMeshMover : MonoBehaviour,IAction
 {
+    public float maxSpeed = 3;
+    float currentSpeed;
     NavMeshAgent agent;
-
+    Action onArrived;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.speed = maxSpeed;
+        currentSpeed = maxSpeed;
     }
 
+    private void Update()
+    {
+        if(Vector3.Distance(transform.position,agent.destination) <= 1)
+        {
+            onArrived?.Invoke();
+            onArrived = null;
+        }
+    }
 
-    public void MoveToPosition(Vector3 position)
+    public void PauseMovement()
+    {
+        agent.speed = 0;
+
+    }
+
+    public void UnpauseMovement()
+    {
+        agent.speed = maxSpeed;
+    }
+
+    public void MoveToPosition(Vector3 position, Action onArrivedAction = null)
     {
         StartMoving();
         agent.SetDestination(position);
+        onArrived = onArrivedAction;
     }
 
-    public void MoveToTarget(Transform target)
+    public void MoveToTarget(Transform target, Action onArrivedAction = null)
     {
         if(target != null)
-            MoveToPosition(target.position);
+            MoveToPosition(target.position, onArrivedAction);
+    }
+
+
+    public void StartMoveAction(Vector3 position, Action onArrivedAction = null)
+    {
+        GetComponent<ActionScheduler>().StartAction(this);
+        MoveToPosition(position, onArrivedAction);
+     
     }
 
     public void StopMoving()

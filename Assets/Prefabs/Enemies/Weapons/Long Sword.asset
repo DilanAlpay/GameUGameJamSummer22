@@ -16,4 +16,4 @@ MonoBehaviour:
   type: 0
   projectile: {fileID: 0}
   attackRange: 5
-  attackTime: 3
+  timeBetweenAttacks: 2

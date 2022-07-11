@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c61ce7d1e01237547aba313efd2d235e, type: 3}
-  m_Name: Spitter
+  m_Script: {fileID: 11500000, guid: ed1af2638b3eb354fab233462d1f365c, type: 3}
+  m_Name: DeflectBubble
   m_EditorClassIdentifier: 
-  weaponName: Spitter
-  type: 1
-  projectile: {fileID: 2448308660433139893, guid: 0435d1ed2ac41064683570c94062111e, type: 3}
-  attackRange: 4
-  timeBetweenAttacks: 2

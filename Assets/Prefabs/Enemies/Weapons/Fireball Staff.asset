@@ -15,5 +15,5 @@ MonoBehaviour:
   weaponName: 
   type: 0
   projectile: {fileID: 0}
-  attackRange: 0
-  attackTime: 0
+  attackRange: 3
+  timeBetweenAttacks: 2
