@@ -12,11 +12,11 @@ public class Fighter : MonoBehaviour, IAction
     [SerializeField] Transform projectileSpawn;
     public Weapon defaultWeapon;
     public Weapon equippedWeapon;
-    
 
     float attackCooldown = 2f;
     float timeSinceLastAttack = Mathf.Infinity;
 
+    LayerMask targetLayers;
     GameObject _target;
     NavMeshMover mover; 
     LoggerTag logtag = LoggerTag.Combat;
@@ -85,6 +85,11 @@ public class Fighter : MonoBehaviour, IAction
         {
             Projectile proj = Instantiate(equippedWeapon.projectile, projectileSpawn.position, projectileSpawn.rotation);
             proj.SetTarget(target);
+            LayerMaskCollider layerMaskCollider = proj.GetComponent<LayerMaskCollider>();
+            if (layerMaskCollider != null)
+            {
+                layerMaskCollider.SetTargets(targetLayers);
+            }
         }
         yield return null;
     }
@@ -126,5 +131,10 @@ public class Fighter : MonoBehaviour, IAction
     public void Unpause()
     {
         isActive = true;
+    }
+
+    public void SetTargetLayers(LayerMask layers)
+    {
+        targetLayers = layers;
     }
 }
