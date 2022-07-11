@@ -7,17 +7,17 @@ using UnityEngine;
 
 public class Fighter : MonoBehaviour, IAction
 {
+    public bool isActive = true;
+    [SerializeField] Transform projectileSpawn;
     public Weapon defaultWeapon;
-
     public Weapon equippedWeapon;
+    
 
     float attackCooldown = 2f;
     float timeSinceLastAttack = Mathf.Infinity;
 
     GameObject _target;
-    NavMeshMover mover;
-
-    public bool isActive = true;
+    NavMeshMover mover; 
     LoggerTag logtag = LoggerTag.Combat;
     public float AttackRange => equippedWeapon.attackRange;
     private void Start()
@@ -26,6 +26,10 @@ public class Fighter : MonoBehaviour, IAction
         if(equippedWeapon == null)
         {
             EquipWeapon(defaultWeapon);
+        }
+        if(projectileSpawn == null)
+        {
+            projectileSpawn = transform;
         }
     }
 
@@ -78,7 +82,7 @@ public class Fighter : MonoBehaviour, IAction
         LoggerManager.i.Log($"{name} is attacking with {equippedWeapon.weaponName}!", logtag);
         if(equippedWeapon.type == WeaponType.Projectile)
         {
-            Projectile proj = Instantiate(equippedWeapon.projectile, transform.position, transform.rotation);
+            Projectile proj = Instantiate(equippedWeapon.projectile, projectileSpawn.position, projectileSpawn.rotation);
             proj.SetTarget(target);
         }
         yield return null;
@@ -97,7 +101,7 @@ public class Fighter : MonoBehaviour, IAction
     }
     private bool IsInRange(GameObject target)
     {
-        return target != null && Vector3.Distance(target.transform.position ,transform.position) <= AttackRange;
+        return target != null && Vector3.Distance(target.transform.position, transform.position) <= AttackRange;
     }
 
     public void Attack(GameObject target)
