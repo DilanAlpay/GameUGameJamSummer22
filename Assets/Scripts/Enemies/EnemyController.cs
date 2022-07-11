@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyController : MonoBehaviour, IPausable
 {
@@ -16,11 +17,17 @@ public class EnemyController : MonoBehaviour, IPausable
     public float susTime = 1f;
     public float timeSinceLastSawPlayer = Mathf.Infinity;
 
+    public GameObjectEvent onAttackBehavior;
+    public UnityEvent onLoseTarget;
+
+    public UnityEvent pause;
+    public UnityEvent unpause;
+
     private void Awake()
     {
         mover = GetComponent<NavMeshMover>();
         health = GetComponent<Health>();
-        fighter = GetComponent<Fighter>();
+        //fighter = GetComponent<Fighter>();
         moverBrain = GetComponent<IMoverBrain>();
         if (moverBrain == null)
         {
@@ -70,24 +77,26 @@ public class EnemyController : MonoBehaviour, IPausable
 
     private void SuspiciousBehavior()
     {
-        fighter.LoseTarget();
+        onLoseTarget?.Invoke();
+        //fighter.LoseTarget();
         mover.StopMoving();
     }
 
     private void AttackBehavior(GameObject target)
     {
         timeSinceLastSawPlayer = 0f;
-        fighter.Attack(target);
+        //fighter.Attack(target);
+        onAttackBehavior?.Invoke(target);
     }
     public void Pause()
     {
         mover.PauseMovement();
-        fighter.isActive = false;
+        pause?.Invoke();
     }
 
     public void Unpause()
     {
-        fighter.isActive = true;
+        unpause?.Invoke();
         mover.UnpauseMovement();
     }
 }
