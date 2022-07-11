@@ -11,17 +11,7 @@ public class EnemyController : MonoBehaviour, IPausable
     Health health;
     Fighter fighter;
     [SerializeField]LineOfSight vision;
-    [SerializeField] GameObject target;
-
-    public enum EnemyType
-    {
-        Dumb,
-        Guard,
-        Patrol
-    }
-
-    public EnemyType enemyType;
-    private Vector3 startPosition;
+    IMoverBrain moverBrain;
 
     public float susTime = 1f;
     public float timeSinceLastSawPlayer = Mathf.Infinity;
@@ -31,8 +21,14 @@ public class EnemyController : MonoBehaviour, IPausable
         mover = GetComponent<NavMeshMover>();
         health = GetComponent<Health>();
         fighter = GetComponent<Fighter>();
+        moverBrain = GetComponent<IMoverBrain>();
+        if (moverBrain == null)
+        {
+            Debug.Log($"{name}: No movement pattern found. Using default behavior");
+            moverBrain = gameObject.AddComponent<DumbBehavior>();
+        }
         vision.SetTargetLayers(targetLayers);
-        startPosition = transform.position;
+
     }
 
     private void Update()
@@ -42,11 +38,11 @@ public class EnemyController : MonoBehaviour, IPausable
             return;
         }
 
-        target = vision.GetTarget();
+        GameObject target = vision.GetTarget();
         if (target != null)
         {
             Debug.Log("I have a target!");
-            AttackBehavior();
+            AttackBehavior(target);
         }
         else if( timeSinceLastSawPlayer <= susTime ) //Suspicious behavior
         {
@@ -62,21 +58,8 @@ public class EnemyController : MonoBehaviour, IPausable
 
     private void MovementBehavior()
     {
-        
-        if(enemyType == EnemyType.Dumb)
-        {
-            
-            mover.StopMoving();
-        }
-        else if(enemyType == EnemyType.Guard)
-        {
-            if(Vector3.Distance(transform.position, startPosition) >= 1f)
-                mover.MoveToPosition(startPosition, ()=>Debug.Log("Hide"));
-        }
-        else if(enemyType == EnemyType.Patrol)
-        {
-            mover.MoveToPosition(startPosition, () => Debug.Log("Patrol"));
-        }
+
+        moverBrain.Move(mover);
         
     }
 
@@ -91,7 +74,7 @@ public class EnemyController : MonoBehaviour, IPausable
         mover.StopMoving();
     }
 
-    private void AttackBehavior()
+    private void AttackBehavior(GameObject target)
     {
         timeSinceLastSawPlayer = 0f;
         fighter.Attack(target);

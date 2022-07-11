@@ -20,7 +20,7 @@ public class NavMeshMover : MonoBehaviour,IAction
 
     private void Update()
     {
-         if(Vector3.Distance(transform.position,agent.destination) <= 1)
+        if(Vector3.Distance(transform.position,agent.destination) <= 1)
         {
             onArrived?.Invoke();
             onArrived = null;
