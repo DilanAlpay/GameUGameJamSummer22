@@ -5,20 +5,32 @@ using UnityEngine.InputSystem;
 
 public class PlayerThrowing : MonoBehaviour
 {
+    #region Public Properties
     public GameObject indicator;
     public GameObject rangeDisplay;
     public LineRenderer _path;
     public InputObj inputThrow;
     public InputObj inputAimControl;
-
     public LayerMask ground;
+    #endregion
 
     #region Animation Hashes
     private int _hashAiming;
     #endregion
 
+    #region References
     private Animator _animator;
 
+    /// <summary>
+    /// The object that the child is attached to
+    /// </summary>
+    private Transform _hold;
+
+    [SerializeField]
+    private Throwable _item;
+    #endregion
+
+    #region Editable Properties
     [SerializeField]
     private float _speed = 1f;
     [SerializeField]
@@ -29,23 +41,35 @@ public class PlayerThrowing : MonoBehaviour
     private float _aimRange = 12;
     [SerializeField]
     private float _height = 5;
+    [SerializeField]
+    private float _maxRange = 8;
+    #endregion
+
+    #region Private Properties
+    private bool _aiming = false;
+    private bool _inRange = false;
 
     /// <summary>
-    /// The object that the child is attached to
+    /// Relative position when aiming is started
     /// </summary>
-    private Transform _hold;
+    private Vector2 _aimStart;
 
-    [SerializeField]
-    private Throwable _item;
+    /// <summary>
+    /// Relative position when aiming is finished
+    /// </summary>
+    private Vector2 _aimEnd;
 
-    private bool _aiming = false;
-
-    private bool _inRange = false;
+    /// <summary>
+    /// Where the ball will want to end up
+    /// </summary>
+    private Vector3 _dest;
+    #endregion
 
     private void Awake()
     {
         Initialization();
     }
+
     void Initialization()
     {
         //References
@@ -63,7 +87,6 @@ public class PlayerThrowing : MonoBehaviour
         inputAimControl.Action.performed += OnAim;
         inputThrow.Action.canceled += OnThrow;
     }
-
 
     #region Callbacks
     void OnStartThrow(InputAction.CallbackContext ctx)
@@ -123,40 +146,15 @@ public class PlayerThrowing : MonoBehaviour
     void Aim(Vector2 v)
     {
         if (!_aiming) return;
-        /*
-        Vector2 mousePos = v;
-        mousePos.x -= Screen.width / 2;
-        mousePos.y -= Screen.height / 2;
 
-        float distance = mousePos.magnitude;
-
-        float angle = Mathf.Atan2(mousePos.x, mousePos.y) * Mathf.Rad2Deg;
-
-        rangeDisplay.transform.localEulerAngles = Vector3.up * angle;
-
-        print(distance);
-
-        rangeDisplay.transform.localScale = new Vector3(1, 1, distance);
-        */
-        //float distance = Vector3.Distance();
+        //Initial location
+        if (_aimStart == Vector2.zero)
+        {
+            _aimStart = v;
+            return;
+        }
         
-        print(v);
-        Ray ray = Camera.main.ScreenPointToRay(v);
-        RaycastHit hit;
-        if (!Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) return;
-        
-        indicator.transform.position = hit.point;
-        _inRange = true;
-
-        Vector3 pos = indicator.transform.localPosition;
-        pos *= -1;
-        indicator.transform.localPosition = pos;
-                     
-        rangeDisplay.transform.LookAt(indicator.transform.position);
-        //Debug.DrawLine(hit.point, indicator.transform.position, Color.red);
-
-        //rangeDisplay.transform.localRotation = Quaternion.Euler(new Vector3(90, 0, angle));
-        //*/
+        _aimEnd = v;       
     }
 
     /*
@@ -176,22 +174,64 @@ public class PlayerThrowing : MonoBehaviour
         }
         _path.positionCount = fidelity;
         _path.SetPositions(points.ToArray());
+
+
+
+
+
+
+
+        print(v);
+        Ray ray = Camera.main.ScreenPointToRay(v);
+        RaycastHit hit;
+        if (!Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) return;
+        
+        indicator.transform.position = hit.point;
+        _inRange = true;
+
+        Vector3 pos = indicator.transform.localPosition;
+        pos *= -1;
+        indicator.transform.localPosition = pos;
+                     
+        rangeDisplay.transform.LookAt(indicator.transform.position);
+        //Debug.DrawLine(hit.point, indicator.transform.position, Color.red);
+
+        //rangeDisplay.transform.localRotation = Quaternion.Euler(new Vector3(90, 0, angle));
         }
     */
+
+
+    private void Update()
+    {
+        Vector2 difference = _aimEnd - _aimStart;
+
+        float angle = Mathf.Atan2(difference.x, difference.y) * Mathf.Rad2Deg;
+
+        rangeDisplay.transform.localEulerAngles = Vector3.up * (180 + angle);
+
+        float distance = Mathf.Clamp(difference.magnitude, 0, _aimRange) / _aimRange * _maxRange;
+        rangeDisplay.transform.localScale = new Vector3(1, 1, distance);
+
+        _dest = transform.position + (rangeDisplay.transform.forward * distance);
+        indicator.transform.position = _dest;
+        indicator.name = _dest.ToString();
+    }
 
     void Throw()
     {
         if (!_aiming) return;
 
-        indicator.SetActive(false);
+
+        //Send the throwable the direction I want it to go in
+        //Along with the percentage it should reach between the min and max
+        //If the distance is not enough the Throwable will handle not being thrown
+
+        //Turn off aiming UI and reset variables
         rangeDisplay.SetActive(false);
         _aiming = false;
+        _aimStart = Vector2.zero;
         _animator.SetBool(_hashAiming, false);
-
-        if (_inRange)
-        {
-            _item.Throw(indicator.transform.position, _speed);
-            _item = null;
-        }
+        _item.Throw(_dest, _speed);
+        _item = null;
     }
 }
