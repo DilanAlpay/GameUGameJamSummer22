@@ -1702,6 +1702,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1589399685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2303749468092113285, guid: 2156b4af73fffbb48a150577f1ee729b, type: 3}
+  m_PrefabInstance: {fileID: 890182281460394818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1589399686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589399685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705e8c196b6e4ce49858d546480ffb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distToWaypoint: 1
+  waypoints:
+  - {fileID: 1614499725}
+  - {fileID: 1316600291}
+  - {fileID: 1942829238}
 --- !u!1 &1614499724
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,6 +2121,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 890182282954661348, guid: 2156b4af73fffbb48a150577f1ee729b, type: 3}
+      propertyPath: onLoseTarget.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoseTarget
+      objectReference: {fileID: 0}
     - target: {fileID: 890182282954661349, guid: 2156b4af73fffbb48a150577f1ee729b, type: 3}
       propertyPath: hitBySmallBubble
       value: 
@@ -2155,7 +2181,8 @@ PrefabInstance:
       propertyPath: isRelentless
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8053736304114434860, guid: 2156b4af73fffbb48a150577f1ee729b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2156b4af73fffbb48a150577f1ee729b, type: 3}
 --- !u!1001 &2367153723021253471
 PrefabInstance:

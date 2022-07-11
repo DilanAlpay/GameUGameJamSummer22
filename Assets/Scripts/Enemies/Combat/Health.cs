@@ -22,7 +22,7 @@ public class Health : MonoBehaviour, IDamageable
 
     public void Squish(int bubbleSize, GameObject source = null)
     {
-        if(bubbleSize>= size)
+        if (bubbleSize > size)
         {
             TakeDamage(maxHealth, source);
         }
