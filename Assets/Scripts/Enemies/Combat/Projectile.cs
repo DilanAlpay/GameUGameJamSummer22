@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour, IPausable
 {
     [SerializeField] bool isHoming;
+    [SerializeField] bool canMoveY = false;
     Bullet bullet;
     Transform target;
     
@@ -14,9 +15,10 @@ public class Projectile : MonoBehaviour, IPausable
     {
         bullet = GetComponent<Bullet>();
     }
-    public void SetTarget(Transform newTarget, float damage = 0)
+    public void SetTarget(Transform newTarget, bool yMove = false, float damage = 0)
     {
         target = newTarget;
+        canMoveY = yMove;
         transform.LookAt(GetAimLocation());
         
     }
@@ -38,7 +40,8 @@ public class Projectile : MonoBehaviour, IPausable
 
     Vector3 GetAimLocation()
     {
-        return new Vector3(target.position.x, transform.position.y, target.position.z);
+        float ypos = canMoveY ? target.position.y : transform.position.y;
+        return new Vector3(target.position.x, ypos, target.position.z);
     }
 
     public void Pause()

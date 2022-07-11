@@ -5,7 +5,7 @@ using UnityEngine;
 public class PatrolBehavior : MonoBehaviour, IMoverBrain
 {
     [SerializeField] float distToWaypoint = 1f;
-    [SerializeField] List<Transform> waypoints;
+    [SerializeField] List<Transform> waypoints = new List<Transform>();
     int currWaypoint = 0;
   
     public void Move(NavMeshMover mover)
