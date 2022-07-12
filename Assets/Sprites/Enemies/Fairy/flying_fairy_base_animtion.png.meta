@@ -1,58 +1,52 @@
 fileFormatVersion: 2
-guid: bacfd090dc0129d49b5fb5ff1037b20e
+guid: bfee3c287fb95c44698e077f96183a03
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5534404911432079453
-    second: jump_PC_0
+      213: 4832275158178232341
+    second: flying_fairy_base_animtion_0
   - first:
-      213: 2820237711269684488
-    second: jump_PC_1
+      213: -8064536161114772453
+    second: flying_fairy_base_animtion_1
   - first:
-      213: 758805977018040859
-    second: jump_PC_2
+      213: 5977954769114480188
+    second: flying_fairy_base_animtion_2
   - first:
-      213: -6493863280434062865
-    second: jump_PC_3
+      213: -7742532847655010662
+    second: flying_fairy_base_animtion_3
   - first:
-      213: -3888613633758346231
-    second: jump_PC_4
+      213: 2141791573166043268
+    second: flying_fairy_base_animtion_4
   - first:
-      213: -6381019244186250056
-    second: jump_PC_5
+      213: 640858426881198174
+    second: flying_fairy_base_animtion_5
   - first:
-      213: -7241914939389080951
-    second: jump_PC_6
+      213: 4890122451173916581
+    second: flying_fairy_base_animtion_6
   - first:
-      213: 3078783996790855117
-    second: jump_PC_7
+      213: 2518591937820850686
+    second: flying_fairy_base_animtion_7
   - first:
-      213: -3442924989161299074
-    second: jump_PC_8
+      213: -1844937817036083544
+    second: flying_fairy_base_animtion_8
   - first:
-      213: 967705794412928252
-    second: jump_PC_9
+      213: 5187015580173363890
+    second: flying_fairy_base_animtion_9
   - first:
-      213: 192614039298815940
-    second: jump_PC_10
+      213: -4038864175697736768
+    second: flying_fairy_base_animtion_10
   - first:
-      213: -2241349347693144159
-    second: jump_PC_11
+      213: 4817377493758946408
+    second: flying_fairy_base_animtion_11
   - first:
-      213: 4095486852554760652
-    second: jump_PC_12
+      213: -7416749592553910089
+    second: flying_fairy_base_animtion_12
   - first:
-      213: -7698132614475713180
-    second: jump_PC_13
+      213: 7274190294580094820
+    second: flying_fairy_base_animtion_13
   - first:
-      213: 5506399409796188961
-    second: jump_PC_14
-  - first:
-      213: -4335639810532571688
-    second: jump_PC_15
-  - first:
-      213: 5971468832417296200
-    second: jump_PC_16
+      213: -7841473672486715636
+    second: flying_fairy_base_animtion_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +91,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 260
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -142,358 +136,316 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_PC_0
+      name: flying_fairy_base_animtion_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 3756
-        width: 182
-        height: 248
+        x: 346
+        y: 3508
+        width: 386
+        height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a7e9ea3e08d133b0800000000000000
-      internalID: -5534404911432079453
+      spriteID: 518782467a0bf0340800000000000000
+      internalID: 4832275158178232341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_1
+      name: flying_fairy_base_animtion_1
       rect:
         serializedVersion: 2
-        x: 612
-        y: 3756
-        width: 182
-        height: 244
+        x: 968
+        y: 3508
+        width: 386
+        height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 805e362914f732720800000000000000
-      internalID: 2820237711269684488
+      spriteID: b1c2676d613051090800000000000000
+      internalID: -8064536161114772453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_2
+      name: flying_fairy_base_animtion_2
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 3756
-        width: 188
-        height: 234
+        x: 1592
+        y: 3508
+        width: 386
+        height: 402
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b128a990402d78a00800000000000000
-      internalID: 758805977018040859
+      spriteID: c3ebb60a036f5f250800000000000000
+      internalID: 5977954769114480188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_3
+      name: flying_fairy_base_animtion_3
       rect:
         serializedVersion: 2
-        x: 1708
-        y: 3756
-        width: 214
-        height: 220
+        x: 2214
+        y: 3508
+        width: 386
+        height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe956cd90c921e5a0800000000000000
-      internalID: -6493863280434062865
+      spriteID: a9ebab1956ffc8490800000000000000
+      internalID: -7742532847655010662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_4
+      name: flying_fairy_base_animtion_4
       rect:
         serializedVersion: 2
-        x: 2280
-        y: 3756
-        width: 214
-        height: 220
+        x: 2838
+        y: 3508
+        width: 386
+        height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 904c71bb08ed80ac0800000000000000
-      internalID: -3888613633758346231
+      spriteID: 480bc7d861c29bd10800000000000000
+      internalID: 2141791573166043268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_5
+      name: flying_fairy_base_animtion_5
       rect:
         serializedVersion: 2
-        x: 2864
-        y: 3796
-        width: 202
-        height: 246
+        x: 3460
+        y: 3508
+        width: 386
+        height: 396
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b4d8553ec01277a0800000000000000
-      internalID: -6381019244186250056
+      spriteID: e58c1950859c4e800800000000000000
+      internalID: 640858426881198174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_6
+      name: flying_fairy_base_animtion_6
       rect:
         serializedVersion: 2
-        x: 3438
-        y: 3812
-        width: 180
-        height: 252
+        x: 346
+        y: 2930
+        width: 386
+        height: 390
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98a8e106bbc8f7b90800000000000000
-      internalID: -7241914939389080951
+      spriteID: 5af326ad5743dd340800000000000000
+      internalID: 4890122451173916581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_7
+      name: flying_fairy_base_animtion_7
       rect:
         serializedVersion: 2
-        x: 62
-        y: 3408
-        width: 182
-        height: 254
+        x: 968
+        y: 2930
+        width: 386
+        height: 386
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc550e4abb90aba20800000000000000
-      internalID: 3078783996790855117
+      spriteID: ef979fbf506d3f220800000000000000
+      internalID: 2518591937820850686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_8
+      name: flying_fairy_base_animtion_8
       rect:
         serializedVersion: 2
-        x: 612
-        y: 3408
-        width: 182
-        height: 254
+        x: 1592
+        y: 2930
+        width: 386
+        height: 390
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e73a9b8b6f54830d0800000000000000
-      internalID: -3442924989161299074
+      spriteID: 8ae21ee84d67566e0800000000000000
+      internalID: -1844937817036083544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_9
+      name: flying_fairy_base_animtion_9
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 3428
-        width: 182
-        height: 246
+        x: 2214
+        y: 2930
+        width: 386
+        height: 394
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfcd11bfa4bfd6d00800000000000000
-      internalID: 967705794412928252
+      spriteID: 2ba66ac203bfbf740800000000000000
+      internalID: 5187015580173363890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_10
+      name: flying_fairy_base_animtion_10
       rect:
         serializedVersion: 2
-        x: 1712
-        y: 3428
-        width: 182
-        height: 246
+        x: 2838
+        y: 2928
+        width: 386
+        height: 398
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c7b82fb27d4ca200800000000000000
-      internalID: 192614039298815940
+      spriteID: 0cb4c775e6213f7c0800000000000000
+      internalID: -4038864175697736768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_11
+      name: flying_fairy_base_animtion_11
       rect:
         serializedVersion: 2
-        x: 2262
-        y: 3388
-        width: 182
-        height: 246
+        x: 3460
+        y: 2928
+        width: 386
+        height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a75239b4a025e0e0800000000000000
-      internalID: -2241349347693144159
+      spriteID: 86ca6789e43cad240800000000000000
+      internalID: 4817377493758946408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_12
+      name: flying_fairy_base_animtion_12
       rect:
         serializedVersion: 2
-        x: 2812
-        y: 3388
-        width: 182
-        height: 246
+        x: 346
+        y: 2348
+        width: 386
+        height: 402
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc12fc4f79716d830800000000000000
-      internalID: 4095486852554760652
+      spriteID: 7b01dcb8a89621990800000000000000
+      internalID: -7416749592553910089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_13
+      name: flying_fairy_base_animtion_13
       rect:
         serializedVersion: 2
-        x: 3362
-        y: 3348
-        width: 182
-        height: 234
+        x: 968
+        y: 2348
+        width: 386
+        height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46573507c2dba2590800000000000000
-      internalID: -7698132614475713180
+      spriteID: 4676a09588d13f460800000000000000
+      internalID: 7274190294580094820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_14
+      name: flying_fairy_base_animtion_14
       rect:
         serializedVersion: 2
-        x: 62
-        y: 2940
-        width: 182
-        height: 238
+        x: 1592
+        y: 2348
+        width: 386
+        height: 404
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12b825cc619aa6c40800000000000000
-      internalID: 5506399409796188961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_PC_15
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 2940
-        width: 182
-        height: 242
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d50a234096b4d3c0800000000000000
-      internalID: -4335639810532571688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_PC_16
-      rect:
-        serializedVersion: 2
-        x: 1162
-        y: 2940
-        width: 182
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84fac8fc34beed250800000000000000
-      internalID: 5971468832417296200
+      spriteID: c0ff9d3ad3d7d2390800000000000000
+      internalID: -7841473672486715636
       vertices: []
       indices: 
       edges: []
@@ -501,7 +453,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 017391355749d614dbf206b61f17e8d7
     internalID: 0
     vertices: []
     indices: 

@@ -9,7 +9,7 @@ public class Fighter : MonoBehaviour, IAction
 {
     public bool isActive = true;
     public bool isRelentless = false;
-    public bool flatShooter = true;
+    public bool canShootYAxis = true;
     [SerializeField] Transform projectileSpawn;
     public Weapon defaultWeapon;
     public Weapon equippedWeapon;
@@ -85,7 +85,7 @@ public class Fighter : MonoBehaviour, IAction
         if(equippedWeapon.type == WeaponType.Projectile)
         {
             Projectile proj = Instantiate(equippedWeapon.projectile, projectileSpawn.position, projectileSpawn.rotation);
-            proj.SetTarget(target, flatShooter);
+            proj.SetTarget(target, canShootYAxis);
             LayerMaskCollider layerMaskCollider = proj.GetComponent<LayerMaskCollider>();
             if (layerMaskCollider != null)
             {

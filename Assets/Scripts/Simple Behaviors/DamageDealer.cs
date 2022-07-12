@@ -9,6 +9,12 @@ public class DamageDealer : MonoBehaviour
 
     public void DealDamage(GameObject health)
     {
-        Debug.Log($"Deal {damage} to {health}");
+        Health targetHealth = health.GetComponent<Health>();
+        if(targetHealth != null)
+        {
+            targetHealth.TakeDamage(damage, this.gameObject);
+            Debug.Log($"Deal {damage} to {health}");
+        }
+   
     }
 }

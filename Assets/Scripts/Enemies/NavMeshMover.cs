@@ -55,7 +55,10 @@ public class NavMeshMover : MonoBehaviour,IAction
             MoveToPosition(target.position, onArrivedAction);
     }
 
-
+    public Vector3 GetMoveDirection()
+    {
+        return (transform.position - agent.destination).normalized;
+    }
     public void StartMoveAction(Vector3 position, Action onArrivedAction = null)
     {
         GetComponent<ActionScheduler>().StartAction(this);

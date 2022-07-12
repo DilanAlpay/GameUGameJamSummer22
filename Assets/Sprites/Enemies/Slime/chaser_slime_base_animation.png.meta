@@ -1,58 +1,49 @@
 fileFormatVersion: 2
-guid: bacfd090dc0129d49b5fb5ff1037b20e
+guid: 8b757b95538e98244a3f3a006f1d76d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5534404911432079453
-    second: jump_PC_0
+      213: -4464550102937618588
+    second: chaser_slime_base_animation_0
   - first:
-      213: 2820237711269684488
-    second: jump_PC_1
+      213: 2583024106037295538
+    second: chaser_slime_base_animation_1
   - first:
-      213: 758805977018040859
-    second: jump_PC_2
+      213: -6745227628696394594
+    second: chaser_slime_base_animation_2
   - first:
-      213: -6493863280434062865
-    second: jump_PC_3
+      213: -8137142158517365705
+    second: chaser_slime_base_animation_3
   - first:
-      213: -3888613633758346231
-    second: jump_PC_4
+      213: -8111493686555819982
+    second: chaser_slime_base_animation_4
   - first:
-      213: -6381019244186250056
-    second: jump_PC_5
+      213: 8655179806246454060
+    second: chaser_slime_base_animation_5
   - first:
-      213: -7241914939389080951
-    second: jump_PC_6
+      213: 4485560288273110015
+    second: chaser_slime_base_animation_6
   - first:
-      213: 3078783996790855117
-    second: jump_PC_7
+      213: -2982318428195630531
+    second: chaser_slime_base_animation_7
   - first:
-      213: -3442924989161299074
-    second: jump_PC_8
+      213: 9184325722954915490
+    second: chaser_slime_base_animation_8
   - first:
-      213: 967705794412928252
-    second: jump_PC_9
+      213: -4248613403839257750
+    second: chaser_slime_base_animation_9
   - first:
-      213: 192614039298815940
-    second: jump_PC_10
+      213: 5131897192725742156
+    second: chaser_slime_base_animation_10
   - first:
-      213: -2241349347693144159
-    second: jump_PC_11
+      213: -1316506196635928908
+    second: chaser_slime_base_animation_11
   - first:
-      213: 4095486852554760652
-    second: jump_PC_12
+      213: -1644173336537233895
+    second: chaser_slime_base_animation_12
   - first:
-      213: -7698132614475713180
-    second: jump_PC_13
-  - first:
-      213: 5506399409796188961
-    second: jump_PC_14
-  - first:
-      213: -4335639810532571688
-    second: jump_PC_15
-  - first:
-      213: 5971468832417296200
-    second: jump_PC_16
+      213: -6889578214439569119
+    second: chaser_slime_base_animation_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -142,358 +133,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_PC_0
+      name: chaser_slime_base_animation_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 3756
-        width: 182
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 98
+        y: 3872
+        width: 178
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a7e9ea3e08d133b0800000000000000
-      internalID: -5534404911432079453
+      spriteID: 4673878e55bba02c0800000000000000
+      internalID: -4464550102937618588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_1
+      name: chaser_slime_base_animation_1
       rect:
         serializedVersion: 2
-        x: 612
-        y: 3756
-        width: 182
-        height: 244
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 418
+        y: 3872
+        width: 178
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 805e362914f732720800000000000000
-      internalID: 2820237711269684488
+      spriteID: 2b9bf9e2dbeb8d320800000000000000
+      internalID: 2583024106037295538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_2
+      name: chaser_slime_base_animation_2
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 3756
-        width: 188
-        height: 234
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 736
+        y: 3872
+        width: 178
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b128a990402d78a00800000000000000
-      internalID: 758805977018040859
+      spriteID: e94a66e95332462a0800000000000000
+      internalID: -6745227628696394594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_3
+      name: chaser_slime_base_animation_3
       rect:
         serializedVersion: 2
-        x: 1708
-        y: 3756
-        width: 214
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1056
+        y: 3874
+        width: 178
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe956cd90c921e5a0800000000000000
-      internalID: -6493863280434062865
+      spriteID: 73497bab150131f80800000000000000
+      internalID: -8137142158517365705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_4
+      name: chaser_slime_base_animation_4
       rect:
         serializedVersion: 2
-        x: 2280
-        y: 3756
-        width: 214
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1374
+        y: 3878
+        width: 178
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 904c71bb08ed80ac0800000000000000
-      internalID: -3888613633758346231
+      spriteID: 2304407f77f2e6f80800000000000000
+      internalID: -8111493686555819982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_5
+      name: chaser_slime_base_animation_5
       rect:
         serializedVersion: 2
-        x: 2864
-        y: 3796
-        width: 202
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1694
+        y: 3880
+        width: 178
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b4d8553ec01277a0800000000000000
-      internalID: -6381019244186250056
+      spriteID: c23447a3d206d1870800000000000000
+      internalID: 8655179806246454060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_6
+      name: chaser_slime_base_animation_6
       rect:
         serializedVersion: 2
-        x: 3438
-        y: 3812
-        width: 180
-        height: 252
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2012
+        y: 3884
+        width: 178
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98a8e106bbc8f7b90800000000000000
-      internalID: -7241914939389080951
+      spriteID: ff31e111159ef3e30800000000000000
+      internalID: 4485560288273110015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_7
+      name: chaser_slime_base_animation_7
       rect:
         serializedVersion: 2
-        x: 62
-        y: 3408
-        width: 182
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2332
+        y: 3888
+        width: 178
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc550e4abb90aba20800000000000000
-      internalID: 3078783996790855117
+      spriteID: d325c48c03dac96d0800000000000000
+      internalID: -2982318428195630531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_8
+      name: chaser_slime_base_animation_8
       rect:
         serializedVersion: 2
-        x: 612
-        y: 3408
-        width: 182
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2650
+        y: 3884
+        width: 178
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e73a9b8b6f54830d0800000000000000
-      internalID: -3442924989161299074
+      spriteID: 2aed53a9597457f70800000000000000
+      internalID: 9184325722954915490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_9
+      name: chaser_slime_base_animation_9
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 3428
-        width: 182
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2970
+        y: 3880
+        width: 178
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfcd11bfa4bfd6d00800000000000000
-      internalID: 967705794412928252
+      spriteID: a63a23c8e94e905c0800000000000000
+      internalID: -4248613403839257750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_10
+      name: chaser_slime_base_animation_10
       rect:
         serializedVersion: 2
-        x: 1712
-        y: 3428
-        width: 182
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3288
+        y: 3878
+        width: 178
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c7b82fb27d4ca200800000000000000
-      internalID: 192614039298815940
+      spriteID: c420e3c8e49283740800000000000000
+      internalID: 5131897192725742156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_11
+      name: chaser_slime_base_animation_11
       rect:
         serializedVersion: 2
-        x: 2262
-        y: 3388
-        width: 182
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3608
+        y: 3874
+        width: 178
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a75239b4a025e0e0800000000000000
-      internalID: -2241349347693144159
+      spriteID: 4b63aecd694dabde0800000000000000
+      internalID: -1316506196635928908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_12
+      name: chaser_slime_base_animation_12
       rect:
         serializedVersion: 2
-        x: 2812
-        y: 3388
-        width: 182
-        height: 246
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 98
+        y: 3644
+        width: 178
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc12fc4f79716d830800000000000000
-      internalID: 4095486852554760652
+      spriteID: 9168786cf09be29e0800000000000000
+      internalID: -1644173336537233895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_PC_13
+      name: chaser_slime_base_animation_13
       rect:
         serializedVersion: 2
-        x: 3362
-        y: 3348
-        width: 182
-        height: 234
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 418
+        y: 3642
+        width: 178
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46573507c2dba2590800000000000000
-      internalID: -7698132614475713180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_PC_14
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 2940
-        width: 182
-        height: 238
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12b825cc619aa6c40800000000000000
-      internalID: 5506399409796188961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_PC_15
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 2940
-        width: 182
-        height: 242
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d50a234096b4d3c0800000000000000
-      internalID: -4335639810532571688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_PC_16
-      rect:
-        serializedVersion: 2
-        x: 1162
-        y: 2940
-        width: 182
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84fac8fc34beed250800000000000000
-      internalID: 5971468832417296200
+      spriteID: 1293f04dd1d4360a0800000000000000
+      internalID: -6889578214439569119
       vertices: []
       indices: 
       edges: []
@@ -501,7 +429,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 5a6d2349b74748d4e90c387a60aa0db6
     internalID: 0
     vertices: []
     indices: 

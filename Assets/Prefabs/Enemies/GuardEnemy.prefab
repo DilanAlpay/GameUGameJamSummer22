@@ -274,6 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 1
   isRelentless: 1
+  canShootYAxis: 0
   projectileSpawn: {fileID: 0}
   defaultWeapon: {fileID: 11400000, guid: 290759b10c3619641917ea224b6ef9c6, type: 2}
   equippedWeapon: {fileID: 0}

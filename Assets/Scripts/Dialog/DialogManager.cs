@@ -43,10 +43,13 @@ public class DialogManager : MonoBehaviour
     {
         return Input.GetKeyDown(KeyCode.Space);
     }
-    public void StartTest()
+
+    public void StartDialog(Dialog dialog)
     {
-        StartDialog(testDialog);
+        onDialogFinished = null;
+        StartCoroutine(DialogCO(dialog));
     }
+
     public void StartDialog(Dialog dialog, Action onFinished = null)
     {
         onDialogFinished = onFinished;

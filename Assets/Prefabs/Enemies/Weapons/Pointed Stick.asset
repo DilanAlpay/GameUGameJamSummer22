@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pointed Stick
   m_EditorClassIdentifier: 
   weaponName: Pointed Stick
-  type: 0
-  projectile: {fileID: 0}
-  attackRange: 3
+  type: 1
+  projectile: {fileID: 2448308660433139893, guid: 2ac5612578298ff448274df6ef50010a, type: 3}
+  attackRange: 1
   timeBetweenAttacks: 1
