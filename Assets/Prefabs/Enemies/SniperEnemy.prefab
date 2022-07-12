@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &566396730
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 566396732}
-  - component: {fileID: 566396731}
-  m_Layer: 0
-  m_Name: DeathFX
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &566396732
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566396730}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4798045406814350996}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &566396731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566396730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f981a42e82ea3d84797af353221306a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 3198746121584063567, guid: 21472c24906fb8845896280828110518, type: 3}
 --- !u!1 &1655209342421303515
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1655209342421303515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4798045405763117919}
   m_RootOrder: 0
@@ -116,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4464550102937618588, guid: 8b757b95538e98244a3f3a006f1d76d5, type: 3}
+  m_Sprite: {fileID: -6618419022979417990, guid: 1032b7e840ea46d4f8c1962a736095d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 1655209342421303515}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a7dae6c0cd306b4fa87f671d546b7d5, type: 2}
+  m_Controller: {fileID: 22100000, guid: 056afeffaf9bd724595fb40678bd78e1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -146,65 +102,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &3082770514422698851
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3075918431641205073}
-  - component: {fileID: 6581316210574245539}
-  - component: {fileID: 5249239733486753919}
-  m_Layer: 0
-  m_Name: EnemySpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3075918431641205073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082770514422698851}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4798045406814350996}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6581316210574245539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082770514422698851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f981a42e82ea3d84797af353221306a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 4798045406814351007, guid: d45edfa89c0a47746a9f2b473c4ef0d9, type: 3}
---- !u!114 &5249239733486753919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082770514422698851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8fe013e39a0345438a4abf3ffc10d06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objSpawner: {fileID: 6581316210574245539}
-  radius: 2.5
 --- !u!1 &4798045405763117918
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205cf5bfb59e93b4eb2c11b6ff7058db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visionRadius: 5
+  visionRadius: 8.03
   active: 1
   layers:
     serializedVersion: 2
@@ -394,9 +291,9 @@ GameObject:
   - component: {fileID: 4798045406814351005}
   - component: {fileID: 4798045406814350997}
   - component: {fileID: 6694489888965783054}
-  - component: {fileID: 1063447900900822563}
+  - component: {fileID: 8002118337255176843}
   m_Layer: 10
-  m_Name: Even Bigger Slime
+  m_Name: SniperEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,8 +312,7 @@ Transform:
   m_Children:
   - {fileID: 4798045407072223141}
   - {fileID: 4798045406369909125}
-  - {fileID: 3075918431641205073}
-  - {fileID: 566396732}
+  - {fileID: 1337082266485916779}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -431,8 +327,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 2.7052567, z: 1}
-  m_Center: {x: 0, y: 1.4746057, z: 0}
+  m_Size: {x: 1.423095, y: 3.2294724, z: 1}
+  m_Center: {x: -0.21154752, y: 1.7078756, z: 0}
 --- !u!195 &4798045406814350998
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -482,9 +378,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 1
   isRelentless: 1
-  canShootYAxis: 0
-  projectileSpawn: {fileID: 0}
-  defaultWeapon: {fileID: 11400000, guid: 290759b10c3619641917ea224b6ef9c6, type: 2}
+  canShootYAxis: 1
+  projectileSpawn: {fileID: 1337082266485916779}
+  defaultWeapon: {fileID: 11400000, guid: 69fd5eccaef4f8342950fe89b00ff5e3, type: 2}
   equippedWeapon: {fileID: 0}
 --- !u!114 &4798045406814350995
 MonoBehaviour:
@@ -553,55 +449,7 @@ MonoBehaviour:
       m_Calls: []
   onDie:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5249239733486753919}
-        m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
-        m_MethodName: SpawnEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5249239733486753919}
-        m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
-        m_MethodName: SpawnEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 566396731}
-        m_TargetAssemblyTypeName: ObjectSpawner, Assembly-CSharp
-        m_MethodName: SpawnObject
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1063447900900822563}
-        m_TargetAssemblyTypeName: DestroyAction, Assembly-CSharp
-        m_MethodName: Destroy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   hitBySmallBubble: {fileID: 11400000, guid: 007f2d4e789ebfb40980ebc17657bc37, type: 2}
 --- !u!114 &4798045406814351004
 MonoBehaviour:
@@ -738,7 +586,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 9127788444270417132}
   mover: {fileID: 4798045406814350993}
   isFacingLeftToStart: 1
---- !u!114 &1063447900900822563
+--- !u!114 &8002118337255176843
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -747,9 +595,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4798045406814351007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a4ff1d8022232440a7b3ae625efa69c, type: 3}
+  m_Script: {fileID: 11500000, guid: ad06665b387836c4d920df6437eee10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  acceptableDist: 1
 --- !u!1 &4798045407072223140
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,3 +726,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &9163900240893722606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337082266485916779}
+  m_Layer: 10
+  m_Name: ProjectileSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1337082266485916779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9163900240893722606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.99, y: 2.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798045406814350996}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
