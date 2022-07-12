@@ -10,7 +10,7 @@ public class ColorRandomizer : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        range.Colorize(sr);
+        sr.color = range.GetColor();
         
         
     }

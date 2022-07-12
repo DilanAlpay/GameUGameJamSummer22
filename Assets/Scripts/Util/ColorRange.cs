@@ -6,13 +6,13 @@ public class ColorRange : ScriptableObject
     [SerializeField] Color color1 = Color.white;
     [SerializeField] Color color2 = Color.black;
 
-    public void Colorize(SpriteRenderer sr)
+    public Color GetColor()
     {
         float r = Random.Range(color1.r, color2.r);
         float g = Random.Range(color1.g, color2.g);
         float b = Random.Range(color1.b, color2.b);
 
-        sr.color = new Color(r, g, b, 1);
+        return new Color(r, g, b, 1);
     }
 
 }
