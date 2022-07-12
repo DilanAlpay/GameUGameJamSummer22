@@ -28,9 +28,21 @@ public class GameEvent : ScriptableObject
     public void Call<T>(T obj)
     {
         for (int i = listeners.Count - 1; i >= 0; i--)
-        {
-            ListenerBase<T> newListener = (ListenerBase<T>)listeners[i];
-            newListener.Call(obj);
+        {            
+            if(listeners[i] is GameEventListener)
+            {
+                listeners[i].Call();
+            }
+            else
+            {
+                ListenerBase<T> newListener = (ListenerBase<T>)listeners[i];
+                newListener.Call(obj);
+            }
         }
+    }
+
+    public void StartDialog(Dialog d)
+    {
+        Call(d);
     }
 }

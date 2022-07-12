@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 507cf7338028b744ba95925b1e1a76f0, type: 3}
-  m_Name: Player
+  m_Name: Zinnia
   m_EditorClassIdentifier: 
   speakerName: Zinnia
   nameBoxColor: {r: 0.46826026, g: 0, b: 0.509434, a: 1}

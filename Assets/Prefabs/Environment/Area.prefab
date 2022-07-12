@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4750044829459901083}
   - component: {fileID: 6265733680417694788}
   - component: {fileID: 6624134540778961168}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: WALL S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 6146560779908839801}
   - component: {fileID: 13957084689243187}
   - component: {fileID: 3548092607664088962}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: WALL W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 52951df599a4e1a4295b54bf834d15d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -495,6 +495,21 @@ MonoBehaviour:
   areaE: {fileID: 0}
   areaS: {fileID: 0}
   areaW: {fileID: 0}
+  onNoItem:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 30db6d0ca9fd22a49afc9d84a569ebed, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: StartDialog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 33006fb4c2ff5544ea427f5057f4af0c, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Dialog, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExit:
     m_PersistentCalls:
       m_Calls:
@@ -522,7 +537,7 @@ GameObject:
   - component: {fileID: 8546638093075985224}
   - component: {fileID: 7077425713749463660}
   - component: {fileID: 8098404749222656641}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: WALL E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +666,7 @@ GameObject:
   - component: {fileID: 7723208781421261025}
   - component: {fileID: 6197624036334939129}
   - component: {fileID: 1789828228276836617}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: WALL N
   m_TagString: Untagged
   m_Icon: {fileID: 0}

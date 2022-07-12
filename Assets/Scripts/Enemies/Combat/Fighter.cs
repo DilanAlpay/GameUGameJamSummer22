@@ -20,7 +20,6 @@ public class Fighter : MonoBehaviour, IAction
     LayerMask targetLayers;
     GameObject _target;
     NavMeshMover mover; 
-    LoggerTag logtag = LoggerTag.Combat;
     public float AttackRange => equippedWeapon.attackRange;
     private void Start()
     {
@@ -81,7 +80,7 @@ public class Fighter : MonoBehaviour, IAction
     public IEnumerator AttackCO(Transform target)
     {
         //Will replace with animation triggers?
-        LoggerManager.i.Log($"{name} is attacking with {equippedWeapon.weaponName}!", logtag);
+        //LoggerManager.i.Log($"{name} is attacking with {equippedWeapon.weaponName}!", logtag);
         if(equippedWeapon.type == WeaponType.Projectile)
         {
             Projectile proj = Instantiate(equippedWeapon.projectile, projectileSpawn.position, projectileSpawn.rotation);

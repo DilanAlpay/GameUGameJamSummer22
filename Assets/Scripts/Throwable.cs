@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Throwable : MonoBehaviour
+public class Throwable : MonoBehaviour, IPausable
 {
     #region Properties
     
@@ -85,6 +85,7 @@ public class Throwable : MonoBehaviour
     /// </summary>
     private IEnumerator _movement;
 
+    private bool isPaused = false;
     #endregion
     #endregion
     
@@ -152,7 +153,7 @@ public class Throwable : MonoBehaviour
             pos.y = y + (bounceCurve.Evaluate(t) * _bounceHeight);
 
             transform.position = pos;
-            _elapsed += Time.deltaTime;
+            _elapsed += isPaused ? 0 : Time.deltaTime;
             
             yield return null;
         }
@@ -186,7 +187,6 @@ public class Throwable : MonoBehaviour
         if (!Physics.SphereCast(center, _size / 2f, _direction, out hit, (_size * 0.1f), bounceSurfaces))
             return;
 
-        print("Boing");
         _start = hit.point;
         _direction = hit.normal;
 
@@ -195,7 +195,8 @@ public class Throwable : MonoBehaviour
 
     public void Grab()
     {
-        StopCoroutine(_movement);
+        if(_movement != null)
+            StopCoroutine(_movement);
         _movement = null;
         _elapsed = 0;
     }
@@ -204,5 +205,15 @@ public class Throwable : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(_goal, 0.5f);
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+    }
+
+    public void Unpause()
+    {
+        isPaused = false;
     }
 }

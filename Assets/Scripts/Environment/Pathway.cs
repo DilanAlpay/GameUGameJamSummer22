@@ -31,7 +31,7 @@ public class Pathway : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerMovement player = other.GetComponentInChildren<PlayerMovement>();
+        Player player = other.GetComponentInChildren<Player>();
         if (player)
             _area.ExitFrom(player, _direction);
     }

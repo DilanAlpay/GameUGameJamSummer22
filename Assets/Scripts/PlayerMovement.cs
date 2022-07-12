@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
+    #region Public Properties
+    public InputObj inputMove;
+    public InputObj inputRun;
+    public InputObj inputJump;
+    #endregion
+
     #region References
-    private PlayerInput _input;
     private CharacterController _controller;
     private Animator _animator;
     /// <summary>
@@ -79,21 +84,12 @@ public class PlayerMovement : MonoBehaviour
     public void Initialization()
     {
         //References
-        _input = new PlayerInput();
         _controller = GetComponent<CharacterController>();
         _animator = GetComponentInChildren<Animator>();
         _geo = transform.Find("GEO");
 
         //Input Callbacks
-        _input.CharacterControls.Move.started += OnMove;
-        _input.CharacterControls.Move.canceled += OnMove;
-        _input.CharacterControls.Move.performed += OnMove;
-
-        _input.CharacterControls.Run.started += OnRun;
-        _input.CharacterControls.Run.canceled += OnRun;
-
-        _input.CharacterControls.Jump.started += OnJump;
-        _input.CharacterControls.Jump.canceled += OnJump;
+       
 
         //Animation hashes
         _hashDirection = Animator.StringToHash("direction");
@@ -107,12 +103,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnEnable()
     {
-        _input.CharacterControls.Enable();
+        inputMove.Action.started += OnMove;
+        inputMove.Action.canceled += OnMove;
+        inputMove.Action.performed += OnMove;
+        inputRun.Action.started += OnRun;
+        inputRun.Action.canceled += OnRun;
+        inputJump.Action.started += OnJump;
+        inputJump.Action.canceled += OnJump;
+
     }
 
     private void OnDisable()
     {
-        _input.CharacterControls.Disable();
+        inputMove.Action.started -= OnMove;
+        inputMove.Action.canceled -= OnMove;
+        inputMove.Action.performed -= OnMove;
+        inputRun.Action.started -= OnRun;
+        inputRun.Action.canceled -= OnRun;
+        inputJump.Action.started -= OnJump;
+        inputJump.Action.canceled -= OnJump;
+        _direction = Vector3.zero;
     }
     #endregion
 

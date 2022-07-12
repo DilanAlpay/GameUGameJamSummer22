@@ -37,6 +37,8 @@ public class PlayerThrowing : MonoBehaviour
     /// </summary>
     [SerializeField]
     private float _aimRange = 300;
+
+    public bool HasBall { get { return _item != null; } }
     #endregion
 
     #region Private Properties
@@ -125,7 +127,6 @@ public class PlayerThrowing : MonoBehaviour
 
         foreach (Collider c in nearby)
         {
-            print(c.name);
             if (c.GetComponentInParent<Throwable>())
             {
                 PickUp(c.GetComponentInParent<Throwable>());

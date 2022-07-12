@@ -17,6 +17,7 @@ public class DialogManager : MonoBehaviour
 
     [SerializeField] Dialog testDialog;
     [SerializeField] float lettersPerSecond;
+    [SerializeField] GameEvent onFinish;
     bool isTyping;
     bool forceComplete = false;
 
@@ -74,6 +75,7 @@ public class DialogManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         dialog.OnDialogOver?.Call();
+        onFinish.Call();
         onDialogFinished?.Invoke();
         HideDialogBox();
     }

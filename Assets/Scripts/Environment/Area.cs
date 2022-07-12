@@ -6,6 +6,7 @@ public class Area : MonoBehaviour
 {
     public Area areaN, areaE, areaS, areaW;
 
+    public UnityEvent onNoItem;
     public UnityEvent onExit;
 
     private Transform _parentPathways;
@@ -19,7 +20,7 @@ public class Area : MonoBehaviour
     /// <summary>
     /// Temporarily stored when moving between Areas
     /// </summary>
-    private PlayerMovement _movingThis;
+    private Player _movingThis;
     private Direction _moveDirection;
 
     private void Awake()
@@ -80,12 +81,20 @@ public class Area : MonoBehaviour
     /// <summary>
     /// Handles when a character leaves through a Pathway
     /// </summary>
-    public void ExitFrom(PlayerMovement player, Direction dir)
+    public void ExitFrom(Player player, Direction dir)
     {
-        //gameObject.SetActive(false);
-        _movingThis = player;
-        _moveDirection = dir;
-        onExit.Invoke();
+        //If the player does not have their throwable, we say they cannot leave
+        if(player.HasBall)
+        {
+            _movingThis = player;
+            _moveDirection = dir;
+            onExit.Invoke();
+        }
+        else
+        {
+            onNoItem.Invoke();
+        }
+
     }
 
 
@@ -106,7 +115,7 @@ public class Area : MonoBehaviour
     /// The character has moved here from this direction
     /// </summary>
     /// <param name="dir"></param>
-    public void EnterFrom(PlayerMovement player, Direction dir)
+    public void EnterFrom(Player player, Direction dir)
     {
         gameObject.SetActive(true);
         print(_dictPath[dir]);
