@@ -51,6 +51,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 6412136533296288304}
   dialogText: {fileID: 6412136533021767030}
+  speakerImages:
+  - {fileID: 6412136534001288124}
+  - {fileID: 6412136533069802655}
   leftSpeakerImage: {fileID: 6412136534001288124}
   rightSpeakerImage: {fileID: 6412136533069802655}
   speakerNameBox: {fileID: 6412136533719074028}
@@ -104,7 +107,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6412136532970536621}
   - component: {fileID: 6412136532970536620}
-  - component: {fileID: 6412136532970536622}
   - component: {fileID: 6412136532970536623}
   m_Layer: 5
   m_Name: FarLeftSpeakerImage
@@ -141,20 +143,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6412136532970536610}
   m_CullTransparentMesh: 1
---- !u!114 &6412136532970536622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6412136532970536610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95f5adbf8e895af41a28b8d5ab7803ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeOutComplete: {fileID: 0}
-  fadeInComplete: {fileID: 0}
 --- !u!225 &6412136532970536623
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -263,7 +251,7 @@ GameObject:
   - component: {fileID: 6412136533069802652}
   - component: {fileID: 6412136533069802655}
   m_Layer: 5
-  m_Name: Image
+  m_Name: RightImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336,7 +324,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6412136533225876594}
   - component: {fileID: 6412136533225876607}
-  - component: {fileID: 6412136533225876604}
   - component: {fileID: 6412136533225876605}
   m_Layer: 5
   m_Name: FarRightSpeakerImage
@@ -344,7 +331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6412136533225876594
 RectTransform:
   m_ObjectHideFlags: 0
@@ -373,20 +360,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6412136533225876595}
   m_CullTransparentMesh: 1
---- !u!114 &6412136533225876604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6412136533225876595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95f5adbf8e895af41a28b8d5ab7803ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeOutComplete: {fileID: 0}
-  fadeInComplete: {fileID: 0}
 --- !u!225 &6412136533225876605
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -414,7 +387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6412136533296288307
 RectTransform:
   m_ObjectHideFlags: 0
@@ -603,7 +576,7 @@ GameObject:
   - component: {fileID: 6412136534001288127}
   - component: {fileID: 6412136534001288124}
   m_Layer: 5
-  m_Name: Image
+  m_Name: LeftImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

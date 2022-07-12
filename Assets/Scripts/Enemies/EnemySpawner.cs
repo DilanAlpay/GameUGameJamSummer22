@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(ObjectSpawner))]
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]ObjectSpawner objSpawner;
