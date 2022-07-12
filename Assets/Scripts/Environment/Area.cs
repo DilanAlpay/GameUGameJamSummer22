@@ -10,6 +10,8 @@ public class Area : MonoBehaviour
 
     private Transform _parentPathways;
     private Transform _parentEnemies;
+    private Transform _parentWalls;
+
     private Dictionary<Direction, Area> _neighbors;
     private Dictionary<Direction, Pathway> _dictPath;
     private Dictionary<Direction, GameObject> _dictEnemies;
@@ -37,6 +39,7 @@ public class Area : MonoBehaviour
         //Grabs the children of this object...
         _parentPathways = transform.Find("Pathways");
         _parentEnemies = transform.Find("Enemies");
+        _parentWalls = transform.Find("Walls");
 
         //... then places them in dictionaries for easy access
         _dictPath = new Dictionary<Direction, Pathway>();
@@ -45,17 +48,20 @@ public class Area : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             Direction dir = (Direction)i;
-
             Pathway path = _parentPathways.GetChild(i).GetComponent<Pathway>();
 
             //We set the path if we have a neighbor in that direction
             if (_neighbors[dir] != null)
             {
                 path.Initialize(this, dir);
+
+                //And turn off the full-length wall
+                _parentWalls.GetChild(i).gameObject.SetActive(false);
             }
-            //Otherwise we turn off that part of the geometry
+            //Otherwise...
             else
             {
+                //we turn off that part of the geometry
                 path.gameObject.SetActive(false);
                 path = null;
             }
