@@ -4,41 +4,44 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour, IPausable
 {
-    [SerializeField] float speed;
     [SerializeField] bool isHoming;
-    [SerializeField] Transform targetTest;
+    [SerializeField] bool canMoveY = false;
+    Bullet bullet;
     Transform target;
+    
     bool isPaused;
 
-    private void Start()
+    private void Awake()
     {
-        if (targetTest != null)
-        {
-            SetTarget(targetTest);
-        }
+        bullet = GetComponent<Bullet>();
     }
-
-    public void SetTarget(Transform newTarget, float damage = 0)
+    public void SetTarget(Transform newTarget, bool yMove = false, float damage = 0)
     {
         target = newTarget;
+        canMoveY = yMove;
         transform.LookAt(GetAimLocation());
+        
     }
 
     private void Update()
     {
         if (isPaused) return;
 
-        if (isHoming)
+        //fix this part eventually
+        if (bullet != null)
         {
-            transform.LookAt(GetAimLocation());
+            if (isHoming)
+                bullet.UpdateHomingPosition(GetAimLocation());
+            else
+                bullet.UpdatePosition();
         }
 
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     Vector3 GetAimLocation()
     {
-        return new Vector3(target.position.x, transform.position.y, target.position.z);
+        float ypos = canMoveY ? target.position.y : transform.position.y;
+        return new Vector3(target.position.x, ypos, target.position.z);
     }
 
     public void Pause()
@@ -51,4 +54,6 @@ public class Projectile : MonoBehaviour, IPausable
     {
         isPaused = false;
     }
+
+
 }

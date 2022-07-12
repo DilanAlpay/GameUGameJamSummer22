@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EnemyController : MonoBehaviour, IPausable
+public class EnemyController : MonoBehaviour
 {
-    public LayerMask targetLayers;
+    
 
     NavMeshMover mover;
     Health health;
-    Fighter fighter;
+    //Fighter fighter;
     [SerializeField]LineOfSight vision;
     IMoverBrain moverBrain;
 
@@ -19,9 +19,6 @@ public class EnemyController : MonoBehaviour, IPausable
 
     public GameObjectEvent onAttackBehavior;
     public UnityEvent onLoseTarget;
-
-    public UnityEvent pause;
-    public UnityEvent unpause;
 
     private void Awake()
     {
@@ -34,7 +31,7 @@ public class EnemyController : MonoBehaviour, IPausable
             Debug.Log($"{name}: No movement pattern found. Using default behavior");
             moverBrain = gameObject.AddComponent<DumbBehavior>();
         }
-        vision.SetTargetLayers(targetLayers);
+        
 
     }
 
@@ -87,15 +84,6 @@ public class EnemyController : MonoBehaviour, IPausable
         //fighter.Attack(target);
         onAttackBehavior?.Invoke(target);
     }
-    public void Pause()
-    {
-        mover.PauseMovement();
-        pause?.Invoke();
-    }
 
-    public void Unpause()
-    {
-        unpause?.Invoke();
-        mover.UnpauseMovement();
-    }
+
 }

@@ -11,6 +11,7 @@ public class NavMeshMover : MonoBehaviour,IAction
     float currentSpeed;
     NavMeshAgent agent;
     Action onArrived;
+    bool isPaused;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -20,6 +21,7 @@ public class NavMeshMover : MonoBehaviour,IAction
 
     private void Update()
     {
+        if (isPaused) return;
         if(Vector3.Distance(transform.position,agent.destination) <= 1)
         {
             onArrived?.Invoke();
@@ -29,12 +31,14 @@ public class NavMeshMover : MonoBehaviour,IAction
 
     public void PauseMovement()
     {
+        isPaused = true;
         agent.speed = 0;
 
     }
 
     public void UnpauseMovement()
     {
+        isPaused = false;
         agent.speed = maxSpeed;
     }
 
