@@ -14,6 +14,7 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] GameEvent hitBySmallBubble;
     int currentHealth;
     bool isDead;
+    bool isInvincible;
     public bool IsDead => isDead;
     private void Start()
     {
@@ -53,6 +54,7 @@ public class Health : MonoBehaviour, IDamageable
     void ChangeHealth(int amount, GameObject source = null)
     {
         if (isDead) return;
+        if (isInvincible && amount < 0) return;
         int prevHealth = currentHealth;
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
@@ -83,5 +85,14 @@ public class Health : MonoBehaviour, IDamageable
         onDie?.Invoke();
     }
 
+    public void SetInvincible()
+    {
+        isInvincible = true;
+    }
+
+    public void SetNotInvincible()
+    {
+        isInvincible = false;
+    }
 
 }

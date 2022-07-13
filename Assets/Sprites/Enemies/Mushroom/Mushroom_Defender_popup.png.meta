@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: a3c5ffd1a86cfce4fb1fbfd744aed941
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1569972771291970015
+    second: Mushroom_Defender_popup_0
+  - first:
+      213: 8614675753219728792
+    second: Mushroom_Defender_popup_1
+  - first:
+      213: -4236312720319607940
+    second: Mushroom_Defender_popup_2
+  - first:
+      213: -2669701946292302792
+    second: Mushroom_Defender_popup_3
+  - first:
+      213: 7479711493129045622
+    second: Mushroom_Defender_popup_4
+  - first:
+      213: 1748856462608928695
+    second: Mushroom_Defender_popup_5
+  - first:
+      213: -370090885002739485
+    second: Mushroom_Defender_popup_6
+  - first:
+      213: 427893044511114810
+    second: Mushroom_Defender_popup_7
+  - first:
+      213: -6888638099733112588
+    second: Mushroom_Defender_popup_8
+  - first:
+      213: 3843347635176030142
+    second: Mushroom_Defender_popup_9
+  - first:
+      213: 8571924403278424529
+    second: Mushroom_Defender_popup_10
+  - first:
+      213: -8796670774950461021
+    second: Mushroom_Defender_popup_11
+  - first:
+      213: 3471661705713606614
+    second: Mushroom_Defender_popup_12
+  - first:
+      213: 4877067580840401845
+    second: Mushroom_Defender_popup_13
+  - first:
+      213: 6415573564017920404
+    second: Mushroom_Defender_popup_14
+  - first:
+      213: -5934621484998183731
+    second: Mushroom_Defender_popup_15
+  - first:
+      213: 2473044740373389311
+    second: Mushroom_Defender_popup_16
+  - first:
+      213: -156055736315107810
+    second: Mushroom_Defender_popup_17
+  - first:
+      213: 1356793029763005913
+    second: Mushroom_Defender_popup_18
+  - first:
+      213: 2501043903665763802
+    second: Mushroom_Defender_popup_19
+  - first:
+      213: 6521477945870896804
+    second: Mushroom_Defender_popup_20
+  - first:
+      213: -3186660915950512482
+    second: Mushroom_Defender_popup_21
+  - first:
+      213: 2240772001240850064
+    second: Mushroom_Defender_popup_22
+  - first:
+      213: -4182031341200385852
+    second: Mushroom_Defender_popup_23
+  - first:
+      213: 6519482804050818580
+    second: Mushroom_Defender_popup_24
+  - first:
+      213: 28503219212070736
+    second: Mushroom_Defender_popup_25
+  - first:
+      213: -954346660278676243
+    second: Mushroom_Defender_popup_26
+  - first:
+      213: 286167485245810399
+    second: Mushroom_Defender_popup_27
+  - first:
+      213: 7008562381076368779
+    second: Mushroom_Defender_popup_28
+  - first:
+      213: 452070189109888812
+    second: Mushroom_Defender_popup_29
+  - first:
+      213: 4493532106574850369
+    second: Mushroom_Defender_popup_30
+  - first:
+      213: 6642032352823095543
+    second: Mushroom_Defender_popup_31
+  - first:
+      213: 4097278963160747642
+    second: Mushroom_Defender_popup_32
+  - first:
+      213: -2932646515383835186
+    second: Mushroom_Defender_popup_33
+  - first:
+      213: 6432180395033558840
+    second: Mushroom_Defender_popup_34
+  - first:
+      213: 2304341527822309922
+    second: Mushroom_Defender_popup_35
+  - first:
+      213: 4898208444593131425
+    second: Mushroom_Defender_popup_36
+  - first:
+      213: -518336429481290213
+    second: Mushroom_Defender_popup_37
+  - first:
+      213: -7055327419441107294
+    second: Mushroom_Defender_popup_38
+  - first:
+      213: -8230221158413962018
+    second: Mushroom_Defender_popup_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3862
+        width: 332
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1264b142516563ae0800000000000000
+      internalID: -1569972771291970015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_1
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 3854
+        width: 332
+        height: 196
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89525dd74f97d8770800000000000000
+      internalID: 8614675753219728792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_2
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 3842
+        width: 332
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b81eb96089535c0800000000000000
+      internalID: -4236312720319607940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_3
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 3828
+        width: 332
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c041b793053fad0800000000000000
+      internalID: -2669701946292302792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3468
+        width: 332
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6760d5a49f54dc760800000000000000
+      internalID: 7479711493129045622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_5
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 3440
+        width: 332
+        height: 216
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf83f8dfaf254810800000000000000
+      internalID: 1748856462608928695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_6
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3408
+        width: 332
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e04dc80d4c2ddaf0800000000000000
+      internalID: -370090885002739485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_7
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 3366
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3602f7f47e20f500800000000000000
+      internalID: 427893044511114810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_8
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 3370
+        width: 332
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f89f275524a660a0800000000000000
+      internalID: -6888638099733112588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_9
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 3374
+        width: 332
+        height: 282
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf310faf40565530800000000000000
+      internalID: 3843347635176030142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_10
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 3378
+        width: 332
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9a9ea24d795f670800000000000000
+      internalID: 8571924403278424529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_11
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 3366
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a184057982fbe580800000000000000
+      internalID: -8796670774950461021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfd26d7de1dd2030800000000000000
+      internalID: 3471661705713606614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_13
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbd09dff13dea340800000000000000
+      internalID: 4877067580840401845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_14
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499cca15a22b80950800000000000000
+      internalID: 6415573564017920404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_15
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4384ec33df3ada0800000000000000
+      internalID: -5934621484998183731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_16
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff9a9fa615025220800000000000000
+      internalID: 2473044740373389311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_17
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16a6c7722495ddf0800000000000000
+      internalID: -156055736315107810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_18
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddffbc621c44d210800000000000000
+      internalID: 1356793029763005913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_19
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad577a5ed2e75b220800000000000000
+      internalID: 2501043903665763802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_20
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 2976
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aecd26b3a1f08a50800000000000000
+      internalID: 6521477945870896804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e961625d7c4b6c3d0800000000000000
+      internalID: -3186660915950512482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_22
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e1a945342d81f10800000000000000
+      internalID: 2240772001240850064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_23
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8533c07a076f5c0800000000000000
+      internalID: -4182031341200385852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_24
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41677be811bd97a50800000000000000
+      internalID: 6519482804050818580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_25
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f2710e683456000800000000000000
+      internalID: 28503219212070736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_26
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de45281d4ca71c2f0800000000000000
+      internalID: -954346660278676243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_27
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6e758cfcba8f300800000000000000
+      internalID: 286167485245810399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_28
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d09364a5a634160800000000000000
+      internalID: 7008562381076368779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_29
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 2588
+        width: 332
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27407b1173164600800000000000000
+      internalID: 452070189109888812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_30
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2158
+        width: 332
+        height: 332
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149e437a4ab3c5e30800000000000000
+      internalID: 4493532106574850369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_31
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2128
+        width: 332
+        height: 362
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f03ca0eb3d3d2c50800000000000000
+      internalID: 6642032352823095543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_32
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 2112
+        width: 332
+        height: 378
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e80e832857cd830800000000000000
+      internalID: 4097278963160747642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_33
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 2106
+        width: 332
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec562c638852d47d0800000000000000
+      internalID: -2932646515383835186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_34
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 2110
+        width: 332
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ff4397df1b34950800000000000000
+      internalID: 6432180395033558840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_35
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 2110
+        width: 332
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a970f196aaaff10800000000000000
+      internalID: 2304341527822309922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_36
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 2138
+        width: 332
+        height: 352
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afcac7e0aee9f340800000000000000
+      internalID: 4898208444593131425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_37
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 2116
+        width: 332
+        height: 374
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b169f9e73cf7ec8f0800000000000000
+      internalID: -518336429481290213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_38
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 2110
+        width: 332
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aea32eb711761e90800000000000000
+      internalID: -7055327419441107294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Defender_popup_39
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1628
+        width: 332
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4f4d5467168cd80800000000000000
+      internalID: -8230221158413962018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

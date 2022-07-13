@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d73591270f7b1843bd6f8056520acc8, type: 3}
   m_Name: New Color Range
   m_EditorClassIdentifier: 
-  color1: {r: 1, g: 1, b: 1, a: 1}
-  color2: {r: 0, g: 0, b: 0, a: 1}
+  color1: {r: 1, g: 0.39526987, b: 0, a: 1}
+  color2: {r: 0.2924528, g: 0, b: 0, a: 1}
