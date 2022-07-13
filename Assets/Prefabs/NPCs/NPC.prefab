@@ -177,7 +177,6 @@ GameObject:
   - component: {fileID: 4521525529893694862}
   - component: {fileID: 6140561096041622898}
   - component: {fileID: 5793545690812968134}
-  - component: {fileID: 1782840114011731039}
   - component: {fileID: 6820494839418449129}
   m_Layer: 8
   m_Name: Intertactable
@@ -291,19 +290,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _alert: {fileID: 2773339887052497544}
---- !u!135 &1782840114011731039
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339568750512852283}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 3
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
 --- !u!54 &6820494839418449129
 Rigidbody:
   m_ObjectHideFlags: 0

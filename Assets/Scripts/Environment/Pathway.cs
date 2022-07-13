@@ -7,7 +7,7 @@ public class Pathway : MonoBehaviour
     /// <summary>
     /// The area this pathway is a part of
     /// </summary>
-    private Area _area;
+    protected Area _area;
 
     /// <summary>
     /// How far locally from the center
@@ -32,7 +32,14 @@ public class Pathway : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.GetComponentInChildren<Player>();
+
+        //The player has entered, so now we tell the area that we are leaving
         if (player)
-            _area.ExitFrom(player, _direction);
+            MovePlayer(player);
+    }
+
+    protected virtual void MovePlayer(Player player)
+    {
+        _area.ExitFrom(player, _direction);
     }
 }

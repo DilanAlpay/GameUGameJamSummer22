@@ -9,7 +9,7 @@ public class Fader : MonoBehaviour
     private Animator _animator;
 
     #region Animation Hashes
-    private int _hashTransition;
+    private int _hasMoveToArea;
     #endregion
 
     private void Awake()
@@ -21,15 +21,20 @@ public class Fader : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
 
-        _hashTransition = Animator.StringToHash("Transition");
+        _hasMoveToArea= Animator.StringToHash("MoveToArea");
+    }
+
+    public void CallGameEvent(GameEvent e)
+    {
+        e.Call();
     }
 
     /// <summary>
     /// Fades in and fades out
     /// </summary>
-    public void Transition()
+    public void MoveToArea()
     {
-        _animator.Play(_hashTransition);
+        _animator.Play(_hasMoveToArea);
     }
 
     public void FadeOutComplete()

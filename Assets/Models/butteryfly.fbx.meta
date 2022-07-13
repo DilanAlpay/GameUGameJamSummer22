@@ -1,34 +1,12 @@
 fileFormatVersion: 2
-guid: 97ab08140f3624d4dbfefab9761b7322
+guid: 5021ff7b5d06cd04caef1d6410f4df11
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
-  externalObjects:
+  internalIDToNameTable:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert6
-    second: {fileID: 2100000, guid: e2988347be9d1c541a947d39df6c2105, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mush2text
-    second: {fileID: 2100000, guid: 5d54b0814692b394cb777dc0aeac178a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mush3
-    second: {fileID: 2100000, guid: 7197dcb278173c34c95d5101a7c1da84, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pink
-    second: {fileID: 2100000, guid: 200cf0e56edee494bb026f72bec8ea9e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: stumpTexture
-    second: {fileID: 2100000, guid: 754775b25f88598489bed45b0bfae8ce, type: 2}
+      74: 1827226128182048838
+    second: Butterfly
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -55,11 +33,40 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Butterfly
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -88,7 +95,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -110,7 +117,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.1
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

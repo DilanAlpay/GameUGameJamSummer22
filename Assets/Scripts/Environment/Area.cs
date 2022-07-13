@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+
 public class Area : MonoBehaviour
 {
     public Area areaN, areaE, areaS, areaW;
@@ -22,6 +24,19 @@ public class Area : MonoBehaviour
     /// </summary>
     private Player _movingThis;
     private Direction _moveDirection;
+    private Vector3 _warpDest;
+    private Zone.Tag _warpZone;
+    /// <summary>
+    /// True if we are entering a zone when we warp, false if we are exiting
+    /// </summary>
+    private bool _warpEnter;
+
+    /// <summary>
+    /// O means this area is not moving
+    /// 1 means we are moving
+    /// 2 means we are warping
+    /// </summary>
+    private int _moveType = 0; 
 
     private void Awake()
     {
@@ -86,6 +101,7 @@ public class Area : MonoBehaviour
         //If the player does not have their throwable, we say they cannot leave
         if(player.HasBall)
         {
+            _moveType = 1;
             _movingThis = player;
             _moveDirection = dir;
             onExit.Invoke();
@@ -98,17 +114,59 @@ public class Area : MonoBehaviour
     }
 
 
+    public void WarpOut(Player player, Vector3 dest, Zone.Tag zone, bool entering)
+    {
+        //If the player does not have their throwable, we say they cannot leave
+        if (player.HasBall)
+        {
+            _moveType = 2;
+            _movingThis = player;
+            _warpDest = dest;
+            _warpZone = zone;
+            _warpEnter = entering;
+            onExit.Invoke();
+        }
+        else
+        {
+            onNoItem.Invoke();
+        }
+    }
+
     public void MoveCharacter()
     {
         if (!_movingThis) return;
 
-        int otherWay = (int)_moveDirection;
-        otherWay = (otherWay + 2) % 4;
-        _neighbors[_moveDirection].EnterFrom(_movingThis, (Direction)otherWay);
+        if(_moveType == 1)
+        {
+            int otherWay = (int)_moveDirection;
+            otherWay = (otherWay + 2) % 4;
+            _neighbors[_moveDirection].EnterFrom(_movingThis, (Direction)otherWay);
+
+            gameObject.SetActive(false);
+        }
+        else if (_moveType == 2)
+        {
+            _movingThis.TeleportTo(_warpDest);
+
+            //If it isn't set then we are either leaving or entering
+            //We can't unload the first zone, the player's in that one!
+            if (_warpZone != 0)
+            {
+                if (_warpEnter)
+                {
+                    SceneManager.LoadScene(_warpZone.ToString(), LoadSceneMode.Additive);
+                    
+                }
+                else
+                {
+                    SceneManager.UnloadSceneAsync(_warpZone.ToString());
+                }
+            }
+        }
 
         _movingThis = null;
-
-        gameObject.SetActive(false);
+        _moveType = 0;
+        _warpZone = 0;
     }
 
     /// <summary>
@@ -120,7 +178,6 @@ public class Area : MonoBehaviour
         gameObject.SetActive(true);
         player.TeleportTo(_dictPath[dir].Position);
     }
-
 
 
     private void OnEnable()

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
-  m_Name: NPCMushroom
+  m_Name: NPCLegend
   m_EditorClassIdentifier: 
   lines:
-  - text: I AM DIFFERENT, ALONE I PLAY
-    speaker: {fileID: 11400000, guid: fab5d5b72f25c3048ad1bb87330fa6a4, type: 2}
+  - text: How'd you get here?
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: BUT THOSE WHO ARE UNIQUE KNOW THE WAY
-    speaker: {fileID: 11400000, guid: fab5d5b72f25c3048ad1bb87330fa6a4, type: 2}
+  - text: If you see Allium, tell'em I said "told ya so"!
+    speaker: {fileID: 11400000, guid: 1e2f11dfb50497a49a8fc3d10a727ed7, type: 2}
     emotion: 0
     speakerNum: 0
   OnDialogOver: {fileID: 0}
