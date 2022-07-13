@@ -345,7 +345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &297412424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1148,6 +1148,10 @@ PrefabInstance:
     - target: {fileID: 2983831396129093397, guid: d24c10af173cdf24fb87c26b7f407480, type: 3}
       propertyPath: m_Name
       value: SniperBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 2983831396129093397, guid: d24c10af173cdf24fb87c26b7f407480, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2983831396129093406, guid: d24c10af173cdf24fb87c26b7f407480, type: 3}
       propertyPath: m_RootOrder
