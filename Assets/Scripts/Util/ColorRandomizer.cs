@@ -5,11 +5,11 @@ using UnityEngine;
 public class ColorRandomizer : MonoBehaviour
 {
     [SerializeField] ColorRange range;
-    SpriteRenderer sr;
+    [SerializeField] SpriteRenderer sr;
     // Start is called before the first frame update
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+       
         sr.color = range.GetColor();
         
         

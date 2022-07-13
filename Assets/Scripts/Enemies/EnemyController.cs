@@ -15,7 +15,6 @@ public class EnemyController : MonoBehaviour
     public float susTime = 1f;
     public float timeSinceLastSawPlayer = Mathf.Infinity;
 
-    public ParticleSystem splat;
 
     public GameObjectEvent onAttackBehavior;
     public UnityEvent onLoseTarget;
@@ -23,10 +22,8 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         mover = GetComponent<NavMeshMover>();
-        health = GetComponent<Health>();
 
-        health.Death.AddListener(Death);
-        
+        health = GetComponent<Health>();
         //fighter = GetComponent<Fighter>();
         moverBrain = GetComponent<IMoverBrain>();
         if (moverBrain == null)
@@ -80,9 +77,4 @@ public class EnemyController : MonoBehaviour
         onAttackBehavior?.Invoke(target);
     }
 
-    public void Death()
-    {
-        ParticleSystem newSplat = Instantiate(splat, transform.position, splat.transform.rotation);
-        Destroy(gameObject);
-    }
 }

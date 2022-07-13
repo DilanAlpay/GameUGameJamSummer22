@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3748365560971900623}
   - component: {fileID: 4410190130556633220}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4798045405763117906}
   - component: {fileID: 4798045405763117917}
   - component: {fileID: 4798045405763117916}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: 2DGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4798045406369909125}
   - component: {fileID: 4798045406369909124}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 4798045406814350997}
   - component: {fileID: 7137395255536572044}
   - component: {fileID: 2973673296107968689}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: FlyingEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cea1aefe4f1d94e9080f6ebeb0ce97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 8919349900652863359}
   mover: {fileID: 4798045406814350993}
   isFacingLeftToStart: 1
 --- !u!1 &4798045407072223140
@@ -589,7 +588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4798045407072223141}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +622,7 @@ GameObject:
   - component: {fileID: 4798045407266292501}
   - component: {fileID: 8919349900652863359}
   - component: {fileID: 8044518353292173835}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
