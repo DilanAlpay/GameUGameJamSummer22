@@ -67,22 +67,16 @@ public class EnemyController : MonoBehaviour
         
     }
 
-    private void PatrolBehavior()
-    {
-        throw new NotImplementedException();
-    }
 
     private void SuspiciousBehavior()
     {
         onLoseTarget?.Invoke();
-        //fighter.LoseTarget();
         mover.StopMoving();
     }
 
     private void AttackBehavior(GameObject target)
     {
         timeSinceLastSawPlayer = 0f;
-        //fighter.Attack(target);
         onAttackBehavior?.Invoke(target);
     }
 

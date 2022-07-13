@@ -236,7 +236,6 @@ GameObject:
   - component: {fileID: 4798045406814351004}
   - component: {fileID: 4798045406814351005}
   - component: {fileID: 4798045406814350997}
-  - component: {fileID: 4097046332111571113}
   - component: {fileID: 6694489888965783054}
   - component: {fileID: 4298760213953609609}
   m_Layer: 11
@@ -260,6 +259,7 @@ Transform:
   - {fileID: 4798045407072223141}
   - {fileID: 4798045406369909125}
   - {fileID: 4679902539078854965}
+  - {fileID: 4338476144792180426}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   isActive: 1
   isRelentless: 1
   canShootYAxis: 0
-  projectileSpawn: {fileID: 0}
+  projectileSpawn: {fileID: 4338476144792180426}
   defaultWeapon: {fileID: 11400000, guid: 290759b10c3619641917ea224b6ef9c6, type: 2}
   equippedWeapon: {fileID: 0}
 --- !u!114 &4798045406814350995
@@ -331,6 +331,7 @@ MonoBehaviour:
   vision: {fileID: 4798045406369909124}
   susTime: 1
   timeSinceLastSawPlayer: Infinity
+  splat: {fileID: 4480754790762921342, guid: be0f99b626b25dd499c2d4cc55f67d4c, type: 3}
   onAttackBehavior:
     m_PersistentCalls:
       m_Calls:
@@ -505,18 +506,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4097046332111571113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4798045406814351007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51b01804fd7b91a41a48f09d5214d2fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6694489888965783054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,7 +518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cea1aefe4f1d94e9080f6ebeb0ce97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   mover: {fileID: 4798045406814350993}
   isFacingLeftToStart: 1
 --- !u!135 &4298760213953609609
@@ -855,6 +843,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6257970960138933483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4338476144792180426}
+  m_Layer: 11
+  m_Name: ProjectileSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4338476144792180426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6257970960138933483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798045406814350996}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6364241404449606874
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,6 +965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6591554456920675733}
   - component: {fileID: 8753705606581066284}
+  - component: {fileID: 1010364096}
   m_Layer: 11
   m_Name: BODY
   m_TagString: Untagged
@@ -1009,7 +1028,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7526866347251117655, guid: 3e48c4841c4c57549884acc365947ee4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.11671209, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1019,6 +1038,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1010364096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079420160181427986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cc53d97bd21c34f944b8c9560439af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: {fileID: 11400000, guid: 4a33342d2c6acde4ea8e90635812bf63, type: 2}
 --- !u!1 &7600338090923861701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cea1aefe4f1d94e9080f6ebeb0ce97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
   mover: {fileID: 0}
   isFacingLeftToStart: 1
 --- !u!1 &9142838635866734689

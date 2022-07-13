@@ -7,5 +7,13 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MushroomRunner
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: d5bb73cfda7514b40b4fb06552dfb41f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2b8fbc2fddbd37c409e515d0748b5ef8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b1c664710c6f507418bf7c526b9f8aa4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b1c664710c6f507418bf7c526b9f8aa4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2b8fbc2fddbd37c409e515d0748b5ef8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 09d7be2394c2d214cbcd8459a0d87d64, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ee262fdb1313be543a9bff1499f811c0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ee262fdb1313be543a9bff1499f811c0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 09d7be2394c2d214cbcd8459a0d87d64, type: 2}
