@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     private PlayerMovement _movement;
     private PlayerThrowing _throwing;
+    private Interactor _interactor;
 
     public bool HasBall { get { return _throwing.HasBall; } }
 
@@ -14,12 +15,14 @@ public class Player : MonoBehaviour
     {
         _movement = GetComponent<PlayerMovement>();
         _throwing = GetComponent<PlayerThrowing>();
+        _interactor = GetComponent<Interactor>();
     }
 
     public void SetPause(bool b)
     {
         _movement.enabled = !b;
         _throwing.enabled = !b;
+        _interactor.enabled = !b;
     }
 
     public void TeleportTo(Vector3 newPos)

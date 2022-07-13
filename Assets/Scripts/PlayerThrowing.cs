@@ -90,6 +90,11 @@ public class PlayerThrowing : MonoBehaviour
         inputThrow.Action.canceled += OnThrow;
     }
 
+    private void OnDisable()
+    {
+        EndAim();
+    }
+
     #region Callbacks
     void OnStartThrow(InputAction.CallbackContext ctx)
     {
@@ -227,20 +232,23 @@ public class PlayerThrowing : MonoBehaviour
 
         //Turn off aiming UI and reset variables
 
+        EndAim();
+        if(_item.Throw(_direction, _throwForce))
+        {
+            _item.transform.parent = null;
+            _item = null;
+        }
+    }
+
+    public void EndAim()
+    {
         rangeDisplay.gameObject.SetActive(false);
         indicator.gameObject.SetActive(false);
         arcDisplay.positionCount = 0;
         _aiming = false;
         _aimStart = Vector3.zero;
         rangeDisplay.localScale = Vector3.zero;
-
         _animator.SetBool(_hashAiming, false);
-
-        if(_item.Throw(_direction, _throwForce))
-        {
-            _item.transform.parent = null;
-            _item = null;
-        }
     }
 
     private void OnDrawGizmos()
