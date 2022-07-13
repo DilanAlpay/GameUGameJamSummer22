@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     #region Animation Hashes
     private int _hashDirection;
+    private int _hashWalking;
     #endregion
 
     #region Private Properties
@@ -93,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Animation hashes
         _hashDirection = Animator.StringToHash("direction");
+        _hashWalking = Animator.StringToHash("walking");
 
         //Jump Velocity Calculation
         //I do not know how this math works
@@ -202,8 +204,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!_animator) return;
         _animator.SetInteger(_hashDirection, (int)_moveInput.x);
+        _animator.SetBool(_hashWalking, _isMoving);
     }
-
 
     public void TeleportTo(Vector3 newPos)
     {

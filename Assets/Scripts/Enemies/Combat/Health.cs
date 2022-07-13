@@ -16,10 +16,11 @@ public class Health : MonoBehaviour, IDamageable
     bool isDead;
     bool isInvincible;
     public bool IsDead => isDead;
+    public UnityEvent Death => onDie;
+
     private void Start()
     {
-        currentHealth = maxHealth;
-        
+        currentHealth = maxHealth;        
     }
 
     private void Update()

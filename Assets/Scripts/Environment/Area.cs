@@ -118,7 +118,6 @@ public class Area : MonoBehaviour
     public void EnterFrom(Player player, Direction dir)
     {
         gameObject.SetActive(true);
-        print(_dictPath[dir]);
         player.TeleportTo(_dictPath[dir].Position);
     }
 

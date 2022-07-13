@@ -55,6 +55,8 @@ public class Throwable : MonoBehaviour, IPausable
     /// </summary>
     private float _bounceHeight;
 
+    public float Height => _bounceHeight;
+
     /// <summary>
     /// How far it will move after each bounce since the last throw
     /// </summary>
@@ -119,11 +121,16 @@ public class Throwable : MonoBehaviour, IPausable
         return true;
     }
 
-    private void CalcBounceHeight()
+    public void CalcBounceHeight()
     {
         _bounceHeight = Mathf.Lerp(_maxHeight, _minHeight, _force);
     }
-    
+
+    public float GetBounceHeight(float f)
+    {
+        return Mathf.Lerp(_maxHeight, _minHeight, f);
+    }
+
     private void CalcGoal()
     {
         float left = 1f - (_elapsed / _speed);

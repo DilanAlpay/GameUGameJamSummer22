@@ -13,7 +13,6 @@ public class DamageDealer : MonoBehaviour
         if(targetHealth != null)
         {
             targetHealth.TakeDamage(damage, this.gameObject);
-            Debug.Log($"Deal {damage} to {health}");
         }
    
     }

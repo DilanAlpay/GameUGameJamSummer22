@@ -6,8 +6,6 @@ using UnityEngine.Events;
 
 public class EnemyController : MonoBehaviour
 {
-    
-
     NavMeshMover mover;
     Health health;
     //Fighter fighter;
@@ -17,6 +15,8 @@ public class EnemyController : MonoBehaviour
     public float susTime = 1f;
     public float timeSinceLastSawPlayer = Mathf.Infinity;
 
+    public ParticleSystem splat;
+
     public GameObjectEvent onAttackBehavior;
     public UnityEvent onLoseTarget;
 
@@ -24,15 +24,16 @@ public class EnemyController : MonoBehaviour
     {
         mover = GetComponent<NavMeshMover>();
         health = GetComponent<Health>();
+
+        health.Death.AddListener(Death);
+        
         //fighter = GetComponent<Fighter>();
         moverBrain = GetComponent<IMoverBrain>();
         if (moverBrain == null)
         {
             Debug.Log($"{name}: No movement pattern found. Using default behavior");
             moverBrain = gameObject.AddComponent<DumbBehavior>();
-        }
-        
-
+        }        
     }
 
     private void Update()
@@ -85,5 +86,9 @@ public class EnemyController : MonoBehaviour
         onAttackBehavior?.Invoke(target);
     }
 
-
+    public void Death()
+    {
+        ParticleSystem newSplat = Instantiate(splat, transform.position, splat.transform.rotation);
+        Destroy(gameObject);
+    }
 }

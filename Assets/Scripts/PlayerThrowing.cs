@@ -12,6 +12,7 @@ public class PlayerThrowing : MonoBehaviour
     public InputObj inputThrow;
     public InputObj inputAimControl;
     public LayerMask ground;
+    public LineRenderer arcDisplay;
     #endregion
 
     #region Animation Hashes
@@ -181,6 +182,30 @@ public class PlayerThrowing : MonoBehaviour
         
         //Update indicator
         indicator.transform.position = transform.position + (rangeDisplay.forward * distance);
+
+        ShowArc();
+    }
+
+    private void ShowArc()
+    {
+        int fidelity = 10;
+        Vector3 start = _item.transform.position;
+        Vector3 goal = indicator.transform.position;
+
+        arcDisplay.positionCount = fidelity;
+
+        List<Vector3> points = new List<Vector3>();
+        
+        for (int i = 0; i < fidelity; i++)
+        {
+            float t = i / (fidelity - 1f);
+            Vector3 pos = Vector3.Lerp(start, goal, t);
+            float y = Mathf.Lerp(start.y, goal.y, t);
+            pos.y = y + (_item.bounceCurve.Evaluate(t) * _item.GetBounceHeight(_throwForce));
+            points.Add(pos);
+        }
+        points.Add(goal);       
+        arcDisplay.SetPositions(points.ToArray());
     }
 
     private void Update()
@@ -204,6 +229,7 @@ public class PlayerThrowing : MonoBehaviour
 
         rangeDisplay.gameObject.SetActive(false);
         indicator.gameObject.SetActive(false);
+        arcDisplay.positionCount = 0;
         _aiming = false;
         _aimStart = Vector3.zero;
         rangeDisplay.localScale = Vector3.zero;

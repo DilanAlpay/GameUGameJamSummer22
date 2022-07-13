@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class EnemyAnimatorController : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] NavMeshMover mover;
     [SerializeField] bool isFacingLeftToStart = true;
+    private bool _facingLeft = true;
+
+    private void Awake()
+    {
+        mover = GetComponentInParent<NavMeshMover>();
+    }
+
     private void Update()
     {
         Vector3 direction = mover.GetMoveDirection();
-        if(direction.x < 0)
+        if(direction.x > 0 && _facingLeft)
         {
-            spriteRenderer.flipX = !isFacingLeftToStart;
+            Flip(true);
         }
-        else
+        else if(direction.y < 0 && !_facingLeft)
         {
-            spriteRenderer.flipX = isFacingLeftToStart;
+            Flip(false);
+        }
+    }
+
+    private void Flip(bool left)
+    {
+        foreach(Transform child in transform)
+        {
+            child.localEulerAngles = Vector3.up * (left ? 180 : 0);
+            _facingLeft = left;
         }
     }
 }
