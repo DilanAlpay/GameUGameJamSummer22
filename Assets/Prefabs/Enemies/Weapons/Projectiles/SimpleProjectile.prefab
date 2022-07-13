@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 612220139814236987}
   - component: {fileID: 3623651538378750616}
   - component: {fileID: 4043932253558010212}
+  - component: {fileID: 3633902545381684013}
   m_Layer: 0
   m_Name: SimpleProjectile
   m_TagString: Untagged
@@ -132,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHoming: 0
+  canMoveY: 0
 --- !u!114 &2448308660433139895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +161,7 @@ MonoBehaviour:
   duration: 3
   fireOnDestroy: 0
   startTimerImmediate: 1
+  isRepeating: 0
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
@@ -200,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  acceleration: 0
 --- !u!114 &3623651538378750616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,3 +259,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+--- !u!114 &3633902545381684013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448308660433139888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7838a7b78358b4ea1adf81bc44eaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: 9b49eba657b904a4e972872558a9c5b6, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2448308660433139895}
+        m_TargetAssemblyTypeName: DestroyAction, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

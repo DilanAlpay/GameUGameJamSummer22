@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Allium
   m_EditorClassIdentifier: 
   speakerName: Allium
-  nameBoxColor: {r: 1, g: 1, b: 1, a: 1}
+  nameBoxColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
   sprite: {fileID: 0}
   defaultEmotion:
     emotion: 0
