@@ -92,6 +92,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2097385439885704367}
+        m_TargetAssemblyTypeName: AnimatorTriggerAction, Assembly-CSharp
+        m_MethodName: SetAnimatorTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1500279835139090024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,19 +240,7 @@ MonoBehaviour:
   timeSinceLastSawPlayer: Infinity
   onAttackBehavior:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Fighter, Assembly-CSharp
-        m_MethodName: Attack
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onLoseTarget:
     m_PersistentCalls:
       m_Calls: []
@@ -712,6 +712,7 @@ GameObject:
   - component: {fileID: 7903185530329993872}
   - component: {fileID: 1536515832552934758}
   - component: {fileID: 7722765484075158051}
+  - component: {fileID: 2097385439885704367}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -803,3 +804,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2097385439885704367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009127902446197073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda9cd7f9ed33e9449b42fa6331f7e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerName: Attack
+  anim: {fileID: 7722765484075158051}

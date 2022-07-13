@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 00ebfc758f235804b9d5e0889cb07e52
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6776590310639955180
+    second: projectile_worm_shoot_0
+  - first:
+      213: 4426982680951622151
+    second: projectile_worm_shoot_1
+  - first:
+      213: -5374008295880375151
+    second: projectile_worm_shoot_2
+  - first:
+      213: 6084159573597808280
+    second: projectile_worm_shoot_3
+  - first:
+      213: 3687940366580434254
+    second: projectile_worm_shoot_4
+  - first:
+      213: 2022697763974333379
+    second: projectile_worm_shoot_5
+  - first:
+      213: -295924203708626322
+    second: projectile_worm_shoot_6
+  - first:
+      213: 9193154146487507385
+    second: projectile_worm_shoot_7
+  - first:
+      213: -2099218749998596292
+    second: projectile_worm_shoot_8
+  - first:
+      213: 6595820587401334563
+    second: projectile_worm_shoot_9
+  - first:
+      213: 4053077761915895177
+    second: projectile_worm_shoot_10
+  - first:
+      213: 4353505730670369946
+    second: projectile_worm_shoot_11
+  - first:
+      213: -479855672742463787
+    second: projectile_worm_shoot_12
+  - first:
+      213: -6782697725207713409
+    second: projectile_worm_shoot_13
+  - first:
+      213: 9200204887639692086
+    second: projectile_worm_shoot_14
+  - first:
+      213: 3805994043551002669
+    second: projectile_worm_shoot_15
+  - first:
+      213: 2981929971989122920
+    second: projectile_worm_shoot_16
+  - first:
+      213: 1329726795604203303
+    second: projectile_worm_shoot_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,11 +143,389 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: projectile_worm_shoot_0
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 3474
+        width: 292
+        height: 444
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41393f13407b4f1a0800000000000000
+      internalID: -6776590310639955180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_1
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 3474
+        width: 290
+        height: 444
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a8dec0b4dcf6d30800000000000000
+      internalID: 4426982680951622151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_2
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 3474
+        width: 292
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1944c087defab65b0800000000000000
+      internalID: -5374008295880375151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_3
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 3474
+        width: 292
+        height: 436
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896e61d95e64f6450800000000000000
+      internalID: 6084159573597808280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_4
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 3474
+        width: 292
+        height: 430
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45c9de49323e2330800000000000000
+      internalID: 3687940366580434254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_5
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 3474
+        width: 290
+        height: 424
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3caad46e0121c10800000000000000
+      internalID: 2022697763974333379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2852
+        width: 292
+        height: 414
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ac18d218aa4ebf0800000000000000
+      internalID: -295924203708626322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_7
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 2852
+        width: 292
+        height: 404
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b91cc22df4a49f70800000000000000
+      internalID: 9193154146487507385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_8
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2856
+        width: 292
+        height: 388
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f7e744ba31ed2e0800000000000000
+      internalID: -2099218749998596292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_9
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2868
+        width: 290
+        height: 388
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fc34ac0ef098b50800000000000000
+      internalID: 6595820587401334563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_10
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 2854
+        width: 290
+        height: 408
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d380610cc6f3830800000000000000
+      internalID: 4053077761915895177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_11
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 2852
+        width: 290
+        height: 418
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c1c3c6562ca6c30800000000000000
+      internalID: 4353505730670369946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_12
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2230
+        width: 292
+        height: 426
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6babadec53759f0800000000000000
+      internalID: -479855672742463787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_13
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2230
+        width: 290
+        height: 432
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79e42eea540fd1a0800000000000000
+      internalID: -6782697725207713409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_14
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2230
+        width: 292
+        height: 436
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633939cb991bdaf70800000000000000
+      internalID: 9200204887639692086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_15
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 2230
+        width: 290
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d203c17ea6b91d430800000000000000
+      internalID: 3805994043551002669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_16
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 2230
+        width: 292
+        height: 444
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f8085b281f16920800000000000000
+      internalID: 2981929971989122920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile_worm_shoot_17
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 2230
+        width: 290
+        height: 444
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7279e44b973247210800000000000000
+      internalID: 1329726795604203303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: baf6a47ae8ca2b54a92851714c29bc0a
     internalID: 0
     vertices: []
     indices: 
