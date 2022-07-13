@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c61ce7d1e01237547aba313efd2d235e, type: 3}
-  m_Name: Sniper
+  m_Script: {fileID: 11500000, guid: 1d73591270f7b1843bd6f8056520acc8, type: 3}
+  m_Name: New Color Range
   m_EditorClassIdentifier: 
-  weaponName: Sniper
-  type: 1
-  projectile: {fileID: 0}
-  attackRange: 15
-  timeBetweenAttacks: 4
+  color1: {r: 1, g: 0.39526987, b: 0, a: 1}
+  color2: {r: 0.2924528, g: 0, b: 0, a: 1}

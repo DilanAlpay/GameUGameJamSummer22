@@ -7,12 +7,19 @@ public class PatrolBehavior : MonoBehaviour, IMoverBrain
     [SerializeField] float distToWaypoint = 1f;
     [SerializeField] List<Transform> waypoints = new List<Transform>();
     int currWaypoint = 0;
-  
+
+    public bool IsAtTarget(NavMeshMover mover, Vector3 targetPos)
+    {
+        
+        return Vector3.Distance(mover.transform.position, targetPos) <= distToWaypoint;
+    }
+
     public void Move(NavMeshMover mover)
     {
         Vector3 targetPos = waypoints[currWaypoint].position;
         mover.MoveToPosition(targetPos);
-        if (Vector3.Distance(mover.transform.position, targetPos) <= distToWaypoint){
+        if (IsAtTarget(mover, targetPos))
+        {
             currWaypoint++;
             if(currWaypoint >= waypoints.Count)
             {

@@ -13,13 +13,17 @@ public class GuardBehavior : MonoBehaviour,IMoverBrain
 
     public void Move(NavMeshMover mover)
     {
-        float v = Vector3.Distance(mover.transform.position, guardPos);
-        if (v <= acceptableDist)
+        if (IsAtTarget(mover, guardPos))
         {
             mover.StopMoving();
             return;
         }
 
         mover.MoveToPosition(guardPos);
+    }
+
+    public bool IsAtTarget(NavMeshMover mover, Vector3 targetPos)
+    {
+        return Vector3.Distance(mover.transform.position, targetPos) <= acceptableDist;
     }
 }

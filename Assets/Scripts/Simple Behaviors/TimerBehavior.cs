@@ -9,6 +9,7 @@ public class TimerBehavior : MonoBehaviour
     [SerializeField] float duration = 1f;
     [SerializeField] bool fireOnDestroy = false;
     [SerializeField] bool startTimerImmediate = false;
+    [SerializeField] bool isRepeating = false;
     [SerializeField] UnityEvent onTimerEnd = new UnityEvent();
     
     bool isRunning = false;
@@ -56,5 +57,7 @@ public class TimerBehavior : MonoBehaviour
     void OnTimerEnd()
     {
         onTimerEnd?.Invoke();
+        if (isRepeating)
+            StartTimer();
     }
 }
