@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.InputSystem;
 public class DialogManager : MonoBehaviour
 {
-
+    public InputObj inputProceed;
     [SerializeField] GameObject dialogBox;
     [SerializeField] Text dialogText;
     [SerializeField] List<Image> speakerImages;
@@ -21,12 +21,23 @@ public class DialogManager : MonoBehaviour
     bool isTyping;
     bool forceComplete = false;
 
+    private IEnumerator _coroutine;
+
     Action onDialogFinished;
+
+    private bool _proceeded = false;
+    private Dialog _dialog;
+
+    /// <summary>
+    /// Need to save this so we don't set sprites to be null
+    /// </summary>
+    [SerializeField]
+    private Sprite _defaultImg;
 
 
     private void Update()
     {
-        if(ShowNextLine())
+        if(_dialog && _proceeded)
         {
             ForceCompleteText();
         }
@@ -36,48 +47,71 @@ public class DialogManager : MonoBehaviour
     {
         if(isTyping && !forceComplete)
         {
-            forceComplete = true;
+            _proceeded = false;
+            forceComplete = true;           
         }
 
     }
 
+    /// <summary>
+    /// Tells ShowNextLine to proceed with the dialog
+    /// </summary>
+    /// <param name="ctx"></param>
+    private void Proceed(InputAction.CallbackContext ctx)
+    {
+        _proceeded = true;
+    }
+
+    /// <summary>
+    /// Used in the coroutine, waits for this to be true
+    /// </summary>
+    /// <returns></returns>
     public bool ShowNextLine()
     {
-        return Input.GetKeyDown(KeyCode.Space);
+        return false;
     }
 
     public void StartDialog(Dialog dialog)
     {
+        if (_coroutine != null) return;
+        _dialog = dialog;
         onDialogFinished = null;
-        StartCoroutine(DialogCO(dialog));
+        _coroutine = DialogCO();
+        inputProceed.Action.started += Proceed;
+        StartCoroutine(_coroutine);
     }
 
     public void StartDialog(Dialog dialog, Action onFinished = null)
     {
+        if (_coroutine != null) return;
+        _dialog = dialog;
         onDialogFinished = onFinished;
-        StartCoroutine(DialogCO(dialog));
+        _coroutine= DialogCO();
+        inputProceed.Action.started += Proceed;
+        StartCoroutine(_coroutine);
     } 
 
-    IEnumerator DialogCO(Dialog dialog)
+    IEnumerator DialogCO()
     {
         ShowDialogBox();
         for(int i = 0; i < speakerImages.Count; i++)
         {
             speakerImages[i].gameObject.SetActive(false);
         }
-        foreach (Line line in dialog.lines)
-        {
-            
+        foreach (Line line in _dialog.lines)
+        {            
             SetSpeaker(line.speaker, line.emotion, line.speakerNum);
             //dialogText.text = line.text;
             yield return TypewriteDialog(line.text);
-            yield return new WaitUntil(() => ShowNextLine());
+
+            while (!_proceeded) yield return null;
+            _proceeded = false;
+
+            //yield return new WaitUntil(() => ShowNextLine());
+
             yield return new WaitForEndOfFrame();
         }
-        dialog.OnDialogOver?.Call();
-        onFinish.Call();
-        onDialogFinished?.Invoke();
-        HideDialogBox();
+        FinishDialog();
     }
 
     IEnumerator TypewriteDialog(string message)
@@ -92,11 +126,25 @@ public class DialogManager : MonoBehaviour
             if (forceComplete)
             {
                 dialogText.text = message;
-                yield return new WaitUntil(() => ShowNextLine());
+                while (!_proceeded) yield return null;
+                _proceeded = false;
+
+//              yield return new WaitUntil(() => ShowNextLine());
                 break;
             }
         }
         isTyping = false;
+    }
+
+    public void FinishDialog()
+    {
+        _dialog.OnDialogOver?.Call();
+        onFinish.Call();
+        onDialogFinished?.Invoke();
+        inputProceed.Action.started -= Proceed;
+        _coroutine = null;
+        _dialog = null;
+        HideDialogBox();
     }
 
     private void SetSpeaker(Speaker speaker, SpeakerEmotion emote = SpeakerEmotion.Default, int speakerNum = 0)
@@ -105,7 +153,9 @@ public class DialogManager : MonoBehaviour
         {
             if(speakerNum == i)
             {
-                speakerImages[i].sprite = speaker.GetSprite(emote);
+                Sprite sprite = speaker.GetSprite(emote);
+                speakerImages[i].sprite = sprite == null ? _defaultImg : sprite;
+                speakerImages[i].color = sprite == null ? new Color(0,0,0,0) : Color.white;
                 speakerImages[i].SetNativeSize();
                 speakerImages[i].gameObject.SetActive(true);
                 SetSpriteTransparent(speakerImages[i], 1);
@@ -113,7 +163,7 @@ public class DialogManager : MonoBehaviour
             else
             {
                 //fade image
-                SetSpriteTransparent(speakerImages[i], 0.5f);
+                SetSpriteTransparent(speakerImages[i], 0f);
             }
         }
 
@@ -126,6 +176,7 @@ public class DialogManager : MonoBehaviour
     {
         dialogBox.SetActive(isActive);
     }
+   
     public void ShowDialogBox()
     {
         SetDialogBoxActive(true);

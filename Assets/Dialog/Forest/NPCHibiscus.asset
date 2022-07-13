@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
+  m_Name: NPCHibiscus
+  m_EditorClassIdentifier: 
+  lines:
+  - text: I'm hunting for the Vibrant Violet Veggies but I keep getting lost!
+    speaker: {fileID: 11400000, guid: 1b5681ba79cb5e347a0284bbcfa10875, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: I once heard a rumor that there's a clue to getting through it somewhere
+      around here.
+    speaker: {fileID: 11400000, guid: 1b5681ba79cb5e347a0284bbcfa10875, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: I think I remember hearing about a lonely mushroom?
+    speaker: {fileID: 11400000, guid: 1b5681ba79cb5e347a0284bbcfa10875, type: 2}
+    emotion: 0
+    speakerNum: 0
+  OnDialogOver: {fileID: 0}

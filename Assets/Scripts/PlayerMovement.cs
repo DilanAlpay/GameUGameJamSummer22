@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDisable()
     {
+        if (inputMove.Action == null) return;
         inputMove.Action.started -= OnMove;
         inputMove.Action.canceled -= OnMove;
         inputMove.Action.performed -= OnMove;

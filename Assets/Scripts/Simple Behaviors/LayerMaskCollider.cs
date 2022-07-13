@@ -16,15 +16,10 @@ public class LayerMaskCollider : MonoBehaviour
 
         if ((targetLayers.value & (1 << other.transform.gameObject.layer)) > 0)
         {
-<<<<<<< Updated upstream
-            Debug.Log($"Hit target - {other.name}");
             if(onCollision.GetPersistentEventCount() > 0)
             {
                 onCollision.Invoke(other.gameObject);
             }
-=======
-            onCollision?.Invoke(other.gameObject);
->>>>>>> Stashed changes
         }
 
     }
