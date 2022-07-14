@@ -627,10 +627,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcfa0eb158bc06748b85c9e4d3c67496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -12
-  maxX: 12
-  minZ: 12
-  maxZ: 12
+  minX: -10
+  maxX: 10
+  minZ: -10
+  maxZ: 10
   y: 0
 --- !u!1001 &53142460
 PrefabInstance:
@@ -1397,6 +1397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9069957295558898093, guid: 820d27d348224324db6013aec4bf4938, type: 3}
+      propertyPath: square
+      value: 
+      objectReference: {fileID: 2010716850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820d27d348224324db6013aec4bf4938, type: 3}
 --- !u!1001 &212402086
@@ -2827,6 +2831,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9069957295558898093, guid: 820d27d348224324db6013aec4bf4938, type: 3}
+      propertyPath: square
+      value: 
+      objectReference: {fileID: 2010716850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820d27d348224324db6013aec4bf4938, type: 3}
 --- !u!1001 &396731286
@@ -4478,7 +4486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -12
   maxX: 12
-  minZ: 12
+  minZ: -12
   maxZ: 12
   y: 0
 --- !u!1 &658266945
@@ -8604,6 +8612,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9069957295558898093, guid: 820d27d348224324db6013aec4bf4938, type: 3}
+      propertyPath: square
+      value: 
+      objectReference: {fileID: 2010716850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820d27d348224324db6013aec4bf4938, type: 3}
 --- !u!1 &1288238621
@@ -12234,6 +12246,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9069957295558898093, guid: 820d27d348224324db6013aec4bf4938, type: 3}
+      propertyPath: square
+      value: 
+      objectReference: {fileID: 2010716850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820d27d348224324db6013aec4bf4938, type: 3}
 --- !u!1001 &2055276248

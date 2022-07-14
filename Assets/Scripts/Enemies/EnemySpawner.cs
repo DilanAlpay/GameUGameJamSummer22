@@ -7,15 +7,13 @@ using UnityEngine.AI;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]ObjectSpawner objSpawner;
-
+    [SerializeField] RandomSquare square;
     [SerializeField] float radius;
 
     public void SpawnEnemy()
     {
 
-        Vector3 position;
-        NavMeshHelper.RandomPoint(transform.position, radius, out position);
-
+        Vector3 position =square.GetRandomPoint();
         objSpawner.SpawnObject(position);
 
     }
