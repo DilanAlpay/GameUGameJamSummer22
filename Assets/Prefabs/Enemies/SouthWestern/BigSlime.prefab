@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f981a42e82ea3d84797af353221306a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3814319348629745555, guid: 57134a27cad50604291c2150c5ab9504, type: 3}
+  prefab: {fileID: 3814319348629745555, guid: d2023dba6f33d574ea00a4a2e35a6bef, type: 3}
 --- !u!1 &363902937549382684
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205cf5bfb59e93b4eb2c11b6ff7058db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visionRadius: 5
+  visionRadius: 10
   active: 1
   layers:
     serializedVersion: 2
@@ -989,7 +989,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.72
   m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!1 &5372065227944015363
 GameObject:
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cc53d97bd21c34f944b8c9560439af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: {fileID: 11400000, guid: 4a33342d2c6acde4ea8e90635812bf63, type: 2}
+  range: {fileID: 11400000, guid: 8e0cc6b719cc03e4ab14d8a4041c4658, type: 2}
   sr: {fileID: 2589207038655201077}
 --- !u!1 &8096929043128041613
 GameObject:

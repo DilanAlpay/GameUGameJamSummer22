@@ -658,7 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205cf5bfb59e93b4eb2c11b6ff7058db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visionRadius: 5
+  visionRadius: 15
   active: 1
   layers:
     serializedVersion: 2
@@ -679,7 +679,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4798045406814350996}
-  - component: {fileID: 4798045406814350999}
   - component: {fileID: 4798045406814350998}
   - component: {fileID: 4798045406814350993}
   - component: {fileID: 4798045406814350992}
@@ -692,6 +691,7 @@ GameObject:
   - component: {fileID: 4348379056288494485}
   - component: {fileID: 5230100802503258572}
   - component: {fileID: 2004075464336925276}
+  - component: {fileID: 402197691978137195}
   m_Layer: 11
   m_Name: FlyingEnemy
   m_TagString: Untagged
@@ -718,19 +718,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4798045406814350999
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4798045406814351007}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 3.34, z: 0}
 --- !u!195 &4798045406814350998
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1072,6 +1059,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b01804fd7b91a41a48f09d5214d2fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &402197691978137195
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798045406814351007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 3.31, z: 0}
 --- !u!1 &4798045407072223140
 GameObject:
   m_ObjectHideFlags: 0

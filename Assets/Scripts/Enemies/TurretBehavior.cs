@@ -49,6 +49,11 @@ public class TurretBehavior : MonoBehaviour
         
     }
 
+    public void Fire()
+    {
+        FireTurret();
+    }
+
     public void Activate()
     {
         isActive = true;
