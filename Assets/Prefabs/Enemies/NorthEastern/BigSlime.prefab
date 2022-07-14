@@ -381,6 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objSpawner: {fileID: 6581316210574245539}
+  square: {fileID: 0}
   radius: 2
 --- !u!1 &3917355575763364693
 GameObject:
@@ -1272,7 +1273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cc53d97bd21c34f944b8c9560439af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: {fileID: 11400000, guid: 4a33342d2c6acde4ea8e90635812bf63, type: 2}
+  range: {fileID: 11400000, guid: db116fe2f3da1a245a206f43d3c5a5c4, type: 2}
   sr: {fileID: 2589207038655201077}
 --- !u!1 &8096929043128041613
 GameObject:
