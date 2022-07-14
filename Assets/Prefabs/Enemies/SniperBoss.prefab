@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1500279835139090021}
   - component: {fileID: 1500279835139090027}
   - component: {fileID: 1500279835139090024}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: ProjectileSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 2983831396129093407}
   - component: {fileID: 3970271810297821060}
   - component: {fileID: 356798136725299969}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: SniperBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cea1aefe4f1d94e9080f6ebeb0ce97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1536515832552934758}
   mover: {fileID: 2983831396129093403}
   isFacingLeftToStart: 1
 --- !u!114 &356798136725299969
@@ -416,7 +415,7 @@ GameObject:
   - component: {fileID: 2983831396676540887}
   - component: {fileID: 2983831396676540886}
   - component: {fileID: 2983831396676540885}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 3DGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2983831396902528559}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +543,7 @@ GameObject:
   - component: {fileID: 2983831397137332952}
   - component: {fileID: 2983831397137332951}
   - component: {fileID: 2983831397137332950}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: 2DGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2983831397747920911}
   - component: {fileID: 2983831397747920910}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +712,7 @@ GameObject:
   - component: {fileID: 1536515832552934758}
   - component: {fileID: 7722765484075158051}
   - component: {fileID: 2097385439885704367}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

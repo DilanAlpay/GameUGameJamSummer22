@@ -23,13 +23,6 @@ public class Health : MonoBehaviour, IDamageable
         currentHealth = maxHealth;        
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(maxHealth);
-        }
-    }
     public void Squish(int bubbleSize, GameObject source = null)
     {
         if (bubbleSize > size)

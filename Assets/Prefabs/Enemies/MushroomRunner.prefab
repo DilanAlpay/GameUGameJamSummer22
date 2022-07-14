@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6585472361055907530}
   - component: {fileID: 6585472361055907531}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 6585472361106228396}
   - component: {fileID: 6585472361106228395}
   - component: {fileID: 6585472361106228394}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6585472361753805579}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6585472362288407854}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 6585472362554827047}
   - component: {fileID: 6585472362554827043}
   - component: {fileID: 6585472362554827042}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MushroomRunner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

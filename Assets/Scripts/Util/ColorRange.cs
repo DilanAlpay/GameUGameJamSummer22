@@ -6,6 +6,8 @@ public class ColorRange : ScriptableObject
     [SerializeField] Color color1 = Color.white;
     [SerializeField] Color color2 = Color.black;
 
+    public Color Color1 => color1;
+    public Color Color2 => color2;
     public Color GetColor()
     {
         float r = Random.Range(color1.r, color2.r);
