@@ -13,10 +13,6 @@ MonoBehaviour:
   m_Name: NPCLilyPoppy
   m_EditorClassIdentifier: 
   lines:
-  - text: 
-    speaker: {fileID: 0}
-    emotion: 0
-    speakerNum: 0
   - text: I saw an orange slime while jumping around the cliffs!
     speaker: {fileID: 11400000, guid: badb2a0dc3aa5fe4fa55e968972858c2, type: 2}
     emotion: 0
