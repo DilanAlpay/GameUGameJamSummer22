@@ -16,6 +16,7 @@ public class PatrolBehavior : MonoBehaviour, IMoverBrain
 
     public void Move(NavMeshMover mover)
     {
+        if (waypoints.Count == 0) return;
         Vector3 targetPos = waypoints[currWaypoint].position;
         mover.MoveToPosition(targetPos);
         if (IsAtTarget(mover, targetPos))

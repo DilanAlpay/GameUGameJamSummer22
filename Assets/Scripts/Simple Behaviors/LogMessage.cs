@@ -10,6 +10,6 @@ public class LogMessage : MonoBehaviour
 
     public void Log()
     {
-        LoggerManager.i.Log(message, logTag);
+        Debug.Log("OW!");
     }
 }
