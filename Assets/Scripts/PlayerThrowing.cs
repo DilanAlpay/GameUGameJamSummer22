@@ -11,6 +11,7 @@ public class PlayerThrowing : MonoBehaviour
     public Transform rangeDisplay;
     public InputObj inputThrow;
     public InputObj inputAimControl;
+    public InputObj inputCancel;
     public LayerMask ground;
     public LayerMask throwable;
     public LineRenderer arcDisplay;
@@ -89,6 +90,7 @@ public class PlayerThrowing : MonoBehaviour
         inputThrow.Action.started += OnStartThrow;
         inputAimControl.Action.performed += OnAim;
         inputThrow.Action.canceled += OnThrow;
+        inputCancel.Action.started += OnCancelThrow;
     }
 
     private void OnDisable()
@@ -119,6 +121,11 @@ public class PlayerThrowing : MonoBehaviour
     void OnThrow(InputAction.CallbackContext ctx)
     {
         Throw();
+    }
+
+    void OnCancelThrow(InputAction.CallbackContext ctx)
+    {
+        EndAim();
     }
     #endregion
 

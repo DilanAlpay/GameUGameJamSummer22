@@ -15,6 +15,7 @@ public class Health : MonoBehaviour, IDamageable
     int currentHealth;
     bool isDead;
     bool isInvincible;
+    public int HP => currentHealth;
     public bool IsDead => isDead;
     public UnityEvent Death => onDie;
 

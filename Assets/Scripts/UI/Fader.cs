@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Fader : MonoBehaviour
 {
-    public GameEvent fadeOutComplete, fadeInComplete;
-
     private Animator _animator;
 
     #region Animation Hashes
-    private int _hasMoveToArea;
+    private int _hashMoveToArea;
+    private int _hashFadeOut;
     #endregion
 
     private void Awake()
@@ -21,7 +20,8 @@ public class Fader : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
 
-        _hasMoveToArea= Animator.StringToHash("MoveToArea");
+        _hashMoveToArea= Animator.StringToHash("MoveToArea");
+        _hashFadeOut = Animator.StringToHash("FadeOut");
     }
 
     public void CallGameEvent(GameEvent e)
@@ -34,17 +34,11 @@ public class Fader : MonoBehaviour
     /// </summary>
     public void MoveToArea()
     {
-        _animator.Play(_hasMoveToArea);
+        _animator.Play(_hashMoveToArea);
     }
 
-    public void FadeOutComplete()
+    public void FadeOut()
     {
-        fadeOutComplete.Call();
+        _animator.Play(_hashFadeOut);
     }
-
-    public void FadeInComplete()
-    {
-        fadeInComplete.Call();
-    }
-
 }

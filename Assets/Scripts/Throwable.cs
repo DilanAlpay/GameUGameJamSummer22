@@ -208,12 +208,6 @@ public class Throwable : MonoBehaviour, IPausable
         _elapsed = 0;
     }
 
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(_goal, 0.5f);
-    }
-
     public void Pause()
     {
         isPaused = true;

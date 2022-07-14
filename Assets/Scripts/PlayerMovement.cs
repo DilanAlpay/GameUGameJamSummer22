@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     #region References
     private CharacterController _controller;
+    public CharacterController Controller => _controller;
     private Animator _animator;
     /// <summary>
     /// The child of the root that is rotated/flipped during movement
@@ -73,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
     /// Applied movement direction
     /// </summary>
     private Vector3 _direction;
+
     #endregion
 
 
@@ -89,9 +91,6 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
         _geo = transform.Find("GEO");
 
-        //Input Callbacks
-       
-
         //Animation hashes
         _hashDirection = Animator.StringToHash("direction");
         _hashWalking = Animator.StringToHash("walking");
@@ -105,6 +104,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnEnable()
     {
+        EnableCallbacks();
+    }
+
+    private void OnDisable()
+    {
+        if (inputMove.Action == null) return;
+        DisableCallbacks();
+        _direction = Vector3.zero;
+    }
+
+    private void EnableCallbacks()
+    {
         inputMove.Action.started += OnMove;
         inputMove.Action.canceled += OnMove;
         inputMove.Action.performed += OnMove;
@@ -112,12 +123,10 @@ public class PlayerMovement : MonoBehaviour
         inputRun.Action.canceled += OnRun;
         inputJump.Action.started += OnJump;
         inputJump.Action.canceled += OnJump;
-
     }
 
-    private void OnDisable()
+    private void DisableCallbacks()
     {
-        if (inputMove.Action == null) return;
         inputMove.Action.started -= OnMove;
         inputMove.Action.canceled -= OnMove;
         inputMove.Action.performed -= OnMove;
@@ -125,7 +134,6 @@ public class PlayerMovement : MonoBehaviour
         inputRun.Action.canceled -= OnRun;
         inputJump.Action.started -= OnJump;
         inputJump.Action.canceled -= OnJump;
-        _direction = Vector3.zero;
     }
     #endregion
 
@@ -217,4 +225,5 @@ public class PlayerMovement : MonoBehaviour
         _controller.enabled = true;
     }
 
+    
 }
