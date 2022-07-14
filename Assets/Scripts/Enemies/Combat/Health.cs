@@ -5,16 +5,16 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour, IDamageable
 {
-    [SerializeField] int maxHealth;
+    [SerializeField] protected int maxHealth;
 
     [SerializeField] int size;
     [SerializeField] UnityEvent onTakeDamage;
-    [SerializeField] UnityEvent onHeal;
-    [SerializeField] UnityEvent onDie;
+    [SerializeField] protected UnityEvent onHeal;
+    [SerializeField] protected UnityEvent onDie;
     [SerializeField] GameEvent hitBySmallBubble;
-    int currentHealth;
-    bool isDead;
-    bool isInvincible;
+    [SerializeField] protected int currentHealth;
+    protected bool isDead;
+    protected bool isInvincible;
     public int HP => currentHealth;
     public bool IsDead => isDead;
     public UnityEvent Death => onDie;
@@ -36,7 +36,7 @@ public class Health : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(int damage, GameObject source = null)
+    public virtual void TakeDamage(int damage, GameObject source = null)
     {
         ChangeHealth(-damage, source);
     }
@@ -45,8 +45,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         ChangeHealth(amount, source);
     }
-
-    void ChangeHealth(int amount, GameObject source = null)
+    protected virtual void ChangeHealth(int amount, GameObject source = null)
     {
         if (isDead) return;
         if (isInvincible && amount < 0) return;

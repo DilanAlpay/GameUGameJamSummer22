@@ -28,14 +28,6 @@ public class Player : MonoBehaviour
         _hashHurting = Animator.StringToHash("hurting");
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Knocked();
-        }
-    }
-
     public void SetPause(bool b)
     {
         _movement.enabled = !b;
@@ -48,7 +40,7 @@ public class Player : MonoBehaviour
         _movement.TeleportTo(newPos);
     }
 
-    public void Knocked()
+    public void Hurt()
     {
         StartCoroutine(Knockback(Vector3.right));
     }

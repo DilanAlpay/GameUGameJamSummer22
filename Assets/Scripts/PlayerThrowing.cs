@@ -31,6 +31,14 @@ public class PlayerThrowing : MonoBehaviour
 
     [SerializeField]
     private Throwable _item;
+
+
+    /// <summary>
+    /// Reference to the last item we had so we can grab it again if it's been too long
+    /// </summary>
+    private Throwable _lastItem;
+
+    private float _returnTime;
     #endregion
 
     #region Accessible Properties
@@ -40,6 +48,12 @@ public class PlayerThrowing : MonoBehaviour
     /// </summary>
     [SerializeField]
     private float _aimRange = 300;
+
+    /// <summary>
+    /// Time, in seconds before Blub comes back to you
+    /// </summary>
+    [SerializeField]
+    private float _returnLength= 10f;
 
     public bool HasBall { get { return _item != null; } }
     #endregion
@@ -147,6 +161,12 @@ public class PlayerThrowing : MonoBehaviour
                 break;
             }
         }
+
+        //It's been long enough, get back here, Blub!
+        if(_lastItem && Time.time > _returnTime)
+        {
+            PickUp(_lastItem);
+        }
     }
 
     void PickUp(Throwable t)
@@ -241,10 +261,13 @@ public class PlayerThrowing : MonoBehaviour
         //Turn off aiming UI and reset variables
 
         EndAim();
+
         if(_item.Throw(_direction, _throwForce))
         {
+            _lastItem = _item;
             _item.transform.parent = null;
             _item = null;
+            _returnTime = Time.time + _returnLength; 
         }
     }
 
