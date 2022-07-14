@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: bf38d901af2ac4e4aa7b414e90106317
+guid: 00631b721a3d49648b6320ac5e92145d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: azaela
-    second: {fileID: 2100000, guid: 7e73425fcd095fd40ae705284e6e9c63, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blue
-    second: {fileID: 2100000, guid: 5cff64765350cc745a4a7c5d11ffabe9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lightpurple
-    second: {fileID: 2100000, guid: 46abad7e2004f7b41862e0d8c2e8f75b, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -78,7 +63,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

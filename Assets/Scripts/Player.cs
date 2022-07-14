@@ -40,9 +40,10 @@ public class Player : MonoBehaviour
         _movement.TeleportTo(newPos);
     }
 
-    public void Hurt()
+    public void Hurt(GameObject source)
     {
-        StartCoroutine(Knockback(Vector3.right));
+        Vector3 direction = source.transform.position - transform.position;
+        StartCoroutine(Knockback(direction));
     }
 
     public IEnumerator Knockback(Vector3 direction)

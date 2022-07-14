@@ -4,12 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 public class HealthPlayer : Health
 {
-    private UnityEvent<GameObject> onTakeDamagePlayer;
+    public UnityEvent<GameObject> onTakeDamagePlayer;
 
-    public void Fine()
-    {
-        print("ASDHJASBABdhb");
-    }
     protected override void ChangeHealth(int amount, GameObject source = null)
     {
         if (isDead) return;

@@ -13,12 +13,19 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] protected UnityEvent onDie;
     [SerializeField] GameEvent hitBySmallBubble;
     [SerializeField] protected int currentHealth;
+    [SerializeField] protected float iFrames;
+
     protected bool isDead;
     protected bool isInvincible;
     public int HP => currentHealth;
     public bool IsDead => isDead;
     public UnityEvent Death => onDie;
 
+    /// <summary>
+    /// Time when the iFrames run out
+    /// </summary>
+    private float iFinish;
+    
     private void Start()
     {
         currentHealth = maxHealth;        
@@ -48,7 +55,12 @@ public class Health : MonoBehaviour, IDamageable
     protected virtual void ChangeHealth(int amount, GameObject source = null)
     {
         if (isDead) return;
-        if (isInvincible && amount < 0) return;
+
+        //We are still temporarily invincible and cannot take damage
+        if ((isInvincible || Time.time < iFinish) && amount < 0) return;
+        
+        if (Time.time < iFinish) return;
+
         int prevHealth = currentHealth;
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
@@ -60,6 +72,7 @@ public class Health : MonoBehaviour, IDamageable
 
         if (currentHealth < prevHealth)
         {
+            iFinish = Time.time + iFrames;
             onTakeDamage?.Invoke();
         }
 
@@ -69,7 +82,6 @@ public class Health : MonoBehaviour, IDamageable
         }
 
     }
-
 
     public void Die()
     {
