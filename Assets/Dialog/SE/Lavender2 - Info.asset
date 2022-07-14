@@ -10,19 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
-  m_Name: Lavender2
+  m_Name: Lavender2 - Info
   m_EditorClassIdentifier: 
   lines:
-  - text: Hello there! How may I beaver service today?
+  - text: Hello there! How may I be of slervice today?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: The willow trees have been infested with nasty gnumnuts, horrible little
-      purple creatures that pretend to look like acorns.
+  - text: 'I am Lavender, and I commune with the willows here. '
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: And how will you conversate Blub and I for our services?
+  - text: Nature-rully.
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: The have been infested with nasty gnumnuts, horrible little purple creatures
+      that pretend to look like acorns. Please use your blub to get rid of them!
+    speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: And how will you compenstate Blub and I for our services?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0

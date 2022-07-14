@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
-  m_Name: Lavender0
+  m_Name: Lavender3 - Reminder
   m_EditorClassIdentifier: 
   lines:
-  - text: Please wait! I really need your help!
+  - text: I counted four gnumnuts in the willow trees. Get them all and I'll show
+      you where the Bubbling Bone Broth is.
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 0
     speakerNum: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Counter")]
 public class CounterObj : ScriptableObject
 {
+    [SerializeField]
     private int _count;
     public int Count => _count;
 

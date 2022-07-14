@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
-  m_Name: Lavender4
+  m_Name: Lavender4 - Thanks
   m_EditorClassIdentifier: 
   lines:
   - text: Minion complete! I got all of the dumb butts for you!
