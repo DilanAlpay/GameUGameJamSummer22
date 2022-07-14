@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f44649abac38942bf819a30bc95174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timesRepeated: 5
+  timesRepeated: 8
   action:
     m_PersistentCalls:
       m_Calls:
@@ -142,7 +142,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2983831396129093406}
-  - component: {fileID: 2983831396129093405}
   - component: {fileID: 2983831396129093404}
   - component: {fileID: 2983831396129093403}
   - component: {fileID: 2983831396129093401}
@@ -153,6 +152,7 @@ GameObject:
   - component: {fileID: 3970271810297821060}
   - component: {fileID: 356798136725299969}
   - component: {fileID: 943397266184849416}
+  - component: {fileID: 1246678356489751500}
   m_Layer: 11
   m_Name: SniperBoss
   m_TagString: Untagged
@@ -179,19 +179,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2983831396129093405
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2983831396129093397}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.9963531, y: 2.2079477, z: 1}
-  m_Center: {x: 0.06072235, y: 1.1971133, z: 0}
 --- !u!195 &2983831396129093404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -455,6 +442,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4ff1d8022232440a7b3ae625efa69c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &1246678356489751500
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2983831396129093397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.24
+  m_Center: {x: 0, y: 0, z: 0.68}
 --- !u!1 &2983831396676540883
 GameObject:
   m_ObjectHideFlags: 0
