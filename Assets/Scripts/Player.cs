@@ -9,6 +9,10 @@ public class Player : MonoBehaviour
     private PlayerMovement _movement;
     private PlayerThrowing _throwing;
     private Interactor _interactor;
+    private Animator _animator;
+
+    private int _hashHurt;
+    private int _hashHurting;
 
     public bool HasBall { get { return _throwing.HasBall; } }
 
@@ -18,6 +22,10 @@ public class Player : MonoBehaviour
         _movement = GetComponent<PlayerMovement>();
         _throwing = GetComponent<PlayerThrowing>();
         _interactor = GetComponent<Interactor>();
+        _animator = GetComponent<Animator>();
+
+        _hashHurt = Animator.StringToHash("Hurt");
+        _hashHurting = Animator.StringToHash("hurting");
     }
 
     private void Update()
@@ -47,6 +55,8 @@ public class Player : MonoBehaviour
 
     public IEnumerator Knockback(Vector3 direction)
     {
+        _animator.SetBool(_hashHurting, true);
+        _animator.Play(_hashHurt);
         SetPause(true);
         _movement.Controller.enabled = false;
 
@@ -64,7 +74,7 @@ public class Player : MonoBehaviour
         float height = 1;
         float duration = 0.5f;
         float elapsed = 0;
-        float stun = 1;
+        float stun = 0.5f;
 
         while (elapsed < duration)
         {
@@ -78,6 +88,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(stun);
 
         _movement.Controller.enabled = true;
+        _animator.SetBool(_hashHurting, false);
         SetPause(false);
     }
 }

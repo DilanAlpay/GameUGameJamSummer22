@@ -124,12 +124,12 @@ TextureImporter:
       name: hurt_PC_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 3749
-        width: 186
+        x: 62
+        y: 3750
+        width: 184
         height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,12 +145,12 @@ TextureImporter:
       name: hurt_PC_1
       rect:
         serializedVersion: 2
-        x: 621
-        y: 3751
+        x: 622
+        y: 3752
         width: 186
         height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,12 +166,12 @@ TextureImporter:
       name: hurt_PC_2
       rect:
         serializedVersion: 2
-        x: 1185
-        y: 3757
+        x: 1184
+        y: 3758
         width: 186
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: hurt_PC_3
       rect:
         serializedVersion: 2
-        x: 1731
-        y: 3767
-        width: 224
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1732
+        y: 3768
+        width: 222
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,12 +208,12 @@ TextureImporter:
       name: hurt_PC_4
       rect:
         serializedVersion: 2
-        x: 2315
-        y: 3781
-        width: 210
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2316
+        y: 3782
+        width: 208
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: hurt_PC_5
       rect:
         serializedVersion: 2
-        x: 2915
-        y: 3799
-        width: 186
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2916
+        y: 3800
+        width: 184
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: hurt_PC_6
       rect:
         serializedVersion: 2
-        x: 61
-        y: 3333
-        width: 186
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 62
+        y: 3334
+        width: 184
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: hurt_PC_7
       rect:
         serializedVersion: 2
-        x: 675
-        y: 3333
-        width: 186
+        x: 676
+        y: 3334
+        width: 184
         height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,12 +292,12 @@ TextureImporter:
       name: hurt_PC_8
       rect:
         serializedVersion: 2
-        x: 1281
-        y: 3333
-        width: 186
+        x: 1282
+        y: 3334
+        width: 184
         height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +313,12 @@ TextureImporter:
       name: hurt_PC_9
       rect:
         serializedVersion: 2
-        x: 1889
-        y: 3333
-        width: 186
+        x: 1890
+        y: 3334
+        width: 184
         height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
