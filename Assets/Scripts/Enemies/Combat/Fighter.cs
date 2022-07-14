@@ -10,6 +10,10 @@ public class Fighter : MonoBehaviour, IAction
     public bool isActive = true;
     public bool isRelentless = false;
     public bool canShootYAxis = true;
+
+    public float targetOffset = 0.7f;
+    public bool useOffset = false;
+
     [SerializeField] Transform projectileSpawn;
     public Weapon defaultWeapon;
     public Weapon equippedWeapon;
@@ -88,6 +92,7 @@ public class Fighter : MonoBehaviour, IAction
             LayerMaskCollider layerMaskCollider = proj.GetComponent<LayerMaskCollider>();
             if (layerMaskCollider != null)
             {
+                
                 layerMaskCollider.SetTargets(targetLayers);
             }
         }

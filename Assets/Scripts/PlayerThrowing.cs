@@ -12,6 +12,7 @@ public class PlayerThrowing : MonoBehaviour
     public InputObj inputThrow;
     public InputObj inputAimControl;
     public LayerMask ground;
+    public LayerMask throwable;
     public LineRenderer arcDisplay;
     #endregion
 
@@ -129,7 +130,7 @@ public class PlayerThrowing : MonoBehaviour
 
     void LookForItem()
     {
-        Collider[] nearby = Physics.OverlapSphere(transform.position, _grab);
+        Collider[] nearby = Physics.OverlapSphere(transform.position, _grab, throwable);
 
         foreach (Collider c in nearby)
         {

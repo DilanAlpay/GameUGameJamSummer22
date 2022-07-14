@@ -15,10 +15,13 @@ public class RandomSquare : MonoBehaviour, IRandomPoint
 
     private void OnDrawGizmosSelected()
     {
-        Vector3 bottomLeft = new Vector3(minX, y, minZ);
-        Vector3 topLeft = new Vector3(minX, y, maxZ);
-        Vector3 topRight = new Vector3(maxX, y, maxZ);
-        Vector3 bottomRight = new Vector3(maxX, y, minZ);
+        float x = transform.position.x;
+        float y = transform.position.y;
+        float z = transform.position.z;
+        Vector3 bottomLeft = new Vector3(x+minX, y, z+minZ);
+        Vector3 topLeft = new Vector3(x+minX, y, z+maxZ);
+        Vector3 topRight = new Vector3(x+maxX, y, z+maxZ);
+        Vector3 bottomRight = new Vector3(x + maxX, y, z+minZ);
         Gizmos.DrawSphere(bottomRight, 1f);
         Gizmos.DrawSphere(bottomLeft, 1f);
         Gizmos.DrawSphere(topLeft, 1f);

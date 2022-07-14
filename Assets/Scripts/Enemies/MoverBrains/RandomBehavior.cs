@@ -25,7 +25,6 @@ public class RandomBehavior : MonoBehaviour, IMoverBrain
     public bool IsAtTarget(NavMeshMover mover, Vector3 targetPos)
     {
         float v = Vector3.Distance(mover.transform.position, targetPos);
-        Debug.Log(v);
         bool isAtTarget = v <= distToTarget;
         
         if(!hasArrived && isAtTarget)
@@ -41,10 +40,9 @@ public class RandomBehavior : MonoBehaviour, IMoverBrain
 
     public void Move(NavMeshMover mover)
     {
-        Debug.Log("Test 2");
         if (IsAtTarget(mover, targetPosition))
         {
-            Debug.Log("Test 3");
+
             if (counter >= waitTime)
                 MoveToRandomPosition(mover);
             counter += Time.deltaTime;
@@ -53,7 +51,7 @@ public class RandomBehavior : MonoBehaviour, IMoverBrain
 
     public void MoveToRandomPosition(NavMeshMover mover)
     {
-        Debug.Log("Test 4");
+
         startedMoving?.Invoke();
 
         hasArrived = false;
@@ -63,10 +61,8 @@ public class RandomBehavior : MonoBehaviour, IMoverBrain
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas))
             {
-                Debug.Log($"move to {randomPoint}");
                 targetPosition = hit.position;
-                break;
-                
+                break;            
             }
         }
        

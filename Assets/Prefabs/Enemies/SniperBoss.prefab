@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 2983831396129093407}
   - component: {fileID: 3970271810297821060}
   - component: {fileID: 356798136725299969}
+  - component: {fileID: 943397266184849416}
   m_Layer: 11
   m_Name: SniperBoss
   m_TagString: Untagged
@@ -172,6 +173,7 @@ Transform:
   - {fileID: 2983831396902528559}
   - {fileID: 2983831397747920911}
   - {fileID: 8750743683976764897}
+  - {fileID: 8425181291748110604}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -256,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1a64ed3d72595449ecbe66c9508510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 1
   size: 0
   onTakeDamage:
     m_PersistentCalls:
@@ -266,7 +268,31 @@ MonoBehaviour:
       m_Calls: []
   onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1398689585505785821}
+        m_TargetAssemblyTypeName: ObjectSpawner, Assembly-CSharp
+        m_MethodName: SpawnObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 943397266184849416}
+        m_TargetAssemblyTypeName: DestroyAction, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   hitBySmallBubble: {fileID: 11400000, guid: 007f2d4e789ebfb40980ebc17657bc37, type: 2}
 --- !u!114 &2983831396129093398
 MonoBehaviour:
@@ -403,6 +429,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptableDist: 1
+--- !u!114 &943397266184849416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2983831396129093397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4ff1d8022232440a7b3ae625efa69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2983831396676540883
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +738,50 @@ MonoBehaviour:
   OnLoseTarget:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &3663090182331154452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8425181291748110604}
+  - component: {fileID: 1398689585505785821}
+  m_Layer: 11
+  m_Name: DeathFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8425181291748110604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663090182331154452}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.54, y: 0.060000002, z: -7.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2983831396129093406}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1398689585505785821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663090182331154452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f981a42e82ea3d84797af353221306a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3814319348629745555, guid: c4726b5bc5d952a4aa26eb4d931cabb5, type: 3}
 --- !u!1 &9009127902446197073
 GameObject:
   m_ObjectHideFlags: 0

@@ -102,6 +102,50 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &4004778550294714365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 62467406673328130}
+  - component: {fileID: 2977356442875928384}
+  m_Layer: 11
+  m_Name: DeathFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &62467406673328130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4004778550294714365}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798045406814350996}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2977356442875928384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4004778550294714365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f981a42e82ea3d84797af353221306a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3814319348629745555, guid: c4726b5bc5d952a4aa26eb4d931cabb5, type: 3}
 --- !u!1 &4798045405763117918
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +336,7 @@ GameObject:
   - component: {fileID: 4798045406814350997}
   - component: {fileID: 6694489888965783054}
   - component: {fileID: 8002118337255176843}
+  - component: {fileID: 7760016566817701525}
   m_Layer: 11
   m_Name: SniperEnemy
   m_TagString: Untagged
@@ -313,6 +358,7 @@ Transform:
   - {fileID: 4798045407072223141}
   - {fileID: 4798045406369909125}
   - {fileID: 1337082266485916779}
+  - {fileID: 62467406673328130}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -379,6 +425,8 @@ MonoBehaviour:
   isActive: 1
   isRelentless: 1
   canShootYAxis: 1
+  targetOffset: 0.7
+  useOffset: 0
   projectileSpawn: {fileID: 1337082266485916779}
   defaultWeapon: {fileID: 11400000, guid: 69fd5eccaef4f8342950fe89b00ff5e3, type: 2}
   equippedWeapon: {fileID: 0}
@@ -439,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1a64ed3d72595449ecbe66c9508510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 1
   size: 0
   onTakeDamage:
     m_PersistentCalls:
@@ -449,7 +497,31 @@ MonoBehaviour:
       m_Calls: []
   onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2977356442875928384}
+        m_TargetAssemblyTypeName: ObjectSpawner, Assembly-CSharp
+        m_MethodName: SpawnObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7760016566817701525}
+        m_TargetAssemblyTypeName: DestroyAction, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   hitBySmallBubble: {fileID: 11400000, guid: 007f2d4e789ebfb40980ebc17657bc37, type: 2}
 --- !u!114 &4798045406814351004
 MonoBehaviour:
@@ -598,6 +670,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptableDist: 1
+--- !u!114 &7760016566817701525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798045406814351007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4ff1d8022232440a7b3ae625efa69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4798045407072223140
 GameObject:
   m_ObjectHideFlags: 0
