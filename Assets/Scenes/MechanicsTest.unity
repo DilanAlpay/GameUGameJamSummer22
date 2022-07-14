@@ -13490,6 +13490,10 @@ PrefabInstance:
       propertyPath: arcDisplay
       value: 
       objectReference: {fileID: 2021219605}
+    - target: {fileID: 7353275121502322089, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: throwable.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7353275121502322090, guid: 3be12875d18298246ab316e8231b540e, type: 3}
       propertyPath: m_RootOrder
       value: 3
