@@ -27,3 +27,7 @@ MonoBehaviour:
   angryEmotion:
     emotion: 0
     sprite: {fileID: 0}
+  audioClips:
+  - {fileID: 8300000, guid: 3b521f4d93949fe4988f68497ae78d27, type: 3}
+  - {fileID: 8300000, guid: a094ad9a62a7aeb4485d6ef905b58316, type: 3}
+  - {fileID: 8300000, guid: 6fddbd83691b24641939196cdcc453e4, type: 3}

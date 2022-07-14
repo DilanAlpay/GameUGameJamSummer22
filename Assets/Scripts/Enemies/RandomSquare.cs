@@ -10,7 +10,7 @@ public class RandomSquare : MonoBehaviour, IRandomPoint
     {
         float x = Random.Range(minX, maxX);
         float z = Random.Range(minZ, maxZ);
-        return new Vector3(x, y, z);
+        return new Vector3(transform.position.x+x, y, transform.position.zz);
     }
 
     private void OnDrawGizmosSelected()
