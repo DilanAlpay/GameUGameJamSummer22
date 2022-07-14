@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 public class Testaroonie : MonoBehaviour
 {
-    public UnityEvent2<string> myEvent;
-
+    public void OnTriggerEnter(Collider other)
+    {
+        print("It works!");
+    }
 }

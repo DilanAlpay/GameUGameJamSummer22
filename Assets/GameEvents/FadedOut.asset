@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed1af2638b3eb354fab233462d1f365c, type: 3}
-  m_Name: FadeOutComplete
+  m_Name: FadedOut
   m_EditorClassIdentifier: 

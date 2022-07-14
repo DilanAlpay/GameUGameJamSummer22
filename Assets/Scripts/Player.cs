@@ -10,9 +10,12 @@ public class Player : MonoBehaviour
     private PlayerThrowing _throwing;
     private Interactor _interactor;
     private Animator _animator;
+    private HealthPlayer _health;
 
     private int _hashHurt;
     private int _hashHurting;
+    private int _hashIdle;
+    private int _hashDie;
 
     public bool HasBall { get { return _throwing.HasBall; } }
 
@@ -23,9 +26,12 @@ public class Player : MonoBehaviour
         _throwing = GetComponent<PlayerThrowing>();
         _interactor = GetComponent<Interactor>();
         _animator = GetComponent<Animator>();
+        _health = GetComponent<HealthPlayer>();
 
         _hashHurt = Animator.StringToHash("Hurt");
         _hashHurting = Animator.StringToHash("hurting");
+        _hashIdle = Animator.StringToHash("Idle");
+        _hashDie = Animator.StringToHash("Die");
     }
 
     public void SetPause(bool b)
@@ -42,8 +48,11 @@ public class Player : MonoBehaviour
 
     public void Hurt(GameObject source)
     {
-        Vector3 direction = source.transform.position - transform.position;
-        StartCoroutine(Knockback(direction));
+        if(_health.HP > 0)
+        {
+            Vector3 direction = source.transform.position - transform.position;
+            StartCoroutine(Knockback(direction));
+        }
     }
 
     public IEnumerator Knockback(Vector3 direction)
@@ -54,20 +63,20 @@ public class Player : MonoBehaviour
         _movement.Controller.enabled = false;
 
         float distance = 1;
+        float height = 1;
+        float duration = 0.5f;
+        float elapsed = 0;
+        float stun = 0.5f;
 
         Vector3 start = transform.position;
         Vector3 end = transform.position - (direction.normalized * distance);
         RaycastHit hit;
 
-        if (Physics.Raycast(end, Vector3.down, out hit, Mathf.Infinity, ground))
+        if (Physics.Raycast(end + (Vector3.up * height), Vector3.down, out hit, Mathf.Infinity, ground))
         {
             end.y = hit.point.y;
         }
 
-        float height = 1;
-        float duration = 0.5f;
-        float elapsed = 0;
-        float stun = 0.5f;
 
         while (elapsed < duration)
         {
@@ -84,4 +93,27 @@ public class Player : MonoBehaviour
         _animator.SetBool(_hashHurting, false);
         SetPause(false);
     }
+
+    public void StartDeath()
+    {
+        //Stop moving
+        SetPause(true);
+        //Play animation
+        _animator.Play(_hashDie);
+    }
+
+    /// <summary>
+    /// Puts you right back at the beginning
+    /// </summary>
+    public void ReturnToStart()
+    {
+        TeleportTo(Vector3.zero);
+        _animator.Play(_hashIdle);
+        _throwing.GetItemBack();
+        _health.Revive();
+        _health.Heal(4);
+
+    }
+
+
 }

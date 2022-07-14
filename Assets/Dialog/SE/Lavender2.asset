@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
+  m_Name: Lavender2
+  m_EditorClassIdentifier: 
+  lines:
+  - text: Hello there! How may I beaver service today?
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: The willow trees have been infested with nasty gnumnuts, horrible little
+      purple creatures that pretend to look like acorns.
+    speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: And how will you conversate Blub and I for our services?
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: Blub!
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 3
+    speakerNum: 0
+  - text: Quiet, Blub! I'm trying to barber for a better deal!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: I know a path to some Bubbling Bone Broth, that's a pretty rare find in
+      these parts.
+    speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: Deal! I'll elaminate those gumguts and get the boney bubblebath stuff for
+      Azalea!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  OnDialogOver: {fileID: 0}

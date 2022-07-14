@@ -185,7 +185,6 @@ public class Area : MonoBehaviour
         RestoreEnemies();
     }
 
-
     /// <summary>
     /// Respawn all defeated enemies in this Area
     /// </summary>
