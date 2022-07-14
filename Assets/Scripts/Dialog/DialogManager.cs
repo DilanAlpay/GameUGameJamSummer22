@@ -101,13 +101,11 @@ public class DialogManager : MonoBehaviour
         foreach (Line line in _dialog.lines)
         {            
             SetSpeaker(line.speaker, line.emotion, line.speakerNum);
-            //dialogText.text = line.text;
+
             yield return TypewriteDialog(line.text);
-            /*
-            while (!_proceeded) yield return null;
+            yield return new WaitUntil(()=>_proceeded);
             _proceeded = false;
-            */
-            //yield return new WaitUntil(() => ShowNextLine());
+
 
             yield return new WaitForEndOfFrame();
         }
@@ -126,9 +124,7 @@ public class DialogManager : MonoBehaviour
             if (forceComplete)
             {
                 dialogText.text = message;
-                while (!_proceeded) yield return null;
-                _proceeded = false;
-
+              
 //              yield return new WaitUntil(() => ShowNextLine());
                 break;
             }
