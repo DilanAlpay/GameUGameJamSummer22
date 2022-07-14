@@ -6,10 +6,13 @@ public class Event_OnStart : MonoBehaviour
 {
     public float delay;
     public UnityEvent2 onStart;
+    public bool destroyAfter;
 
-    void Start()
+    void OnEnable()
     {
         Invoke("CallEvent", delay);
+        if (destroyAfter)
+            Destroy(gameObject);
     }
 
 

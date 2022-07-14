@@ -2340,6 +2340,7 @@ MonoBehaviour:
         m_Modes: 01000000
     m_TypeName: UnityEngine.Events.UnityEvent2, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  destroyAfter: 0
 --- !u!114 &886144778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2352,8 +2353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1a168af9639314990e42365b74eae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: {fileID: 11400000, guid: bb96f25baaa9e674abaa8238fc7adf1a, type: 2}
-  requirement: 4
+  counter: {fileID: 11400000, guid: 9678ec5f74c24ee449625744b0a2de3f, type: 2}
+  requirement: 2
   onCountReached:
     m_PersistentCalls:
       m_Calls:
@@ -3704,6 +3705,7 @@ MonoBehaviour:
         m_Modes: 01000000
     m_TypeName: UnityEngine.Events.UnityEvent2, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  destroyAfter: 0
 --- !u!1001 &1493986851
 PrefabInstance:
   m_ObjectHideFlags: 0
