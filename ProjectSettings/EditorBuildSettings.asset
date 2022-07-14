@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SOUTHEAST.unity
     guid: 3ceb37cbfe6e77c419ed9e088e87e3e6
+  - enabled: 1
+    path: Assets/Scenes/SOUTHWEST.unity
+    guid: 1b90407705ee9b644a78e6c8a845f69f
   m_configObjects: {}
