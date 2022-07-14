@@ -880,7 +880,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6653196351274634662, guid: 3c677d839bd78c642842629e1a34d92e, type: 3}
   m_PrefabInstance: {fileID: 289760151}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 289760156}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fd3aa5959bc02d4fac4d488fd8cb04a, type: 3}
@@ -906,6 +906,11 @@ MonoBehaviour:
   destination: {fileID: 1340490759}
   zone: 3
   entering: 0
+--- !u!1 &289760156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2377915406269783098, guid: 3c677d839bd78c642842629e1a34d92e, type: 3}
+  m_PrefabInstance: {fileID: 289760151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &383860491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1916,6 +1921,42 @@ PrefabInstance:
     - target: {fileID: -3876891792881523100, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
       propertyPath: zoneName
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 289760156}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Modes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Modes.Array.data[0]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.Array.data[0].m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619852989920286574, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.Array.data[0].m_ObjectArgumentAssemblyTypeName
+      value: System.Boolean, mscorlib
       objectReference: {fileID: 0}
     - target: {fileID: 3923353581244373566, guid: ebbcc977f0d81fd4eb9548118939b6e7, type: 3}
       propertyPath: m_RootOrder
