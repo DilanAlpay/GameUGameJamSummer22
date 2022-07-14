@@ -17,6 +17,9 @@ public class Speaker : ScriptableObject
     public SpeakerEmotionData sadEmotion;
     public SpeakerEmotionData angryEmotion;
 
+    public List<AudioClip> audioClips = new List<AudioClip>();
+    public bool HasAudio => audioClips.Count > 0;
+
     public Sprite GetSprite(SpeakerEmotion emotion = SpeakerEmotion.Default)
     {
         if(emotion == SpeakerEmotion.Angry && angryEmotion != null)
@@ -41,7 +44,16 @@ public class Speaker : ScriptableObject
         }
 
     }
+    public AudioClip GetAudioClip()
+    {
+        if (!HasAudio)
+        {
+            return null;
+        }
+        return audioClips[UnityEngine.Random.Range(0, audioClips.Count)];
+    }
 }
+
 
 public enum SpeakerEmotion
 {

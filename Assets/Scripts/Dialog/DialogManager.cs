@@ -159,6 +159,7 @@ public class DialogManager : MonoBehaviour
                 speakerImages[i].SetNativeSize();
                 speakerImages[i].gameObject.SetActive(true);
                 SetSpriteTransparent(speakerImages[i], 1);
+                
             }
             else
             {
@@ -169,6 +170,11 @@ public class DialogManager : MonoBehaviour
 
         speakerNameText.text = speaker.speakerName;
         speakerNameBox.color = speaker.nameBoxColor;
+        AudioClip audio = speaker.GetAudioClip();
+        if (audio != null)
+        {
+            //play sound clip
+        }
 
     }
 
