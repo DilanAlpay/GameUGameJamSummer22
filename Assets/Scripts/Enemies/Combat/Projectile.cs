@@ -6,6 +6,8 @@ public class Projectile : MonoBehaviour, IPausable
 {
     [SerializeField] bool isHoming;
     [SerializeField] bool canMoveY = false;
+    [SerializeField] bool useOffset;
+    [SerializeField] float offset = 0.7f;
     Bullet bullet;
     Transform target;
     
@@ -41,6 +43,7 @@ public class Projectile : MonoBehaviour, IPausable
     Vector3 GetAimLocation()
     {
         float ypos = canMoveY ? target.position.y : transform.position.y;
+        if (useOffset) ypos += offset;
         return new Vector3(target.position.x, ypos, target.position.z);
     }
 

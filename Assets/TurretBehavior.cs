@@ -12,7 +12,7 @@ public class TurretBehavior : MonoBehaviour
     [SerializeField] bool resetCounterOnActivate;
     float timeSinceLastShot = Mathf.Infinity;
     [SerializeField]bool isActive = true;
-
+   
     private void Awake()
     {
         if(spawnPoint == null)

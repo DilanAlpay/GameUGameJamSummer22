@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed568fcca9790b44a9ed0e838c6e656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 3
+  maxSpeed: 4
 --- !u!114 &4798045406814350992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +315,8 @@ MonoBehaviour:
   isActive: 1
   isRelentless: 1
   canShootYAxis: 0
+  targetOffset: 0.7
+  useOffset: 0
   projectileSpawn: {fileID: 4338476144792180426}
   defaultWeapon: {fileID: 11400000, guid: 290759b10c3619641917ea224b6ef9c6, type: 2}
   equippedWeapon: {fileID: 0}
@@ -1245,7 +1247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cea1aefe4f1d94e9080f6ebeb0ce97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mover: {fileID: 0}
+  mover: {fileID: 4798045406814350993}
   isFacingLeftToStart: 1
 --- !u!1 &9142838635866734689
 GameObject:

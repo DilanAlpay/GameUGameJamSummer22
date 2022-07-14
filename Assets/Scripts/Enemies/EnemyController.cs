@@ -15,7 +15,6 @@ public class EnemyController : MonoBehaviour
     public float susTime = 1f;
     public float timeSinceLastSawPlayer = Mathf.Infinity;
 
-
     public GameObjectEvent onAttackBehavior;
     public UnityEvent onLoseTarget;
 

@@ -657,7 +657,7 @@ MonoBehaviour:
   active: 1
   layers:
     serializedVersion: 2
-    m_Bits: 33554432
+    m_Bits: 64
   loggerTag: 0
   OnSeeTarget:
     m_PersistentCalls:
@@ -762,6 +762,8 @@ MonoBehaviour:
   isActive: 1
   isRelentless: 1
   canShootYAxis: 0
+  targetOffset: 0.7
+  useOffset: 0
   projectileSpawn: {fileID: 7860843565695691663}
   defaultWeapon: {fileID: 11400000, guid: 290759b10c3619641917ea224b6ef9c6, type: 2}
   equippedWeapon: {fileID: 0}
@@ -822,7 +824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1a64ed3d72595449ecbe66c9508510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 1
   size: 0
   onTakeDamage:
     m_PersistentCalls:
