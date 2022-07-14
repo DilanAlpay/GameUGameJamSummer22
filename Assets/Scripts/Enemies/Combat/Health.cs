@@ -52,6 +52,12 @@ public class Health : MonoBehaviour, IDamageable
     {
         ChangeHealth(amount, source);
     }
+    
+    public void Revive()
+    {
+        isDead = false;
+    }
+
     protected virtual void ChangeHealth(int amount, GameObject source = null)
     {
         if (isDead) return;
@@ -59,7 +65,6 @@ public class Health : MonoBehaviour, IDamageable
         //We are still temporarily invincible and cannot take damage
         if ((isInvincible || Time.time < iFinish) && amount < 0) return;
         
-        if (Time.time < iFinish) return;
 
         int prevHealth = currentHealth;
         currentHealth += amount;

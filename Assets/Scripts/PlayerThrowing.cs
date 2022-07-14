@@ -165,13 +165,20 @@ public class PlayerThrowing : MonoBehaviour
         //It's been long enough, get back here, Blub!
         if(_lastItem && Time.time > _returnTime)
         {
-            PickUp(_lastItem);
+            GetItemBack();
         }
+    }
+
+    public void GetItemBack()
+    {
+        _returnTime = 0;
+        PickUp(_lastItem);
     }
 
     void PickUp(Throwable t)
     {
         _item = t;
+        _lastItem = _item;
         _item.transform.parent = _hold;
         _item.transform.localPosition = Vector3.zero;
         t.Grab();
@@ -264,7 +271,6 @@ public class PlayerThrowing : MonoBehaviour
 
         if(_item.Throw(_direction, _throwForce))
         {
-            _lastItem = _item;
             _item.transform.parent = null;
             _item = null;
             _returnTime = Time.time + _returnLength; 
