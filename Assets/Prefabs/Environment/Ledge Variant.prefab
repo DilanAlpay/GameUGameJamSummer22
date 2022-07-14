@@ -66,11 +66,23 @@ PrefabInstance:
     - target: {fileID: 2120401104041789018, guid: 91896d6b7599ba7489638f677b1ccfc1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ff4c049e93777d24ebf32c2f528b836d, type: 2}
+      objectReference: {fileID: 2100000, guid: 11b0740d162513a42ab02c94fed4e895, type: 2}
+    - target: {fileID: 3220984397233760608, guid: 91896d6b7599ba7489638f677b1ccfc1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512191277333754459, guid: 91896d6b7599ba7489638f677b1ccfc1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6424101502374032016, guid: 91896d6b7599ba7489638f677b1ccfc1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7937839925245560367, guid: 91896d6b7599ba7489638f677b1ccfc1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff4c049e93777d24ebf32c2f528b836d, type: 2}
     - target: {fileID: 8802733604080634047, guid: 91896d6b7599ba7489638f677b1ccfc1, type: 3}
       propertyPath: m_Name
       value: Ledge Variant

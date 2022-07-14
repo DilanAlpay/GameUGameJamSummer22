@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NORTHWEST.unity
     guid: 6c30c4dc7c18a5b42a46dcc0cba7dd49
+  - enabled: 1
+    path: Assets/Scenes/NORTHEAST.unity
+    guid: 45ff150c9e6152242899b00bcadb08b4
+  - enabled: 1
+    path: Assets/Scenes/SOUTHEAST.unity
+    guid: 3ceb37cbfe6e77c419ed9e088e87e3e6
   m_configObjects: {}
