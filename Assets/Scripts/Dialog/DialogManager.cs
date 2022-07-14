@@ -103,10 +103,10 @@ public class DialogManager : MonoBehaviour
             SetSpeaker(line.speaker, line.emotion, line.speakerNum);
             //dialogText.text = line.text;
             yield return TypewriteDialog(line.text);
-
+            /*
             while (!_proceeded) yield return null;
             _proceeded = false;
-
+            */
             //yield return new WaitUntil(() => ShowNextLine());
 
             yield return new WaitForEndOfFrame();
