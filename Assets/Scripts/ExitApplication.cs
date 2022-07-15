@@ -8,5 +8,6 @@ public class ExitApplication : MonoBehaviour
     public void Quit()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 }
