@@ -5,9 +5,16 @@ using UnityEngine;
 public class PlayMusicEvent : MonoBehaviour
 {
     [SerializeField] AudioClip music;
-
+    [SerializeField] SoundManager.MusicArea area;
     public void PlayMusic()
     {
-        SoundManager.Instance.PlayMusic(music);
+        if (!SoundManager.Instance)
+            SoundManager.Instance.PlayMusic(music);
+    }
+
+    public void PlayMusicArea()
+    {
+        if(!SoundManager.Instance)
+            SoundManager.Instance.PlayMusicArea(area);
     }
 }

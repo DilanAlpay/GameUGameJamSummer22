@@ -175,6 +175,13 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 2d31a66b29c33714e81f9dc9cb77f1c0, type: 2}
   EffectsSource: {fileID: 5256078170519952345}
   MusicSource: {fileID: 5256078171267172934}
+  areaMusic:
+  - {fileID: 8300000, guid: ab5b86b09bd9d1d44b1769542d358c56, type: 3}
+  - {fileID: 8300000, guid: 69d3d5aba65a12b40a1da17b4c63fcef, type: 3}
+  - {fileID: 8300000, guid: 03cecc2120de96c43948e88c9096775f, type: 3}
+  - {fileID: 8300000, guid: c41c689baf14fea42abd53f4bbe2c56c, type: 3}
+  - {fileID: 8300000, guid: 4ecbfbd97b431554d9c97aeb4b921711, type: 3}
+  - {fileID: 8300000, guid: 0ce001323ba67134dba81a2bd616c3d2, type: 3}
 --- !u!1 &5256078171267172933
 GameObject:
   m_ObjectHideFlags: 0

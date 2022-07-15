@@ -11,7 +11,19 @@ public class SoundManager : MonoBehaviour
 	public AudioSource MusicSource;
 	
 	public static SoundManager Instance = null;
-	
+
+	[Tooltip("0. Home 1. Forest 2. Cliffs 3. Desolate 4. Willows, 5. Bosses")]
+	public List<AudioClip> areaMusic;
+
+	public enum MusicArea
+    {
+		Home,
+		Forest,
+		Cliffs,
+		Desolate,
+		Willows,
+		Boss
+    }
 	private void Awake()
 	{
 		
@@ -55,4 +67,19 @@ public class SoundManager : MonoBehaviour
 	{
 		mixer.SetFloat("sfxVolume", value);
 	}
+
+	public void PlayMusicArea(MusicArea area)
+    {
+		if(areaMusic.Count < (int)area)
+        {
+			AudioClip clip = areaMusic[(int)area];
+			if(clip)
+				PlayMusic(clip);
+            else
+            {
+				Debug.LogWarning($"No music found for {area}");
+            }
+        }
+
+    }
 }
