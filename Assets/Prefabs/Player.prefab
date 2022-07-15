@@ -995,6 +995,7 @@ Transform:
   - {fileID: 8245070822542705645}
   - {fileID: 6549213948040657194}
   - {fileID: 1845663674}
+  - {fileID: 789238745155271245}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1160,7 +1161,19 @@ MonoBehaviour:
   size: 0
   onTakeDamage:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125378582644257549}
+        m_TargetAssemblyTypeName: PlayAudioClip, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHeal:
     m_PersistentCalls:
       m_Calls: []
@@ -1949,6 +1962,75 @@ Transform:
   m_Father: {fileID: 7353275121502322090}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8002709321657226334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789238745155271245}
+  - component: {fileID: 1125378582644257549}
+  - component: {fileID: 8888408736617622409}
+  m_Layer: 6
+  m_Name: HurtAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &789238745155271245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002709321657226334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7353275121502322090}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1125378582644257549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002709321657226334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bebb7e03feab556458f6b6d1168eb977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: ec30a8ad59880dc409883da7d9cec232, type: 3}
+--- !u!114 &8888408736617622409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002709321657226334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1e829c26416164faba28d5913632a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 25
+  onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Arguments: []
+        m_CallState: 2
+        m_Target: {fileID: 1125378582644257549}
+        m_MethodName: 
+        m_Modes: 
+    m_TypeName: UnityEngine.Events.UnityEvent2, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  destroyAfter: 0
 --- !u!1001 &4999599353709330632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2198,11 +2280,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3067552d4702c14485f0ec6c124ee6d, type: 3}
---- !u!224 &4535240238995230440 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6412136533296288307, guid: b3067552d4702c14485f0ec6c124ee6d, type: 3}
-  m_PrefabInstance: {fileID: 7353275122665413851}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4535240238353836887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6412136532585691020, guid: b3067552d4702c14485f0ec6c124ee6d, type: 3}
@@ -2224,6 +2301,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9d2cb8d516de14fabe21016fcd9e21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &4535240238995230440 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6412136533296288307, guid: b3067552d4702c14485f0ec6c124ee6d, type: 3}
+  m_PrefabInstance: {fileID: 7353275122665413851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &598183352
 MonoBehaviour:
   m_ObjectHideFlags: 0
