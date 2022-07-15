@@ -99,6 +99,7 @@ MonoBehaviour:
         m_Modes: 01000000
     m_TypeName: UnityEngine.Events.UnityEvent2, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  destroyAfter: 0
 --- !u!114 &8860607613214218516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objSpawner: {fileID: 6581316210574245539}
+  square: {fileID: 0}
   radius: 2
 --- !u!1 &3917355575763364693
 GameObject:
@@ -540,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205cf5bfb59e93b4eb2c11b6ff7058db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visionRadius: 5
+  visionRadius: 8
   active: 1
   layers:
     serializedVersion: 2
@@ -653,7 +655,7 @@ MonoBehaviour:
   targetOffset: 0.7
   useOffset: 0
   projectileSpawn: {fileID: 5422160807122823522}
-  defaultWeapon: {fileID: 11400000, guid: 290759b10c3619641917ea224b6ef9c6, type: 2}
+  defaultWeapon: {fileID: 11400000, guid: 199c4dc693565ff429f85501cbdfbaa9, type: 2}
   equippedWeapon: {fileID: 0}
 --- !u!114 &4798045406814350995
 MonoBehaviour:
@@ -772,6 +774,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   hitBySmallBubble: {fileID: 11400000, guid: 007f2d4e789ebfb40980ebc17657bc37, type: 2}
+  currentHealth: 0
+  iFrames: 0
 --- !u!114 &4798045406814351004
 MonoBehaviour:
   m_ObjectHideFlags: 0

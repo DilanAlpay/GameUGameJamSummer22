@@ -55,6 +55,7 @@ MonoBehaviour:
         m_Modes: 01000000
     m_TypeName: UnityEngine.Events.UnityEvent2, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  destroyAfter: 0
 --- !u!114 &1748946059807161305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +453,7 @@ MonoBehaviour:
   targetOffset: 0.7
   useOffset: 0
   projectileSpawn: {fileID: 4338476144792180426}
-  defaultWeapon: {fileID: 11400000, guid: 290759b10c3619641917ea224b6ef9c6, type: 2}
+  defaultWeapon: {fileID: 11400000, guid: 199c4dc693565ff429f85501cbdfbaa9, type: 2}
   equippedWeapon: {fileID: 0}
 --- !u!114 &4798045406814350994
 MonoBehaviour:

@@ -313,11 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distToWaypoint: 1
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  waypoints: []
 --- !u!114 &2577967042438908518
 MonoBehaviour:
   m_ObjectHideFlags: 0
