@@ -20,7 +20,7 @@ public class DirectionalShooter : MonoBehaviour
     }
     public void Shoot(float yAngle)
     {
-        Projectile tempProjectile = Instantiate(projectile, transform.position, Quaternion.Euler(0, yAngle, 0));
+        Projectile tempProjectile = Instantiate(projectile, projectileSpawn.position, Quaternion.Euler(0, yAngle, 0));
     }
 
     public void MultiShot()

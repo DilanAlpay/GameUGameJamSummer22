@@ -9891,7 +9891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29d2d37742f5974795136e074ef14ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  face: {fileID: 1923980746218318926}
+  face: {fileID: 1923980746218318929}
   sizeCounter: {fileID: 11400000, guid: 61caff6eb279c5a48a449a260cff921a, type: 2}
   objParents:
   - {fileID: 1421603998}
@@ -9917,6 +9917,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1923980746218318929 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3485405671365346643, guid: f9629131a411a9043bb2bf7c8e0dccae, type: 3}
+  m_PrefabInstance: {fileID: 1923980746218318924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3554592192921202386
 PrefabInstance:
   m_ObjectHideFlags: 0

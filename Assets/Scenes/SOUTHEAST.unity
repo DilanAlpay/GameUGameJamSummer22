@@ -3098,6 +3098,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 398612289}
     m_Modifications:
+    - target: {fileID: 885710639379959582, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577967041697092747, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2577967042438908514, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3174,9 +3182,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bosssssss
       objectReference: {fileID: 0}
+    - target: {fileID: 2577967042438908522, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280919578639753287, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5018486969059415243, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971807977797459568, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9a2ab065ae0d8d4f87caed9ba710bf9, type: 3}
