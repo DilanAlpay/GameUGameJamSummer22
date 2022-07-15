@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61ce7d1e01237547aba313efd2d235e, type: 3}
   m_Name: BossWand
   m_EditorClassIdentifier: 
-  weaponName: 
+  weaponName: BossWand
   type: 1
   projectile: {fileID: 2448308660433139893, guid: 674ccf90757545b4bbaf06c35cd6c61a, type: 3}
   attackRange: 10
-  timeBetweenAttacks: 0.3
+  timeBetweenAttacks: 0.5

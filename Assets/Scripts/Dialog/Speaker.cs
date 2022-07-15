@@ -19,6 +19,7 @@ public class Speaker : ScriptableObject
 
     public List<AudioClip> audioClips = new List<AudioClip>();
     public bool HasAudio => audioClips.Count > 0;
+ 
 
     public Sprite GetSprite(SpeakerEmotion emotion = SpeakerEmotion.Default)
     {
