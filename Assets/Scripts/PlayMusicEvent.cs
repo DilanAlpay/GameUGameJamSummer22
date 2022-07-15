@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class PlayMusicEvent : MonoBehaviour
 {
+    [Header("Not required if using music area")]
     [SerializeField] AudioClip music;
     [SerializeField] SoundManager.MusicArea area;
     public void PlayMusic()
     {
-        if (!SoundManager.Instance)
+        if (SoundManager.Instance)
             SoundManager.Instance.PlayMusic(music);
     }
 
     public void PlayMusicArea()
     {
-        if(!SoundManager.Instance)
+        if(SoundManager.Instance)
             SoundManager.Instance.PlayMusicArea(area);
     }
 }

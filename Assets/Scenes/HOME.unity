@@ -1046,6 +1046,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8252559318593870404, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
   m_PrefabInstance: {fileID: 256202735}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &256202737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8624062183405245172, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 256202735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &256202738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8900676006580681998, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 256202735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &256202739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256202738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7838a7b78358b4ea1adf81bc44eaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: b00e1626ce303374da06ac1e8770084e, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1124944909}
+        m_TargetAssemblyTypeName: PlayMusicEvent, Assembly-CSharp
+        m_MethodName: PlayMusicArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &261194752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3417239323853924155, guid: 8f2faf830ff32494d9c1c943744e5912, type: 3}
@@ -1120,6 +1159,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f2faf830ff32494d9c1c943744e5912, type: 3}
+--- !u!1 &287295954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287295955}
+  - component: {fileID: 287295956}
+  m_Layer: 7
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &287295955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287295954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 70}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1015763817}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &287295956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287295954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cfb3d9da1a9dd41afcd37a2fd8d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  area: 1
 --- !u!1001 &290488395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2559,7 +2643,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1139992741349247961, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
   m_PrefabInstance: {fileID: 1015763813}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1015763819}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fd3aa5959bc02d4fac4d488fd8cb04a, type: 3}
@@ -2931,6 +3015,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3417239323853924155, guid: 8f2faf830ff32494d9c1c943744e5912, type: 3}
   m_PrefabInstance: {fileID: 1575507682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &807390804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807390805}
+  - component: {fileID: 807390806}
+  m_Layer: 7
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &807390805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807390804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -40, y: 0, z: 35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8252559317176339658}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807390806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807390804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cfb3d9da1a9dd41afcd37a2fd8d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  area: 0
 --- !u!1001 &815304822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3527,6 +3656,66 @@ MonoBehaviour:
   destination: {fileID: 1469539772}
   zone: 3
   entering: 1
+--- !u!4 &1015763817 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8624062183405245172, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 1015763813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1015763818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8900676006580681998, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 1015763813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1015763819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8252559318593870405, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 1015763813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1015763820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015763818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7838a7b78358b4ea1adf81bc44eaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: b00e1626ce303374da06ac1e8770084e, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 287295956}
+        m_TargetAssemblyTypeName: PlayMusicEvent, Assembly-CSharp
+        m_MethodName: PlayMusicArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1015763821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015763819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7838a7b78358b4ea1adf81bc44eaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: []
+  response:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1026710520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4059,6 +4248,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 296f5b7eb2b014341b84b1af921b66fb, type: 3}
+--- !u!1 &1124944907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1124944908}
+  - component: {fileID: 1124944909}
+  m_Layer: 7
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1124944908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124944907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 256202737}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1124944909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124944907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cfb3d9da1a9dd41afcd37a2fd8d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  area: 0
 --- !u!4 &1128877116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3417239323853924155, guid: 8f2faf830ff32494d9c1c943744e5912, type: 3}
@@ -5238,6 +5472,45 @@ MonoBehaviour:
   destination: {fileID: 665404926}
   zone: 4
   entering: 1
+--- !u!4 &1366286544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8624062183405245172, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 1366286540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1366286545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8900676006580681998, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 1366286540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1366286546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366286545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7838a7b78358b4ea1adf81bc44eaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: b00e1626ce303374da06ac1e8770084e, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2087572802}
+        m_TargetAssemblyTypeName: PlayMusicEvent, Assembly-CSharp
+        m_MethodName: PlayMusicArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1377400410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3405166154015404031, guid: a109b60f42e4ac34192046aefe25cd3f, type: 3}
@@ -6028,6 +6301,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8252559318593870404, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
   m_PrefabInstance: {fileID: 1577370773}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1577370775 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8624062183405245172, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 1577370773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1577370776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8900676006580681998, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 1577370773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1577370777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577370776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7838a7b78358b4ea1adf81bc44eaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: b00e1626ce303374da06ac1e8770084e, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1648364059}
+        m_TargetAssemblyTypeName: PlayMusicEvent, Assembly-CSharp
+        m_MethodName: PlayMusicArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1587819279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6190,7 +6502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5449179915936005112, guid: ed7992ea6505d8b4aabf208091d46f27, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5449179915936005113, guid: ed7992ea6505d8b4aabf208091d46f27, type: 3}
       propertyPath: m_Pivot.x
@@ -6600,6 +6912,51 @@ PrefabInstance:
       objectReference: {fileID: 6876961666855488517, guid: 700b6dd3d903d6c44850f479ae0c9766, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f2faf830ff32494d9c1c943744e5912, type: 3}
+--- !u!1 &1648364057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1648364058}
+  - component: {fileID: 1648364059}
+  m_Layer: 7
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1648364058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648364057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -80, y: 0, z: 35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1577370775}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1648364059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648364057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cfb3d9da1a9dd41afcd37a2fd8d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  area: 0
 --- !u!1 &1686265000
 GameObject:
   m_ObjectHideFlags: 0
@@ -7631,7 +7988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &2005498743
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8070,6 +8427,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08d12511224c2244fbaf4ce1ab1531a8, type: 3}
+--- !u!1 &2087572800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2087572801}
+  - component: {fileID: 2087572802}
+  m_Layer: 7
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2087572801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087572800}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -80, y: 0, z: 70}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1366286544}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2087572802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087572800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cfb3d9da1a9dd41afcd37a2fd8d423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  area: 0
 --- !u!1 &2088795688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9151,3 +9553,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+--- !u!4 &8252559317176339658 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8624062183405245172, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 8252559317176339657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8252559317176339659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8900676006580681998, guid: 6f9e821e3d332ad479f12fc83e4e52f4, type: 3}
+  m_PrefabInstance: {fileID: 8252559317176339657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8252559317176339660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252559317176339659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7838a7b78358b4ea1adf81bc44eaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: b00e1626ce303374da06ac1e8770084e, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 807390806}
+        m_TargetAssemblyTypeName: PlayMusicEvent, Assembly-CSharp
+        m_MethodName: PlayMusicArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

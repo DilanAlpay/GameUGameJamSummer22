@@ -37,7 +37,7 @@ public class SoundManager : MonoBehaviour
 			Destroy(gameObject);
 		}
 
-		DontDestroyOnLoad(gameObject);
+		//DontDestroyOnLoad(gameObject);
 	}
 
 	
@@ -49,6 +49,8 @@ public class SoundManager : MonoBehaviour
 	
 	public void PlayMusic(AudioClip clip)
 	{
+		if (MusicSource.clip == clip) return;
+		
 		MusicSource.clip = clip;
 		MusicSource.Play();
 	}
@@ -70,8 +72,7 @@ public class SoundManager : MonoBehaviour
 
 	public void PlayMusicArea(MusicArea area)
     {
-		if(areaMusic.Count < (int)area)
-        {
+
 			AudioClip clip = areaMusic[(int)area];
 			if(clip)
 				PlayMusic(clip);
@@ -79,7 +80,7 @@ public class SoundManager : MonoBehaviour
             {
 				Debug.LogWarning($"No music found for {area}");
             }
-        }
+        
 
     }
 }
