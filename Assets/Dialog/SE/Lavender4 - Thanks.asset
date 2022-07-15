@@ -37,7 +37,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 3
     speakerNum: 0
-  - text: I need to learn how to be a better eggotiater...
+  - text: I need to learn how to be a better egg-gotiater...
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 2
     speakerNum: 0

@@ -30,7 +30,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: And how will you compenstate Blub and I for our services?
+  - text: And how will you compy-state Blub and I for our services?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
@@ -42,13 +42,13 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: I know a path to some Bubbling Bone Broth, that's a pretty rare find in
-      these parts.
+  - text: I know a path to some Sprawling Spider Spaghetti, that's a pretty rare
+      find in these parts.
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: Deal! I'll elaminate those gumguts and get the boney bubblebath stuff for
-      Azalea!
+  - text: Deal! I'll e-laminate those gumguts and get the boney bubblebath stuff
+      for Azalea!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0

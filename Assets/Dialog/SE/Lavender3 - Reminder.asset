@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - text: I counted four gnumnuts in the willow trees. Get them all and I'll show
-      you where the Bubbling Bone Broth is.
+      you where the Sprawling Spider Spaghetti is.
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 0
     speakerNum: 0

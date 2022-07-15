@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lavender5 - Bye
   m_EditorClassIdentifier: 
   lines:
-  - text: Personally, I think the canned Bubbling Bone Broth is fine, but you can't
-      beat it straight from the monster;'s den!
+  - text: Personally, I think the canned Sprawling Spider Spaghetti is fine, but
+      you can't beat it straight from the monster;'s den!
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 0
     speakerNum: 0

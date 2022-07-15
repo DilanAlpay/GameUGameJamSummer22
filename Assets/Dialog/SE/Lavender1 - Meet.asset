@@ -17,7 +17,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2af9446038b9f443a1979d4a9ed25cb, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: Sounds like your problem is you gotta get a Blub of your own!
+  - text: Sounds like your probby-lum is you gotta get a Blub of your own!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
@@ -25,8 +25,8 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
     emotion: 2
     speakerNum: 0
-  - text: You're such a beeping harp, Blub. Fine! We'll help her real quick and then
-      get back to helping Azalea.
+  - text: You're such a bleeding harp, Blub. Fine! We'll help her real quick and
+      then get back to helping Azalea.
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 2
     speakerNum: 0
