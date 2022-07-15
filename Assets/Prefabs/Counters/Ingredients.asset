@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 088bed15058ba2344b96018d832d66a3, type: 3}
   m_Name: Ingredients
   m_EditorClassIdentifier: 
+  _count: 4
