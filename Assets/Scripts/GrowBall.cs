@@ -29,9 +29,10 @@ public class GrowBall : MonoBehaviour
 
     public void GetItem(Transform item, int i)
     {
+        item.localScale = Vector3.one;
         item.parent = objParents[i];
         item.localPosition = Vector3.zero;
         item.localRotation = Quaternion.identity;
-        item.localScale = Vector3.one;
+        
     }
 }

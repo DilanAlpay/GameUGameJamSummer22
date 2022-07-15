@@ -24,7 +24,8 @@ public class Interactor : MonoBehaviour
     {
         foreach (Interactable item in nearby)
         {
-            item.SetAlert(false);
+            
+            item?.SetAlert(false);
         }
 
         Collider[] hits = Physics.OverlapSphere(transform.position, range, interactable);

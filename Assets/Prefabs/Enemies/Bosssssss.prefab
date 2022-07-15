@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141e1ce70a297944ba66a8821d6bf3b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 2448308660433139893, guid: 0435d1ed2ac41064683570c94062111e, type: 3}
+  projectile: {fileID: 2448308660433139893, guid: e456ed5352e8cff47b3e14e9851fd40c, type: 3}
   projectileSpawn: {fileID: 5018486969059415243}
   rotateStep: 0
   numMultiShots: 16
