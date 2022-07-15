@@ -13,10 +13,6 @@ MonoBehaviour:
   m_Name: NPCTulip
   m_EditorClassIdentifier: 
   lines:
-  - text: 
-    speaker: {fileID: 0}
-    emotion: 0
-    speakerNum: 0
   - text: A child? Here?! How'd you get past all of those terrible creatures?
     speaker: {fileID: 11400000, guid: ed90eec712835a24fb5b10d3877ddba4, type: 2}
     emotion: 0

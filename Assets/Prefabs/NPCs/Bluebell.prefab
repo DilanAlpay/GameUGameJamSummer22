@@ -126,7 +126,7 @@ PrefabInstance:
     - target: {fileID: 5793545690812968134, guid: 2a6dcee8d30523f4293cbaa2262ee707, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: efa0a5e0cbf12b1419dee98032428371, type: 2}
+      objectReference: {fileID: 11400000, guid: 88195f7a9dab92c4286144e089b7ac88, type: 2}
     - target: {fileID: 6618728688067767644, guid: 2a6dcee8d30523f4293cbaa2262ee707, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -189,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7157305490151883795, guid: 2a6dcee8d30523f4293cbaa2262ee707, type: 3}
       propertyPath: m_Name
-      value: Lily
+      value: Bluebell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a6dcee8d30523f4293cbaa2262ee707, type: 3}
