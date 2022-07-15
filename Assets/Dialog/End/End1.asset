@@ -13,28 +13,24 @@ MonoBehaviour:
   m_Name: End1
   m_EditorClassIdentifier: 
   lines:
-  - text: 
-    speaker: {fileID: 0}
-    emotion: 0
-    speakerNum: 0
   - text: Okay Azalea, I got everything to make the soup!
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0
   - text: Thank you, Zinnia. *cough* *cough* I 'm lucky to have a friend like you.
-    speaker: {fileID: 0}
-    emotion: 0
+    speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
+    emotion: 2
     speakerNum: 0
   - text: So whadda I do now? Do I gotta find a big pot or sumpin?
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
   - text: '*sniff* Don''t be silly, Zinny. It''s already finished!'
-    speaker: {fileID: 0}
-    emotion: 0
+    speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
+    emotion: 2
     speakerNum: 0
   - text: Whaddya mean?
-    speaker: {fileID: 0}
-    emotion: 0
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 2
     speakerNum: 0
   OnDialogOver: {fileID: 0}
