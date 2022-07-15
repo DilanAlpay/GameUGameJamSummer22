@@ -28,7 +28,7 @@ public class WarpManager : MonoBehaviour
             }
             _warping = false;
         }
-        else if (_turningOnArea > 0)
+        else if (_turningOnArea >= 0)
         {
             nearbyAreas[_turningOnArea].gameObject.SetActive(true);
             _turningOnArea = -1;

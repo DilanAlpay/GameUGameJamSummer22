@@ -10,31 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
-  m_Name: End1
+  m_Name: End2
   m_EditorClassIdentifier: 
   lines:
   - text: 
     speaker: {fileID: 0}
     emotion: 0
     speakerNum: 0
-  - text: Okay Azalea, I got everything to make the soup!
+  - text: Wow I feel so much better already!
     speaker: {fileID: 0}
     emotion: 1
     speakerNum: 0
-  - text: Thank you, Zinnia. *cough* *cough* I 'm lucky to have a friend like you.
+  - text: ...
     speaker: {fileID: 0}
-    emotion: 0
+    emotion: 1
     speakerNum: 0
-  - text: So whadda I do now? Do I gotta find a big pot or sumpin?
+  - text: Zinnia?
     speaker: {fileID: 0}
-    emotion: 0
+    emotion: 1
     speakerNum: 0
-  - text: '*sniff* Don''t be silly, Zinny. It''s already finished!'
+  - text: YU JUST ATE BLUB!
     speaker: {fileID: 0}
-    emotion: 0
+    emotion: 1
     speakerNum: 0
-  - text: Whaddya mean?
+  - text: Well yeah, a blub is the main ingredient of griffin noodle soup.
     speaker: {fileID: 0}
-    emotion: 0
+    emotion: 1
+    speakerNum: 0
+  - text: YOU SPIT HIM OUT RIGHT NOW!
+    speaker: {fileID: 0}
+    emotion: 1
     speakerNum: 0
   OnDialogOver: {fileID: 0}
