@@ -59,8 +59,10 @@ public class RandomBehavior : MonoBehaviour, IMoverBrain
         hasArrived = false;
 
         for (int i = 0; i < 20; i++) {
-            Vector3 randomPoint = square.GetRandomPoint();
-            if (randomPoint == null)
+            Vector3 randomPoint = new Vector3();
+            if(square)
+                randomPoint = square.GetRandomPoint();
+            else
             {
                 NavMeshHelper.RandomPoint(transform.position, radius, out randomPoint);
             }
