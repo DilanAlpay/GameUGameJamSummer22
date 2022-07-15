@@ -17,16 +17,19 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: Look at those teeth, they're filled up with bite-amins for sure!
+  - text: Bluuub...
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: Blub!
+  - text: Is it weird having all that pasketti in you, Blub
     speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: And you got bigger! I thought vegetabibbles were supposed to make you skinny!
-      Tee hee!
+  - text: Blub.
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: 'Noodlie-doos are what '
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0
