@@ -2044,6 +2044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IngredientReward
       objectReference: {fileID: 0}
+    - target: {fileID: 4045470061173774198, guid: de0a1f15437e05844b639d7e0bbfbe02, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6464116957169068725, guid: de0a1f15437e05844b639d7e0bbfbe02, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2087,6 +2091,10 @@ PrefabInstance:
     - target: {fileID: 6464116957169068725, guid: de0a1f15437e05844b639d7e0bbfbe02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167175183581285276, guid: de0a1f15437e05844b639d7e0bbfbe02, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0a1f15437e05844b639d7e0bbfbe02, type: 3}

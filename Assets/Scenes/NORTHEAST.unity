@@ -2309,6 +2309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IngredientReward
       objectReference: {fileID: 0}
+    - target: {fileID: 4045470061173774198, guid: de0a1f15437e05844b639d7e0bbfbe02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6464116957169068725, guid: de0a1f15437e05844b639d7e0bbfbe02, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5432,7 +5436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6986082517308323870, guid: 049c91f60d9bc9c4d9359d941aad0e48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 6986082517308323870, guid: 049c91f60d9bc9c4d9359d941aad0e48, type: 3}
       propertyPath: m_LocalPosition.z
