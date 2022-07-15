@@ -55,6 +55,7 @@ MonoBehaviour:
         m_Modes: 01000000
     m_TypeName: UnityEngine.Events.UnityEvent2, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  destroyAfter: 1
 --- !u!114 &1748946059807161305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +558,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   hitBySmallBubble: {fileID: 11400000, guid: 007f2d4e789ebfb40980ebc17657bc37, type: 2}
+  currentHealth: 0
+  iFrames: 0
 --- !u!114 &4798045406814351004
 MonoBehaviour:
   m_ObjectHideFlags: 0

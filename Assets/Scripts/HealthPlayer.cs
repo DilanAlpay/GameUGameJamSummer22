@@ -9,7 +9,9 @@ public class HealthPlayer : Health
     protected override void ChangeHealth(int amount, GameObject source = null)
     {
         if (isDead) return;
-        if (isInvincible && amount < 0) return;
+        //We are still temporarily invincible and cannot take damage
+        if ((isInvincible || Time.time < iFinish) && amount < 0) return;
+
         int prevHealth = currentHealth;
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);

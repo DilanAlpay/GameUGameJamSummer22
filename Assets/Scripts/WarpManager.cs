@@ -24,6 +24,7 @@ public class WarpManager : MonoBehaviour
         {
             area.gameObject.SetActive(false);
         }
+        _warping = false;
     }
 
 }

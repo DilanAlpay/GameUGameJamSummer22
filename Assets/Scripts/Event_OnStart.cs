@@ -12,7 +12,7 @@ public class Event_OnStart : MonoBehaviour
     {
         Invoke("CallEvent", delay);
         if (destroyAfter)
-            Destroy(gameObject);
+            Destroy(this);
     }
 
 

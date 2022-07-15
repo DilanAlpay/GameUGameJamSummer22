@@ -6,11 +6,13 @@ public class ObjectSpawner : MonoBehaviour
 
     public void SpawnObject(Vector3 position)
     {
-        Instantiate(prefab, position, Quaternion.identity);
+        GameObject obj = Instantiate(prefab, position, Quaternion.identity);
+        obj.transform.SetParent(transform.parent.parent);
     }
 
     public void SpawnObject()
     {
-        Instantiate(prefab, transform.position, Quaternion.identity);
+        GameObject obj = Instantiate(prefab, transform.position, Quaternion.identity);
+        obj.transform.SetParent(transform.parent.parent);
     }
 }
