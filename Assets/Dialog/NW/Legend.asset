@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Legend
   m_EditorClassIdentifier: 
   speakerName: Legend
-  nameBoxColor: {r: 1, g: 1, b: 1, a: 1}
+  nameBoxColor: {r: 0.32941177, g: 0.54901963, b: 0.34901962, a: 1}
   sprite: {fileID: 0}
   defaultEmotion:
     emotion: 0

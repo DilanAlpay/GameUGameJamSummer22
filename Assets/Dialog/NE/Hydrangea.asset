@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hydrangea
   m_EditorClassIdentifier: 
   speakerName: Hydrangea
-  nameBoxColor: {r: 1, g: 1, b: 1, a: 1}
+  nameBoxColor: {r: 0.54901963, g: 0.3529412, b: 0.10196079, a: 1}
   sprite: {fileID: 0}
   defaultEmotion:
     emotion: 0
@@ -27,3 +27,4 @@ MonoBehaviour:
   angryEmotion:
     emotion: 0
     sprite: {fileID: 0}
+  audioClips: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hibiscus
   m_EditorClassIdentifier: 
   speakerName: Hibiscus
-  nameBoxColor: {r: 1, g: 1, b: 1, a: 1}
+  nameBoxColor: {r: 0.2509804, g: 0.4039216, b: 0.26666668, a: 1}
   sprite: {fileID: 0}
   defaultEmotion:
     emotion: 0
