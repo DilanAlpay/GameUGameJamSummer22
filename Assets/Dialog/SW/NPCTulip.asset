@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
+  m_Name: NPCTulip
+  m_EditorClassIdentifier: 
+  lines:
+  - text: 
+    speaker: {fileID: 0}
+    emotion: 0
+    speakerNum: 0
+  - text: A child? Here?! How'd you get past all of those terrible creatures?
+    speaker: {fileID: 11400000, guid: ed90eec712835a24fb5b10d3877ddba4, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: I got a lot of determy-lation!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: Blub!
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 3
+    speakerNum: 0
+  - text: I also got Blub.
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: A blub! Of course. I just kept running in flailing my arms hoping not to
+      hit anything.
+    speaker: {fileID: 11400000, guid: ed90eec712835a24fb5b10d3877ddba4, type: 2}
+    emotion: 3
+    speakerNum: 0
+  OnDialogOver: {fileID: 0}

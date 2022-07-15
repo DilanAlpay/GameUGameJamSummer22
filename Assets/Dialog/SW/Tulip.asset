@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 507cf7338028b744ba95925b1e1a76f0, type: 3}
-  m_Name: Iris
+  m_Name: Tulip
   m_EditorClassIdentifier: 
-  speakerName: Iris
-  nameBoxColor: {r: 0.43921572, g: 0.24313727, b: 0.5019608, a: 1}
+  speakerName: Tulip
+  nameBoxColor: {r: 0.13725491, g: 0.61960787, b: 1, a: 1}
   sprite: {fileID: 0}
   defaultEmotion:
     emotion: 0

@@ -20,6 +20,7 @@ public class Health : MonoBehaviour, IDamageable
     public int HP => currentHealth;
     public bool IsDead => isDead;
     public UnityEvent Death => onDie;
+    public bool AtMax { get { return currentHealth == maxHealth; } }
 
     /// <summary>
     /// Time when the iFrames run out

@@ -109,7 +109,8 @@ public class PlayerThrowing : MonoBehaviour
 
     private void OnDisable()
     {
-        EndAim();
+        if(arcDisplay != null)
+            EndAim();
     }
 
     #region Callbacks

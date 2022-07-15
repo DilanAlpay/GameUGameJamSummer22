@@ -105,9 +105,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDisable()
     {
+        _direction = Vector3.zero;
+
         if (inputMove.Action == null) return;
         DisableCallbacks();
-        _direction = Vector3.zero;
+    }
+
+    public void ResetVariables()
+    {
+        _isMoving = false;
     }
 
     private void EnableCallbacks()
@@ -202,6 +208,7 @@ public class PlayerMovement : MonoBehaviour
         //This is a necessary step when working with CharacterControllers
         //No, I do not know why
         _controller.enabled = false;
+        _isMoving = false;
         transform.position = newPos;
         _controller.enabled = true;
     }
