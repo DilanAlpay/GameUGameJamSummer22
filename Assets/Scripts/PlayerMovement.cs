@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     #region Animation Hashes
     private int _hashDirection;
     private int _hashWalking;
+    private int _hashJumping;
     #endregion
 
     #region Private Properties
@@ -90,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
         //Animation hashes
         _hashDirection = Animator.StringToHash("direction");
         _hashWalking = Animator.StringToHash("walking");
+        _hashJumping = Animator.StringToHash("jumping");
 
         //Jump Velocity Calculation
         //I do not know how this math works
@@ -174,6 +176,8 @@ public class PlayerMovement : MonoBehaviour
         {
             _isJumping = false;
         }
+
+        _animator.SetBool("jumping", _isJumping);
     }
 
     void HandleGravity()

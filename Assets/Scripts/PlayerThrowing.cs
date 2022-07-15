@@ -19,6 +19,7 @@ public class PlayerThrowing : MonoBehaviour
 
     #region Animation Hashes
     private int _hashAiming;
+    private int _hashThrow;
     #endregion
 
     #region References
@@ -95,6 +96,7 @@ public class PlayerThrowing : MonoBehaviour
 
         //Hashes
         _hashAiming = Animator.StringToHash("aiming");
+        _hashThrow = Animator.StringToHash("Throw");
 
         indicator.SetActive(false);
         rangeDisplay.gameObject.SetActive(false);
@@ -274,7 +276,8 @@ public class PlayerThrowing : MonoBehaviour
         {
             _item.transform.parent = null;
             _item = null;
-            _returnTime = Time.time + _returnLength; 
+            _returnTime = Time.time + _returnLength;
+            _animator.Play(_hashThrow);
         }
     }
 

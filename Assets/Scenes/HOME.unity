@@ -4474,8 +4474,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1421603998}
-  - {fileID: 1992484046}
   - {fileID: 1961724332}
+  - {fileID: 1992484046}
   - {fileID: 1400341971}
   m_Father: {fileID: 1923980746218318926}
   m_RootOrder: 5
@@ -9151,7 +9151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1961724332}
   m_Layer: 9
-  m_Name: 3
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9169,7 +9169,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1044679083}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1967554805 stripped
 Transform:
@@ -9260,7 +9260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992484046}
   m_Layer: 9
-  m_Name: 2
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9278,7 +9278,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1044679083}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2005498742
 GameObject:
@@ -10308,7 +10308,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   face: {fileID: 1923980746218318926}
   sizeCounter: {fileID: 11400000, guid: 61caff6eb279c5a48a449a260cff921a, type: 2}
-  objParents: []
+  objParents:
+  - {fileID: 1421603998}
+  - {fileID: 1961724332}
+  - {fileID: 1992484046}
+  - {fileID: 1400341971}
 --- !u!95 &1923980746218318928
 Animator:
   serializedVersion: 3
