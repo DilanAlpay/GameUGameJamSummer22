@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthPickUp : MonoBehaviour
 {
+    [SerializeField] int healAmount = 1;
     private void OnTriggerEnter(Collider other)
     {
         HealthPlayer health = other.GetComponent<HealthPlayer>();

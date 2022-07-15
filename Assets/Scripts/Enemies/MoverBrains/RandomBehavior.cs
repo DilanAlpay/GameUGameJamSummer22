@@ -11,6 +11,8 @@ public class RandomBehavior : MonoBehaviour, IMoverBrain
     [SerializeField] UnityEvent startedMoving;
     [SerializeField] UnityEvent arrivedAtTarget;
     [SerializeField] float waitTime = 3f;
+
+    [SerializeField] float radius = 10;
     float counter = Mathf.Infinity;
     bool hasArrived = true;
     Vector3 targetPosition = new Vector3();
@@ -58,6 +60,10 @@ public class RandomBehavior : MonoBehaviour, IMoverBrain
 
         for (int i = 0; i < 20; i++) {
             Vector3 randomPoint = square.GetRandomPoint();
+            if (randomPoint == null)
+            {
+                NavMeshHelper.RandomPoint(transform.position, radius, out randomPoint);
+            }
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas))
             {
