@@ -135,7 +135,7 @@ AnimationClip:
   - time: 1.0166667
     functionName: CallGameEvent
     data: 
-    objectReferenceParameter: {fileID: 11400000, guid: b169a1cb607dce44c81f07e6913d1154, type: 2}
+    objectReferenceParameter: {fileID: 11400000, guid: 300bdffdf6683d942bd5b1c60c030c10, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
