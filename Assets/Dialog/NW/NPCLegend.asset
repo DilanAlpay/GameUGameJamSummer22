@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NPCLegend
   m_EditorClassIdentifier: 
   lines:
-  - text: How'd you get here?
+  - text: How'd YOU get here?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 0
+    emotion: 3
     speakerNum: 0
   - text: If you see Allium, tell'em I said "told ya so"!
     speaker: {fileID: 11400000, guid: 1e2f11dfb50497a49a8fc3d10a727ed7, type: 2}

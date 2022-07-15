@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Petunia
   m_EditorClassIdentifier: 
   speakerName: Petunia
-  nameBoxColor: {r: 1, g: 1, b: 1, a: 1}
+  nameBoxColor: {r: 0.9058824, g: 0.6117647, b: 0.2784314, a: 1}
   sprite: {fileID: 0}
   defaultEmotion:
     emotion: 0
@@ -27,3 +27,4 @@ MonoBehaviour:
   angryEmotion:
     emotion: 0
     sprite: {fileID: 0}
+  audioClips: []

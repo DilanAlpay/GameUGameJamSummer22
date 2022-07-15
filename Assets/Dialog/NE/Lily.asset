@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lily
   m_EditorClassIdentifier: 
   speakerName: Lily
-  nameBoxColor: {r: 1, g: 1, b: 1, a: 1}
+  nameBoxColor: {r: 0.34901962, g: 0.24705884, b: 0.11764707, a: 1}
   sprite: {fileID: 0}
   defaultEmotion:
     emotion: 0
@@ -27,3 +27,4 @@ MonoBehaviour:
   angryEmotion:
     emotion: 0
     sprite: {fileID: 0}
+  audioClips: []
