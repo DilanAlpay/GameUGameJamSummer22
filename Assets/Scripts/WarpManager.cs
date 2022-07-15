@@ -8,7 +8,8 @@ public class WarpManager : MonoBehaviour
     public Area startingArea;
     public List<Area> nearbyAreas;
     private bool _warping = false;
-    
+    private static int _turningOnArea = -1;
+
     public void PrepWarp()
     {
         _warping = true;
@@ -16,15 +17,27 @@ public class WarpManager : MonoBehaviour
 
     public void Warp()
     {
-        if (!_warping) return;
-        startingArea.gameObject.SetActive(true);
-        player.ReturnToStart();
-
-        foreach (Area area in nearbyAreas)
+        if (_warping)
         {
-            area.gameObject.SetActive(false);
+            startingArea.gameObject.SetActive(true);
+            player.ReturnToStart();
+
+            foreach (Area area in nearbyAreas)
+            {
+                area.gameObject.SetActive(false);
+            }
+            _warping = false;
         }
-        _warping = false;
+        else if (_turningOnArea > 0)
+        {
+            nearbyAreas[_turningOnArea].gameObject.SetActive(true);
+            _turningOnArea = -1;
+        }
+    }
+
+    public static void TurnOnArea(int area)
+    {
+        _turningOnArea = area-1;
     }
 
 }

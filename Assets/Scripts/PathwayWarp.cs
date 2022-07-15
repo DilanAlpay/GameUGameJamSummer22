@@ -19,6 +19,10 @@ public class PathwayWarp : Pathway
 
     protected override void MovePlayer(Player player)
     {
+        if(!entering)
+        {
+            WarpManager.TurnOnArea((int)zone);
+        }
         _area.WarpOut(player, destination.position, zone, entering);
     }   
 

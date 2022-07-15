@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     #region Public Properties
     public InputObj inputMove;
-    public InputObj inputRun;
     public InputObj inputJump;
     #endregion
 
@@ -23,8 +22,6 @@ public class PlayerMovement : MonoBehaviour
     #region Variable Properties
     [SerializeField]
     private float _speed;
-    [SerializeField]
-    private float _run;
     /// <summary>
     /// Max jump height
     /// </summary>
@@ -47,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
 
     #region Condition Boolean
     private bool _isMoving;
-    private bool _isRunning;
     private bool _isJumping;
     private bool _isFalling;
     private bool _isJumpPressed;
@@ -119,8 +115,6 @@ public class PlayerMovement : MonoBehaviour
         inputMove.Action.started += OnMove;
         inputMove.Action.canceled += OnMove;
         inputMove.Action.performed += OnMove;
-        inputRun.Action.started += OnRun;
-        inputRun.Action.canceled += OnRun;
         inputJump.Action.started += OnJump;
         inputJump.Action.canceled += OnJump;
     }
@@ -130,8 +124,6 @@ public class PlayerMovement : MonoBehaviour
         inputMove.Action.started -= OnMove;
         inputMove.Action.canceled -= OnMove;
         inputMove.Action.performed -= OnMove;
-        inputRun.Action.started -= OnRun;
-        inputRun.Action.canceled -= OnRun;
         inputJump.Action.started -= OnJump;
         inputJump.Action.canceled -= OnJump;
     }
@@ -147,12 +139,6 @@ public class PlayerMovement : MonoBehaviour
 
         _isMoving = _moveInput != Vector2.zero;
     }
-
-    public void OnRun(InputAction.CallbackContext ctx)
-    {
-        _isRunning = ctx.ReadValueAsButton();
-    }
-
     public void OnJump(InputAction.CallbackContext ctx)
     {
         _isJumpPressed = ctx.ReadValueAsButton();
@@ -163,11 +149,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Vector3 appliedMovement = _direction;
-        if (_isRunning)
-        {
-            appliedMovement.x *= _run;
-            appliedMovement.z *= _run;
-        }
 
         _controller.Move(appliedMovement * Time.deltaTime);
 

@@ -140,9 +140,7 @@ public class Area : MonoBehaviour
         {
             int otherWay = (int)_moveDirection;
             otherWay = (otherWay + 2) % 4;
-            _neighbors[_moveDirection].EnterFrom(_movingThis, (Direction)otherWay);
-
-            gameObject.SetActive(false);
+            _neighbors[_moveDirection].EnterFrom(_movingThis, (Direction)otherWay);          
         }
         else if (_moveType == 2)
         {
@@ -163,6 +161,8 @@ public class Area : MonoBehaviour
                 }
             }
         }
+
+        gameObject.SetActive(false);
 
         _movingThis = null;
         _moveType = 0;
