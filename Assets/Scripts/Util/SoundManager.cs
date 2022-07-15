@@ -57,17 +57,17 @@ public class SoundManager : MonoBehaviour
 
 	public void SetMasterVolume(float value)
 	{
-		mixer.SetFloat("masterVolume", value);
+		mixer.SetFloat("masterVolume", Mathf.Log10(value) * 20);
 	}
 
 	public void SetMusicVolume(float value)
     {
-		mixer.SetFloat("musicVolume", value);
+		mixer.SetFloat("musicVolume", Mathf.Log10(value) * 20);
     }
 
 	public void SetSFXVolume(float value)
 	{
-		mixer.SetFloat("sfxVolume", value);
+		mixer.SetFloat("sfxVolume", Mathf.Log10(value) * 20);
 	}
 
 	public void PlayMusicArea(MusicArea area)
