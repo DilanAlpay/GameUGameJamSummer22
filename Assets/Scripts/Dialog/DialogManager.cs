@@ -169,7 +169,7 @@ public class DialogManager : MonoBehaviour
         AudioClip audio = speaker.GetAudioClip();
         if (audio != null)
         {
-            //play sound clip
+            SoundManager.Instance.Play(audio);
         }
 
     }

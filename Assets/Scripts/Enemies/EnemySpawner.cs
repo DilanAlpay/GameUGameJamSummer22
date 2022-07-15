@@ -12,8 +12,16 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemy()
     {
+        Vector3 position;
 
-        Vector3 position =square.GetRandomPoint();
+        if (square != null)
+        {
+            position = square.GetRandomPoint();
+        }
+        else
+        {
+            NavMeshHelper.RandomPoint(transform.position, radius, out position);
+        }
         objSpawner.SpawnObject(position);
 
     }

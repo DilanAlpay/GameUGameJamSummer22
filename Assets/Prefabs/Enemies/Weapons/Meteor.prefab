@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
   onCollision:
     m_PersistentCalls:
       m_Calls:
@@ -374,7 +374,7 @@ Transform:
   m_GameObject: {fileID: 5115469130295453183}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 5115469131497029276}
   m_RootOrder: 1
@@ -599,3 +599,4 @@ MonoBehaviour:
         m_Modes: 01000000
     m_TypeName: UnityEngine.Events.UnityEvent2, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  destroyAfter: 0

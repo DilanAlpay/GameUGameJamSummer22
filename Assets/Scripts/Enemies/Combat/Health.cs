@@ -24,7 +24,7 @@ public class Health : MonoBehaviour, IDamageable
     /// <summary>
     /// Time when the iFrames run out
     /// </summary>
-    private float iFinish;
+    protected float iFinish;
     
     private void Start()
     {
