@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3964240523692934058, guid: 6f91f17079c45b048bee1c0be996c38f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5352094896618728881, guid: 6f91f17079c45b048bee1c0be996c38f, type: 3}
       propertyPath: dialog
       value: 
@@ -17,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 2d5f992f108782d478b9fd2adb6f9380, type: 2}
     - target: {fileID: 6091670569310237941, guid: 6f91f17079c45b048bee1c0be996c38f, type: 3}
       propertyPath: m_Name
-      value: Noodles
+      value: Noodles Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7562581001195150105, guid: 6f91f17079c45b048bee1c0be996c38f, type: 3}
       propertyPath: m_RootOrder
@@ -77,9 +81,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f91f17079c45b048bee1c0be996c38f, type: 3}
---- !u!4 &2965853858033824198 stripped
+--- !u!4 &8563793446230567285 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7562581001195150105, guid: 6f91f17079c45b048bee1c0be996c38f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3964240523692934058, guid: 6f91f17079c45b048bee1c0be996c38f, type: 3}
   m_PrefabInstance: {fileID: 4745521891866389215}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4964071783366119139
@@ -87,7 +91,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2965853858033824198}
+    m_TransformParent: {fileID: 8563793446230567285}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5bfb569cc08d6f6488d77fca5e92c98e, type: 3}
       propertyPath: m_RootOrder
@@ -123,7 +127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bfb569cc08d6f6488d77fca5e92c98e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bfb569cc08d6f6488d77fca5e92c98e, type: 3}
       propertyPath: m_LocalRotation.y

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Veggies
   m_EditorClassIdentifier: 
   lines:
-  - text: Those veggies'll make Azalea all healthy again!
+  - text: These veggies'll make Azalea all healthy again!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0

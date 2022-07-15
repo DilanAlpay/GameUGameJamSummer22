@@ -22,7 +22,8 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 2
     speakerNum: 0
-  - text: Don't worry, I'll take care of you! What can I do to help?
+  - text: Don't worry, I'll take care of you! I'm a mebical spezzalist! What can
+      I do to help?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
@@ -30,7 +31,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: Sorry, when I said help I meant emotionally. I can't cook.
+  - text: Sorry, when I said help I meant emoji-ly. I can't cook.
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 2
     speakerNum: 0
@@ -43,8 +44,8 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 2
     speakerNum: 0
-  - text: I can't carry veggies and spiders and boiled whatever you said! I'm just
-      too little.
+  - text: I can't carry veggies and spidders and bubbly whatever you said! I'm just
+      too liddle!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 2
     speakerNum: 0

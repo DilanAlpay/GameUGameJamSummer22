@@ -13,21 +13,29 @@ MonoBehaviour:
   m_Name: Broth
   m_EditorClassIdentifier: 
   lines:
-  - text: Those veggies'll make Azalea all healthy again!
+  - text: Look at this neat pot, Blub! It's all eyebally and stuff!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: Blub? Blub blub.
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 2
+    speakerNum: 0
+  - text: Yeah you gotta make sure to not spill any of it! Azalea needs every last
+      drop!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: I wonder if you're supposed ta eat the bowl too?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: Look at those teeth, they're filled up with bite-amins for sure!
+  - text: Maybe it's made of chocky-lit!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: Blub!
-    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
-    emotion: 1
-    speakerNum: 0
-  - text: And you got bigger! I thought vegetabibbles were supposed to make you skinny!
-      Tee hee!
+  - text: Blub-blub.
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 1
+    emotion: 0
     speakerNum: 0
   OnDialogOver: {fileID: 0}

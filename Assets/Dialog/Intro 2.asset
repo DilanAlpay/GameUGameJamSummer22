@@ -15,13 +15,21 @@ MonoBehaviour:
   lines:
   - text: Hello there, little ball.
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 1
+    emotion: 0
     speakerNum: 0
   - text: Blub!
     speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: Now click anywhere on screen, drag, and release to sending it flying!
+  - text: You are so ADORA-BUBBLE! I'mma call you Blub the blub!
+    speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: Blub blub!
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: Now click anywhere on screen, pull back, and release to sending it flying!
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 1
     speakerNum: 0

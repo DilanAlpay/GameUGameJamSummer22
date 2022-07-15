@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: Meat
   m_EditorClassIdentifier: 
   lines:
-  - text: Those veggies'll make Azalea all healthy again!
-    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 0
-    speakerNum: 0
-  - text: Look at those teeth, they're filled up with bite-amins for sure!
+  - text: WOWIE! I bet the chiggen this came from was bigger than Azalea!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: Blub!
+  - text: Blub blub
     speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: And you got bigger! I thought vegetabibbles were supposed to make you skinny!
-      Tee hee!
+  - text: Griffins are pretty much huge-gantic chickens, so this'll fill up Azalea
+      a billion times faster!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 1
+    emotion: 0
+    speakerNum: 0
+  - text: And it better cuz fighting monsters to get this stuff is pretty 'nnoying...
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 3
     speakerNum: 0
   OnDialogOver: {fileID: 0}

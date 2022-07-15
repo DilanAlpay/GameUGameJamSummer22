@@ -13,24 +13,28 @@ MonoBehaviour:
   m_Name: Noodles
   m_EditorClassIdentifier: 
   lines:
-  - text: Those veggies'll make Azalea all healthy again!
-    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 0
-    speakerNum: 0
   - text: Bluuub...
-    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 1
-    speakerNum: 0
-  - text: Is it weird having all that pasketti in you, Blub
     speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: Blub.
+  - text: Is it weird having all that pasketti in you, Blub?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: 'Noodlie-doos are what '
+  - text: Blub.
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 3
+    speakerNum: 0
+  - text: Noodlie-doos are what make soup fun!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: So you're just gonna hafta deal with this sitchy-ation.
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: blub blub...
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
     emotion: 1
     speakerNum: 0
   OnDialogOver: {fileID: 0}

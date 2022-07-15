@@ -18,16 +18,16 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 1
     speakerNum: 0
-  - text: Where can I find all those ingreifients?
+  - text: Where can I find all those in-greif-ients?
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: They're scattered throughout the land. I'd start with the forest to the
-      northwest.
+  - text: They're...sniff... scattered throughout the land. I'd start with the mushroom
+      forest to the northwest.
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 0
     speakerNum: 0
-  - text: We're on it!
+  - text: We're on it! Zinnia and Blub to the rescue!
     speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
     emotion: 1
     speakerNum: 0
