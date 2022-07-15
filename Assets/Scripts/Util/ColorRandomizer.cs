@@ -6,12 +6,16 @@ public class ColorRandomizer : MonoBehaviour
 {
     [SerializeField] ColorRange range;
     [SerializeField] SpriteRenderer sr;
+    [SerializeField] List<SpriteRenderer> others;
     // Start is called before the first frame update
     void Start()
-    {
-       
-        sr.color = range.GetColor();
-        
+    {       
+        Color c = range.GetColor();
+        sr.color = c;
+        foreach(SpriteRenderer s in others)
+        {
+            s.color = c; 
+        }   
         
     }
 

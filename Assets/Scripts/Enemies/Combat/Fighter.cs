@@ -61,7 +61,7 @@ public class Fighter : MonoBehaviour, IAction
 
     private void AttackBehavior()
     {
-        transform.LookAt(new Vector3(_target.transform.position.x, transform.position.y,_target.transform.position.z));
+        //transform.LookAt(new Vector3(_target.transform.position.x, transform.position.y,_target.transform.position.z));
         if(timeSinceLastAttack > equippedWeapon.timeBetweenAttacks)
         {
             timeSinceLastAttack = 0;

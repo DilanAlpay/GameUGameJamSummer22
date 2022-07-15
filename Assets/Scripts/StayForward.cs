@@ -13,6 +13,7 @@ public class StayForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(transform.rotation);
         transform.rotation = Quaternion.identity;
     }
 }

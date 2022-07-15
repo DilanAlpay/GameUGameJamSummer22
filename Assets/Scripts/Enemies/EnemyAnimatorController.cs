@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyAnimatorController : MonoBehaviour
 {
     [SerializeField] NavMeshMover mover;
-    [SerializeField] bool isFacingLeftToStart = true;
     private bool _facingLeft = true;
 
     private void Awake()
@@ -28,10 +27,9 @@ public class EnemyAnimatorController : MonoBehaviour
 
     private void Flip(bool left)
     {
-        foreach(Transform child in transform)
-        {
-            child.localEulerAngles = Vector3.up * (left ? 180 : 0);
-            _facingLeft = left;
-        }
+        Vector3 scale = Vector3.one;
+        scale.x = (left ? -1 : 1); 
+        _facingLeft = left;
+        transform.localScale = scale;
     }
 }
