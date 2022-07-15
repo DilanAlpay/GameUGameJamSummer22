@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d73591270f7b1843bd6f8056520acc8, type: 3}
   m_Name: Gnumnut
   m_EditorClassIdentifier: 
-  color1: {r: 0.1254902, g: 0.0627451, b: 0.5882353, a: 1}
-  color2: {r: 0.49803925, g: 0, b: 0.43137258, a: 1}
+  color1: {r: 0.59042764, g: 0.56559277, b: 0.7735849, a: 1}
+  color2: {r: 0.41073132, g: 0.15966536, b: 0.49056602, a: 1}
