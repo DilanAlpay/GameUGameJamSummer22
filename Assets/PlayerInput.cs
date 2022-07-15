@@ -89,6 +89,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""c3c84c0e-3f9f-4033-b76c-5ed4c54858fe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -256,6 +265,17 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""action"": ""CancelThrow"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""950a396b-c964-456f-a76b-fd83e52a579d"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -271,6 +291,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_CharacterControls_Throw = m_CharacterControls.FindAction("Throw", throwIfNotFound: true);
         m_CharacterControls_Interact = m_CharacterControls.FindAction("Interact", throwIfNotFound: true);
         m_CharacterControls_CancelThrow = m_CharacterControls.FindAction("CancelThrow", throwIfNotFound: true);
+        m_CharacterControls_Pause = m_CharacterControls.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -337,6 +358,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_CharacterControls_Throw;
     private readonly InputAction m_CharacterControls_Interact;
     private readonly InputAction m_CharacterControls_CancelThrow;
+    private readonly InputAction m_CharacterControls_Pause;
     public struct CharacterControlsActions
     {
         private @PlayerInput m_Wrapper;
@@ -348,6 +370,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         public InputAction @Throw => m_Wrapper.m_CharacterControls_Throw;
         public InputAction @Interact => m_Wrapper.m_CharacterControls_Interact;
         public InputAction @CancelThrow => m_Wrapper.m_CharacterControls_CancelThrow;
+        public InputAction @Pause => m_Wrapper.m_CharacterControls_Pause;
         public InputActionMap Get() { return m_Wrapper.m_CharacterControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -378,6 +401,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @CancelThrow.started -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnCancelThrow;
                 @CancelThrow.performed -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnCancelThrow;
                 @CancelThrow.canceled -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnCancelThrow;
+                @Pause.started -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_CharacterControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -403,6 +429,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @CancelThrow.started += instance.OnCancelThrow;
                 @CancelThrow.performed += instance.OnCancelThrow;
                 @CancelThrow.canceled += instance.OnCancelThrow;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -416,5 +445,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         void OnThrow(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnCancelThrow(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
