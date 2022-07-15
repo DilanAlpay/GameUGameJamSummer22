@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f697f447ff359ff418e660ce09e667b1, type: 3}
-  m_Name: Intro 2
+  m_Name: Azalea
   m_EditorClassIdentifier: 
   lines:
-  - text: Hello there, little ball.
-    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
-    emotion: 1
+  - text: We need Vibrant Violet Veggies, Sprawling Spider Spaghetti, Bubbling Bone
+      Broth, and Grizzly Grilled Griffin.
+    speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
+    emotion: 0
     speakerNum: 0
-  - text: Blub!
-    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
-    emotion: 1
-    speakerNum: 0
-  - text: Now click anywhere on screen, drag, and release to sending it flying!
+  - text: A pot of griffin noodle soup will make me right as rain.
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 1
     speakerNum: 0
-  OnDialogOver: {fileID: 11400000, guid: e46545f45e067bf49a2bd8bf5f5e41db, type: 2}
+  - text: eeeuurrrrrggghh... please hurry
+    speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
+    emotion: 2
+    speakerNum: 0
+  OnDialogOver: {fileID: 0}

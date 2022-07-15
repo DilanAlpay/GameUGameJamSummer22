@@ -13,8 +13,26 @@ MonoBehaviour:
   m_Name: Intro 3
   m_EditorClassIdentifier: 
   lines:
-  - text: Eghhh... great job. Now grab it and hurry... my vision's blurry and I'm
+  - text: sniff... great job! Now grab it and hurry... my vision's blurry and I'm
       starting to see double
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 1
-  OnDialogOver: {fileID: 0}
+    speakerNum: 0
+  - text: Where can I find all those ingreifients?
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: They're scattered throughout the land. I'd start with the forest to the
+      northwest.
+    speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
+    emotion: 0
+    speakerNum: 0
+  - text: We're on it!
+    speaker: {fileID: 11400000, guid: f5bbddd0653ee8343ac3bd0ed286846c, type: 2}
+    emotion: 1
+    speakerNum: 0
+  - text: Blub!
+    speaker: {fileID: 11400000, guid: ebb8132645fb62b439bda84a0774d2fb, type: 2}
+    emotion: 1
+    speakerNum: 0
+  OnDialogOver: {fileID: 11400000, guid: e805cfe4c45ac7244a63e323483cb241, type: 2}

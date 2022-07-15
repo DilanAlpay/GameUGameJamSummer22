@@ -52,4 +52,4 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: e2e8587c3b048b746b0a8942d8a702dd, type: 2}
     emotion: 0
     speakerNum: 0
-  OnDialogOver: {fileID: 0}
+  OnDialogOver: {fileID: 11400000, guid: 00ae6464c67a3ce4fa33f4a68ec7eff9, type: 2}
