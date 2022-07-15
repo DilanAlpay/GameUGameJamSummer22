@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45115042, g: 0.49976742, b: 0.5676699, a: 1}
+  m_IndirectSpecularColor: {r: 0.45115077, g: 0.49976796, b: 0.56767035, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10074,6 +10074,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1230712628, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -498.00995
+      objectReference: {fileID: 0}
     - target: {fileID: 1354302581, guid: 3be12875d18298246ab316e8231b540e, type: 3}
       propertyPath: target
       value: 
@@ -10238,6 +10242,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3375407297195385992, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7353275123192287601}
+    - target: {fileID: 3375407297195385992, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMasterVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375407297509083884, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7353275123192287601}
+    - target: {fileID: 3375407297509083884, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSFXVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 3375407297748428006, guid: 3be12875d18298246ab316e8231b540e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10269,10 +10289,18 @@ PrefabInstance:
     - target: {fileID: 3375407297786219810, guid: 3be12875d18298246ab316e8231b540e, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375407297973504338, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7353275123192287601}
+    - target: {fileID: 3375407297973504338, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMusicVolume
       objectReference: {fileID: 0}
     - target: {fileID: 3375407298054081444, guid: 3be12875d18298246ab316e8231b540e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.100006
+      value: -19.099976
       objectReference: {fileID: 0}
     - target: {fileID: 3375407298054081444, guid: 3be12875d18298246ab316e8231b540e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10493,6 +10521,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f8bab818055faf4fa781cc213e62551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7353275123192287601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3385937244694725496, guid: 3be12875d18298246ab316e8231b540e, type: 3}
+  m_PrefabInstance: {fileID: 7353275123192287599}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62afa65b772121f4ab8beaf81b78db33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8252559317176339657
