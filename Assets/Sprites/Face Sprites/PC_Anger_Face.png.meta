@@ -1,12 +1,39 @@
 fileFormatVersion: 2
 guid: c53a13552700c41448272c13caceee6d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3080916182134344987
+    second: PC_Anger_Face_0
+  - first:
+      213: -695663297534434094
+    second: PC_Anger_Face_1
+  - first:
+      213: 9203338658930886558
+    second: PC_Anger_Face_2
+  - first:
+      213: -508603162251508357
+    second: PC_Anger_Face_3
+  - first:
+      213: 8285534615901724712
+    second: PC_Anger_Face_4
+  - first:
+      213: -1312797841232709613
+    second: PC_Anger_Face_5
+  - first:
+      213: -6018617311015357243
+    second: PC_Anger_Face_6
+  - first:
+      213: 4647888891371491533
+    second: PC_Anger_Face_7
+  - first:
+      213: 2001031239733728575
+    second: PC_Anger_Face_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +62,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +77,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -75,13 +102,214 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PC_Anger_Face_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 3653
+        width: 346
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e231254e036e35d0800000000000000
+      internalID: -3080916182134344987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_1
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 3653
+        width: 348
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4ee2baae18856f0800000000000000
+      internalID: -695663297534434094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_2
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 3653
+        width: 346
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e970239bfb3d8bf70800000000000000
+      internalID: 9203338658930886558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2987
+        width: 346
+        height: 340
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75cb5e5e1411f8f0800000000000000
+      internalID: -508603162251508357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_4
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 2989
+        width: 346
+        height: 340
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8206603a5d12cf270800000000000000
+      internalID: 8285534615901724712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_5
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 2987
+        width: 346
+        height: 342
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318bc63a15108cde0800000000000000
+      internalID: -1312797841232709613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2317
+        width: 346
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4b9e19173997ca0800000000000000
+      internalID: -6018617311015357243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_7
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 2317
+        width: 348
+        height: 346
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc09ea5325e908040800000000000000
+      internalID: 4647888891371491533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Anger_Face_8
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 2317
+        width: 348
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35d9c48f4715cb10800000000000000
+      internalID: 2001031239733728575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b9653b66d473444d8a7fee96cdc3114
     internalID: 0
     vertices: []
     indices: 

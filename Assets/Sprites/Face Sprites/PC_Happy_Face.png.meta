@@ -1,12 +1,42 @@
 fileFormatVersion: 2
 guid: 8bc87bc8738940444853478eac6d641e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4216019490796944291
+    second: PC_Happy_Face_0
+  - first:
+      213: -4210261136706455138
+    second: PC_Happy_Face_1
+  - first:
+      213: -6958210009904296324
+    second: PC_Happy_Face_2
+  - first:
+      213: -2758325833886471111
+    second: PC_Happy_Face_3
+  - first:
+      213: 1789926949969136266
+    second: PC_Happy_Face_4
+  - first:
+      213: 8464950756740195929
+    second: PC_Happy_Face_5
+  - first:
+      213: 8659015580154326136
+    second: PC_Happy_Face_6
+  - first:
+      213: 5561108157819043171
+    second: PC_Happy_Face_7
+  - first:
+      213: -7095151443222373424
+    second: PC_Happy_Face_8
+  - first:
+      213: 1813076934091922070
+    second: PC_Happy_Face_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,16 +62,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +80,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -68,7 +98,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,11 +119,221 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PC_Happy_Face_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3662
+        width: 338
+        height: 336
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab3313b36f428a30800000000000000
+      internalID: 4216019490796944291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_1
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 3664
+        width: 340
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99baf69dc52295c0800000000000000
+      internalID: -4210261136706455138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_2
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3664
+        width: 340
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e4617bcd87f6f90800000000000000
+      internalID: -6958210009904296324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3012
+        width: 340
+        height: 332
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ce960b44578b9d0800000000000000
+      internalID: -2758325833886471111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_4
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 3016
+        width: 340
+        height: 328
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a0fcad31917d810800000000000000
+      internalID: 1789926949969136266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_5
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3014
+        width: 340
+        height: 330
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9566ca03ddb897570800000000000000
+      internalID: 8464950756740195929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2360
+        width: 340
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cebafeac00b2870800000000000000
+      internalID: 8659015580154326136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_7
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 2360
+        width: 340
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36db450d7660d2d40800000000000000
+      internalID: 5561108157819043171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_8
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2358
+        width: 338
+        height: 336
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db5127aa55f88d90800000000000000
+      internalID: -7095151443222373424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Happy_Face_9
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 2406
+        width: 340
+        height: 340
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ad00f8dd7592910800000000000000
+      internalID: 1813076934091922070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 57e1a9a10a758d7418feffd18e15783a
     internalID: 0
     vertices: []
     indices: 

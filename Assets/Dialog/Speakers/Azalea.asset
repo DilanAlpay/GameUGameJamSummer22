@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Azalea
   nameBoxColor: {r: 0.21226418, g: 0.47481605, b: 1, a: 1}
-  sprite: {fileID: 0}
+  sprite: {fileID: -6628912586327811855, guid: 7e8dd319b1d20c9469822163047be862, type: 3}
   defaultEmotion:
     emotion: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -6628912586327811855, guid: 7e8dd319b1d20c9469822163047be862, type: 3}
   happyEmotion:
     emotion: 0
     sprite: {fileID: 0}

@@ -1,12 +1,48 @@
 fileFormatVersion: 2
 guid: 7e8dd319b1d20c9469822163047be862
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6628912586327811855
+    second: Azelea_0
+  - first:
+      213: -502984814615632839
+    second: Azelea_1
+  - first:
+      213: 1138641021279562633
+    second: Azelea_2
+  - first:
+      213: 3478185283423494924
+    second: Azelea_3
+  - first:
+      213: 4381838066330183738
+    second: Azelea_4
+  - first:
+      213: 5456610753129478611
+    second: Azelea_5
+  - first:
+      213: -2559879271071924876
+    second: Azelea_6
+  - first:
+      213: -2394882576806569764
+    second: Azelea_7
+  - first:
+      213: 1856245701244396652
+    second: Azelea_8
+  - first:
+      213: 3189286193436659823
+    second: Azelea_9
+  - first:
+      213: -2673847081237456440
+    second: Azelea_10
+  - first:
+      213: -1125455176939348326
+    second: Azelea_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +71,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +86,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -75,13 +111,277 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Azelea_0
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 3472
+        width: 542
+        height: 315
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f890dccf1f5104a0800000000000000
+      internalID: -6628912586327811855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_1
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 3191
+        width: 542
+        height: 594
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9346b6dd9f90509f0800000000000000
+      internalID: -502984814615632839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_2
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 3191
+        width: 542
+        height: 594
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b6e00e9f34dcf00800000000000000
+      internalID: 1138641021279562633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_3
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2289
+        width: 542
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e279461ff44030800000000000000
+      internalID: 3478185283423494924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_4
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 2289
+        width: 542
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3825ee518a6fcc30800000000000000
+      internalID: 4381838066330183738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_5
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 2289
+        width: 542
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9fbd1d196c9bb40800000000000000
+      internalID: 5456610753129478611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_6
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1385
+        width: 542
+        height: 592
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d3fd3ad5b797cd0800000000000000
+      internalID: -2559879271071924876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_7
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1385
+        width: 542
+        height: 590
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd81caa2cfaa3ced0800000000000000
+      internalID: -2394882576806569764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_8
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 1385
+        width: 542
+        height: 590
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64a48661a5b2c910800000000000000
+      internalID: 1856245701244396652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_9
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 483
+        width: 542
+        height: 586
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6099d635ee924c20800000000000000
+      internalID: 3189286193436659823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_10
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 483
+        width: 542
+        height: 586
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9502b0f3694ead0800000000000000
+      internalID: -2673847081237456440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azelea_11
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 483
+        width: 542
+        height: 584
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ed7efba749160f0800000000000000
+      internalID: -1125455176939348326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d57472362ca63534caff02078b2da46e
     internalID: 0
     vertices: []
     indices: 
